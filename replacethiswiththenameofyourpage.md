@@ -17,6 +17,8 @@ layout: false
 
 - Markdown formatting, with smart extensions
 
+$$LaTeX test x^2_i \sum_i$$
+
 - Presenter mode, with cloned slideshow view
 
 - Syntax highlighting, supporting a range of languages
