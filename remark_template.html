@@ -8,6 +8,24 @@
     </style>
   </head>
   <body>
+    <textarea id="source">
+
+class: center, middle
+
+# \\(\KaTeX{}\\) in remark
+
+---
+
+# Display and Inline
+
+1. This is an inline integral: \\(\int_a^bf(x)dx\\)
+2. More \\(x={a \over b}\\) formulae.
+
+Display formula:
+
+$$e^{i\pi} + 1 = 0$$
+
+    </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js"></script>
@@ -24,7 +42,7 @@
         //     {left: "\\(", right: "\\)", display: false},
         // ]});
       }
-      var slideshow = remark.create({sourceUrl: q ? q : "replacethiswiththenameofyourpage.md"});
+      var slideshow = remark.create(options, renderMath);
 
     </script>
   </body>
