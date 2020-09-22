@@ -15,7 +15,7 @@ layout: false
 .right-column[
   A simple, in-browser, Markdown-driven slideshow tool targeted at people who know their way around HTML and CSS, featuring:
 
-- Markdown formatting, with smart extensions
+- Markdown formatting, with smart extensions latex foloows
 
 $$LaTeX test x^2_i \sum_i$$
 
