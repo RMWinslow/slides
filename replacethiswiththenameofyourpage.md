@@ -28,10 +28,10 @@ $$e^{i\pi} + 1 = 0$$
 ## What is it and why should I be using it?
 ---
 layout: false
-.left-column[
+.left[
   ## What is it?
 ]
-.right-column[
+.right[
   A simple, in-browser, Markdown-driven slideshow tool targeted at people who know their way around HTML and CSS, featuring:
 
 - Markdown formatting, with smart \(x^7\) extensions $X^3$ latex foloows
