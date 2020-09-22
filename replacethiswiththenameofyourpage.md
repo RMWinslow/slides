@@ -34,11 +34,13 @@ layout: false
 .right[
   A simple, in-browser, Markdown-driven slideshow tool targeted at people who know their way around HTML and CSS, featuring:
 
-- Markdown formatting, with smart \(x^7\) extensions $X^3$ latex foloows
+- Markdown formatting, with smart \\(x^7\\) extensions $X^3$ latex foloows
 
 $$LaTeX test x^2_i \sum_i$$
 
-\[x^8\]
+$$x_2 + y_3$$
+
+\\[x^8\\]
 
 - Presenter mode, with cloned slideshow view
 
