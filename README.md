@@ -25,6 +25,10 @@ Github's parser makes `\(\)` and `\[\]` finicky:
 Double dollar notation for display mode `$$x^2_i  \times \beta $$`: 
 $$x^2_i \times \beta $$
 
+Double dollar notation for display mode, with blank line `\n $$x^2_i  \times \beta $$`: 
+
+$$x^2_i \times \beta $$
+
 Slash bracket display mode `\[x^2_i + u_u  \times \beta \]`: 
 \[x^2_i + u_u  \times \beta \]
 
