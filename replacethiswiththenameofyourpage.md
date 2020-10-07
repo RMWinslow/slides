@@ -13,6 +13,7 @@ class: center, middle
 
 1. This is an inline integral: \\(\int_a^bf(x)dx\\)
 2. More \\(x={a \over b}\\) formulae.
+4. A third $x^2$
 
 Display formula:
 
