@@ -123,17 +123,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
     <script type="text/javascript">
       var options = {sourceUrl: 'pgf-source.md'};
-      var renderMath = function() {
-        //renderMathInElement(document.body);
-        // or if you want to use $...$ for math,
-        renderMathInElement(document.body, {delimiters: [ // mind the order of delimiters(!?)
-             {left: "$$", right: "$$", display: true},
-             {left: "$", right: "$", display: false},
-             {left: "\\[", right: "\\]", display: true},
-             {left: "\\(", right: "\\)", display: false},
-         ]});
-      }
-      var slideshow = remark.create(options, renderMath);
+      var slideshow = remark.create(options);
+      
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+      });
+
+      MathJax.Hub.Configured();
     </script>
   </body>
 </html>
