@@ -1,0 +1,6 @@
+title: Slides
+author: Robert Winslow
+description: Markdown Slides using remark.js
+
+plugins:
+  - jekyll-sitemap
