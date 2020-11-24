@@ -11,9 +11,11 @@ class: center, middle
 
 # The Probability Generating Function
 
-$X$ is a discrete random variable with support $\mathbb{Z}_{\geq 0}$ and probability mass function $p_X$. Then we define the probability generating function $G_X$ as
+$$X$$ is a discrete random variable with support $$\mathbb{Z}_{\geq 0}$$ and probability mass function $$p_X$$. Then we define the probability generating function $$G_X(🙂)$$ as
 
-$$G_X(😬)\equiv E[😬^X] = \sum_{x=0}^\infty \left[ p_X (x) \cdot 😬^x \right]$$
+$$G_X(🙂)\equiv E[🙂^X] = \sum_{x=0}^\infty \left[ p_X (x) \cdot 🙂^x \right]$$
+
+$$e^{i\pi} + 1 = 0$$
 
 ---
 
