@@ -13,7 +13,7 @@ class: center, middle
 
 $X$ is a discrete random variable with support $\mathbb{Z}_{\geq 0}$ and probability mass function $p_X$. Then we define the probability generating function $G_X(🙂)$ as
 
-$G_X(🙂)\equiv E[🙂^X] = \sum_{x=0}^\infty \left[ p_X (x) \cdot 🙂^x \right]$
+$$G_X(🙂)\equiv E[🙂^X] = \sum_{x=0}^\infty \left[ p_X (x) \cdot 🙂^x \right]$$
 
 ---
 
@@ -23,7 +23,7 @@ $G_X(🙂)\equiv E[🙂^X] = \sum_{x=0}^\infty \left[ p_X (x) \cdot 🙂^x \righ
 
 If $Y$ and $W$ are independent (discrete random variables with support $\mathbb{Z}_{\geq 0}$), and $X\sim aY + bW$, then 
 
-$G_X(😬)=G_Y(😬^a)\cdot G_W(😬^b)$
+$$G_X(😬)=G_Y(😬^a)\cdot G_W(😬^b)$$
 
 ---
 
@@ -34,7 +34,7 @@ $G_X(😬)=G_Y(😬^a)\cdot G_W(😬^b)$
 
 - In particular, if $x_1,X_2,...,X_N$ are iid, and $Y\sim \sum_i X_i$, then
 
-$G_Y(🙂) = [G_X(🙂)]^N$
+$$G_Y(🙂) = [G_X(🙂)]^N$$
 
 ---
 
@@ -44,7 +44,7 @@ $G_Y(🙂) = [G_X(🙂)]^N$
 
 If $N$ itself is a discrete random variables with support $\mathbb{Z}_{\geq 0}$, which is independent of $X_i$, and if $Y\sim \sum^N_{i=1} X_i$ is the sum of $N$ iid draws of $X$, then 
 
-$G_Y(🙂) = G_N(G_X(🙂))$
+$$G_Y(🙂) = G_N(G_X(🙂))$$
 
 ---
 
@@ -58,7 +58,7 @@ $G_Y(🙂) = G_N(G_X(🙂))$
 
 In particular, if $N$ is iid to $X$, then 
 
-$G_Y(🙂) = G_X(G_X(🙂))$
+$$G_Y(🙂) = G_X(G_X(🙂))$$
 
 ---
 
@@ -68,7 +68,7 @@ $G_Y(🙂) = G_X(G_X(🙂))$
 
 Derivative wrt 🙂 is $\sum_{x=0}^\infty \left[x \cdot p_X (x) \cdot 🙂^{x-1} \right]$  and therefore 
 
-$G^\prime(1)=E[X]$
+$$G^\prime(1)=E[X]$$
 
 
 ---
@@ -79,11 +79,11 @@ $G^\prime(1)=E[X]$
 
 Derivative wrt 🙂 is $\sum_{x=0}^\infty \left[x \cdot p_X (x) \cdot 🙂^{x-1} \right]$  and therefore 
 
-$G^\prime(1)=E[X]$
+$$G^\prime(1)=E[X]$$
 
 And in general, the $n$th derivative gives the $n$th factorial moment. 
 
-$G^{\prime n} (1) = E\left[\frac{x^!}{(x-r)!}\right]$
+$$G^{\prime n} (1) = E\left[\frac{x^!}{(x-r)!}\right]$$
 
 ---
 
@@ -99,9 +99,9 @@ $$G_X(0) = \sum_{x=0}^\infty \left[ p_X (x) \cdot 0^x \right] = p_0$$
 
 Note that if $X$ is a constant random variable equal to 1, then 
 
-$G_x(🙂) = \sum_{x=0}^\infty \left[ p_X (x) \cdot 🙂^x \right]$
+$$G_x(🙂) = \sum_{x=0}^\infty \left[ p_X (x) \cdot 🙂^x \right]$$
 
-$G_x(🙂) =  🙂$
+$$G_x(🙂) =  🙂$$
 
 This also means that the pgf for $1+Y$ is $🙂\cdot G_Y(🙂)$
 
@@ -113,7 +113,7 @@ This also means that the pgf for $1+Y$ is $🙂\cdot G_Y(🙂)$
 
 Also we can get the pmf back out
 
-$p_X(x) = \frac{1}{k!}\frac{\partial^k}{\partial x^k} G_0 |_{x=0}$
+$$p_X(x) = \frac{1}{k!}\frac{\partial^k}{\partial x^k} G_0 |_{x=0}$$
 
 
 
