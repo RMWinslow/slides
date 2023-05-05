@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PRESENTATION</title>
+    <title>PRESENTATION JEKYLL</title>
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -31,15 +31,17 @@
     <script>
       var options = {navigation: {scroll: false,}};
       var renderMath = function() {
-        renderMathInElement(document.body, {
-          delimiters: [
-            {left: "$$", right: "$$", display: true},
-            {left: "$", right: "$", display: false},
-            {left: "\\(", right: "\\)", display: false},
-            {left: "\\[", right: "\\]", display: true}
-          ], trust: true,
-          throwOnError: false,
-          globalGroup: true,
+        document.addEventListener("DOMContentLoaded", function() {
+          renderMathInElement(document.body, {
+              delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false},
+                {left: "\\[", right: "\\]", display: true}
+              ], trust: true,
+              throwOnError: false,
+              globalGroup: true,
+          });
         });
       }
       var slideshow = remark.create(options,renderMath);
