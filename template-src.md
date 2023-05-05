@@ -1,7 +1,3 @@
----
-title: Template
----
-
 
 # Template Presentation
 
