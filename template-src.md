@@ -1,5 +1,9 @@
+---
+title: Template
+---
 
-# My Awesome Presentation
+
+# Template Presentation
 
 ---
 
