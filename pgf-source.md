@@ -1,9 +1,7 @@
----
-Title:
 name: inverse
 layout: true
 class: center, middle, inverse
----
+
 
 class: center, middle
 
