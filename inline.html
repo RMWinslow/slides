@@ -47,21 +47,19 @@ class: center, middle
     </script>
     <script>
       var options = {sourceUrl: 'test.md'};
-      var slideshow = remark.create(options);
+      var renderMath = function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ], trust: true,
+          throwOnError: false,
+          globalGroup: true,
+        });
+      }
+      var slideshow = remark.create(options,renderMath);
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          renderMathInElement(document.body, {
-              delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false},
-                {left: "\\(", right: "\\)", display: false},
-                {left: "\\[", right: "\\]", display: true}
-              ], trust: true,
-              throwOnError: false,
-              globalGroup: true,
-          });
-      });
-  </script>
   </body>
 </html>
