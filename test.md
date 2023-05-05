@@ -28,3 +28,12 @@ sdasdasdasdasdasdas d asd
  
  asdasdas
  adaaaaaaaaaaaaaaaaaaaaaaaaa
+
+
+---
+
+## Math Test
+
+$$\beta^2 = \sum_i \frac{1}{i^2}$$
+
+
