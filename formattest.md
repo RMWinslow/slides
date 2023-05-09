@@ -92,6 +92,18 @@ and display:
 
 $$\int_{-\infty}^\infty e^{-i \omega \tau} R_{zz}(\tau) \, d\tau=  S_{zz}(\omega)$$
 
+Same thing but across multiple lines
+
+
+$$
+\int_{-\infty}^\infty 
+e^{-i \omega \tau} R_{zz}(\tau) \, d\tau= 
+S_{zz}(\omega)$$
+
+
+And here's the same thing but with slashes before the underscore
+
+$$\int\_{-\infty}^\infty e^{-i \omega \tau} R\_{zz}(\tau) \, d\tau=  S\_{zz}(\omega)$$
 
 
 
