@@ -1,4 +1,4 @@
-# Slideshows using Remark
+# Slideshows using [Remark](https://github.com/gnab/remark)
 
 To make a new html slidedeck:
 
