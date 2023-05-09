@@ -186,6 +186,9 @@ layout: true
 
 ## table
 
+
+---
+
 | a | b | c |
 |:--|:-:|--:|
 | test | test | test |
@@ -193,7 +196,7 @@ layout: true
 | test | $\beta^2$ | test |
 | test | test | test |
 
----
+--
 
 ### alt format
 
@@ -207,4 +210,5 @@ Content Cell  | Content Cell
 
 ---
 
+layout: false
 
