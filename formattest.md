@@ -25,9 +25,8 @@ And here is another sentence.
 
 ---
 
-Markup for a title slide, for footnotes$^1$.footnote[$1.$ Here is a footnote, located at the bottom of the page as the name suggests.], and for citations 
+## alt footnote test
 
-<!--
 <style>
 .footnote {
     position: absolute;
@@ -36,7 +35,11 @@ Markup for a title slide, for footnotes$^1$.footnote[$1.$ Here is a footnote, lo
     font-size: 0.7em;
 }
 </style>
--->
+
+
+Markup for a title slide, for footnotes$^1$.footnote[$1.$ Here is a footnote, located at the bottom of the page as the name suggests.], and for citations 
+
+
 
 
 ---
