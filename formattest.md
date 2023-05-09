@@ -101,13 +101,32 @@ e^{-i \omega \tau} R_{zz}(\tau) \, d\tau=
 S_{zz}(\omega)$$
 
 
+Same thing but different delimiters
+
+\[\int_{-\infty}^\infty e^{-i \omega \tau} R_{zz}(\tau) \, d\tau=  S_{zz}(\omega)\]
+
+
+
 And here's the same thing but with slashes before the underscore
 
 $$\int\_{-\infty}^\infty e^{-i \omega \tau} R\_{zz}(\tau) \, d\tau=  S\_{zz}(\omega)$$
 
 
 
+---
 
+## katex gdefs
+
+$$\gdef\foo#1{#1^2} \foo{y} + \foo{y}$$
+
+$$\foo{34}$$
+
+$$\gdef\RIZZ{R_{zz}(\tau)}$$
+
+$$\gdef\SIZZ{S_{zz}(\omega)}$$
+
+
+$$\int\_{-\infty}^\infty e^{-i \omega \tau} \RIZZ \, d\tau=  \SIZZ$$
 
 
 ---
