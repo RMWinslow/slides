@@ -65,7 +65,7 @@
   </head>
   <body>
     <textarea id="source">
-{{page.content}}
+{{page.content | replace: "_", "FISH" }}
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
