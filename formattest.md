@@ -48,6 +48,7 @@ Markup for a title slide, for footnotes$^1$.footnote[$1.$ Here is a footnote, lo
 
 
 layout: true
+class: header
 
 ## Section
 
