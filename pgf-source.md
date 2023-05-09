@@ -17,7 +17,7 @@ $X$ is a discrete random variable with support $\mathbb{Z}_{\geq 0}$
 and probability mass function $p_X$. 
 Then we define the probability generating function $G_X(🙂)$ as
 
-$$G_X(🙂)\equiv E[🙂^X] = \sum\_{x=0}^\infty \left[ p\_X (x) \cdot 🙂^x \right]$$
+$$G\_X(🙂)\equiv E[🙂^X] = \sum\_{x=0}^\infty \left[ p\_X (x) \cdot 🙂^x \right]$$
 
 ---
 
@@ -25,9 +25,10 @@ $$G_X(🙂)\equiv E[🙂^X] = \sum\_{x=0}^\infty \left[ p\_X (x) \cdot 🙂^x \r
 
 ### We can easily sum variables: 
 
-If $Y$ and $W$ are independent (discrete random variables with support $\mathbb{Z}_{\geq 0}$), and $X\sim aY + bW$, then 
+If $Y$ and $W$ are independent (discrete random variables with support $\mathbb{Z}\_{\geq 0}$), 
+and $X\sim aY + bW$, then 
 
-$$G_X(😬)=G\_Y(😬^a)\cdot G\_W(😬^b)$$
+$$G\_X(😬)=G\_Y(😬^a)\cdot G\_W(😬^b)$$
 
 ---
 
@@ -46,7 +47,7 @@ $$G\_Y(🙂) = [G\_X(🙂)]^N$$
 
 ### Compound Distributions
 
-If $N$ itself is a discrete random variables with support $\mathbb{Z}_{\geq 0}$, 
+If $N$ itself is a discrete random variables with support $\mathbb{Z}\_{\geq 0}$, 
 which is independent of $X\_i$, 
 and if $Y\sim \sum^N\_{i=1} X_i$ is the sum of $N$ iid draws of $X$, then 
 
@@ -99,7 +100,7 @@ $$G^{\prime n} (1) = E\left[\frac{x^!}{(x-r)!}\right]$$
 
 ### Zeros:
 
-$$G_X(0) = \sum\_{x=0}^\infty \left[ p\_X (x) \cdot 0^x \right] = p\_0$$
+$$G\_X(0) = \sum\_{x=0}^\infty \left[ p\_X (x) \cdot 0^x \right] = p\_0$$
 
 ---
 
@@ -107,9 +108,9 @@ $$G_X(0) = \sum\_{x=0}^\infty \left[ p\_X (x) \cdot 0^x \right] = p\_0$$
 
 Note that if $X$ is a constant random variable equal to 1, then 
 
-$$G_x(🙂) = \sum\_{x=0}^\infty \left[ p\_X (x) \cdot 🙂^x \right]$$
+$$G\_x(🙂) = \sum\_{x=0}^\infty \left[ p\_X (x) \cdot 🙂^x \right]$$
 
-$$G_x(🙂) =  🙂$$
+$$G\_x(🙂) =  🙂$$
 
 This also means that the pgf for $1+Y$ is $🙂\cdot G_Y(🙂)$
 
@@ -121,7 +122,7 @@ This also means that the pgf for $1+Y$ is $🙂\cdot G_Y(🙂)$
 
 Also we can get the pmf back out
 
-$$p_X(x) = \frac{1}{k!}\frac{\partial^k}{\partial x^k} G\_0 |\_{x=0}$$
+$$p\_X(x) = \frac{1}{k!}\frac{\partial^k}{\partial x^k} G\_0 |\_{x=0}$$
 
 
 
@@ -217,7 +218,7 @@ $$\lim_{g\to\infty} G^g(0) = G^\infty(0)$$
 - These individual attack rates are Gamma-distributed 
 - The Gamma-Poisson mixture distribution has pgf
 
-$G_Z(🙂) = \left(\left(1-🙂\right)\frac{R_{0}}{k}+1\right)^{-k}$
+$G\_Z(🙂) = \left(\left(1-🙂\right)\frac{R\_{0}}{k}+1\right)^{-k}$
 
 - High dispersion parameter $k$ makes outbreaks more volatile. Has implications for the targetting of government intervention
 
