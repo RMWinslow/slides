@@ -6,11 +6,11 @@ date: 2023-05-12
 
 class:center,middle
 
-# {{page.title}}
+# Remark Formatting Test
 
 Robert Winslow
 
-{{page.date}}
+2023-05-09
 
 ---
 
@@ -21,8 +21,26 @@ And here is another sentence.
 
 [^footnoteexample]: This should appear in a footnote.
 
+(Doesn't work, sadly)
 
 ---
+
+Markup for a title slide, for footnotes$^1$.footnote[$1.$ Here is a footnote, located at the bottom of the page as the name suggests.], and for citations 
+
+<!--
+<style>
+.footnote {
+    position: absolute;
+    bottom: 2em;
+    left: 6em;
+    font-size: 0.7em;
+}
+</style>
+-->
+
+
+---
+
 
 layout: true
 
@@ -64,5 +82,95 @@ okey dokes
 
 ---
 
-pbbbbtt
+
+inline $\int_{-\infty}^\infty e^{-i \omega \tau} R_{zz}(\tau) \, d\tau=  S_{zz}(\omega)$
+
+and display:
+
+$$\int_{-\infty}^\infty e^{-i \omega \tau} R_{zz}(\tau) \, d\tau=  S_{zz}(\omega)$$
+
+
+
+
+
+
+
+---
+
+layout: true
+
+## lists
+
+---
+
+### ordered
+
+1. test
+1. test
+1. test
+1. test
+1. test
+1. test
+
+
+---
+
+### Unordered
+
+- test
+- test
+- test
+- test
+- test
+- test
+
+---
+
+### dlist
+
+term
+: definition
+
+term
+: definition
+
+term
+: definition
+
+term
+: definition
+
+
+
+
+
+
+
+---
+
+layout: true
+
+## table
+
+| a | b | c |
+|:--|:-:|--:|
+| test | test | test |
+| test | test | test |
+| test | $\beta^2$ | test |
+| test | test | test |
+
+---
+
+### alt format
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+
+
+
+---
+
 
