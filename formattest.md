@@ -106,7 +106,7 @@ $$\int\_{-\infty}^\infty e^{-i \omega \tau} R\_{zz}(\tau) \, d\tau=  S\_{zz}(\om
 Same thing but wrapped in a div
 
 <div>
-$$\int\_{-\infty}^\infty e^{-i \omega \tau} R\_{zz}(\tau) \, d\tau=  S\_{zz}(\omega)$$
+$$\int_{-\infty}^\infty e^{-i \omega \tau} R_{zz}(\tau) \, d\tau=  S_{zz}(\omega)$$
 </div>
 
 
