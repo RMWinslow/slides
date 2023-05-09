@@ -1,39 +1,20 @@
 # Slideshows using Remark
 
-To make a new html5 slidedeck:
+To make a new html slidedeck:
 
 * Write a new slidedeck in markdown using `---` to seperate slides.
-* copy the remark_template.html file and 
-    * edit the external markdown link to point towards the slides you just made
-    * give it a nice title.
+* Give it the attribute `layout: presentation` in the yaml header
 
-Then on the website, 
-you'll have a jekyll-rendered "blog" version of the slides, with the url being derived from the markdown source
-and a html file which contains the remark-rendered slides.
+Then github pages should properly render the slides pages, and the JTD theme should index the slides and enable search.
 
 
+## Issues
 
-I'm doing it this way because trying to use the jekyll template for remark.js failed to properly render the 
+[The markdown parser for Remark tries to render markdown within a latex equation](https://github.com/gnab/remark/issues/336).
 
----
+This means that if a latex equation has multiple `_`s, 
+one of the following workarounds must be used:
 
-as a new slide.
-Instead it was just a horizontal rule.
+- Escape each underscore by replacing each `_` with `\_`
+- Wrap the equation in an html element so the markdown parser ignores it.
 
-Github's parser makes `\(\)` and `\[\]` finicky:
-
-Double dollar notation for display mode `$$x^2_i  \times \beta $$`: 
-$$x^2_i \times \beta $$
-
-Double dollar notation for display mode, with blank line `\n $$x^2_i  \times \beta $$`: 
-
-$$x^2_i \times \beta $$
-
-Slash bracket display mode `\[x^2_i + u_u  \times \beta \]`: 
-\[x^2_i + u_u  \times \beta \]
-
-Slash bracket display mode `\\[x^2_i + u_u \times \beta \\]`: 
-\\[x^2_i + u_u  \times \beta \\]
-
-
-Inline latext how you doin? `\(x^3\)` \(x^2\)    ; `\\(x^4\\)` \\(x^4\\)   ;  `$x^5$` $x^6$
