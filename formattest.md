@@ -94,7 +94,7 @@ S_{zz}(\omega)$$
 
 Same thing but different delimiters
 
-\[\int_{-\infty}^\infty e^{-i \omega \tau} R_{zz}(\tau) \, d\tau=  S_{zz}(\omega)\]
+\\[\int_{-\infty}^\infty e^{-i \omega \tau} R_{zz}(\tau) \, d\tau=  S_{zz}(\omega)\\]
 
 
 
