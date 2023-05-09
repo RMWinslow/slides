@@ -103,6 +103,12 @@ And here's the same thing but with slashes before the underscore
 $$\int\_{-\infty}^\infty e^{-i \omega \tau} R\_{zz}(\tau) \, d\tau=  S\_{zz}(\omega)$$
 
 
+Same thing but wrapped in a div
+
+<div>
+$$\int\_{-\infty}^\infty e^{-i \omega \tau} R\_{zz}(\tau) \, d\tau=  S\_{zz}(\omega)$$
+</div>
+
 
 ---
 
