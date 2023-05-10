@@ -36,6 +36,9 @@
       h2 {
         border-bottom: 1px solid #93a1a1;
       }
+      h3 {
+        margin-bottom: 1rem;
+      }
 
       .header {
         padding-top: 4rem;
@@ -69,7 +72,7 @@
   </head>
   <body>
     <textarea id="source">
-{{page.content | replace: "_", "\_" }}
+{{page.content | replace: "_", "\_"  | replace: "\\", "\\\\" }}
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
