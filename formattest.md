@@ -182,6 +182,17 @@ $$
 
 ---
 
+Two slashes:
+
+`\\`
+
+Four slashes
+
+`\\\\`
+
+---
+
+
 layout: true
 class: header
 
