@@ -72,7 +72,7 @@
   </head>
   <body>
     <textarea id="source">
-{{page.content | replace: "_", "\_"  | replace: "\\", "FISH" }}
+{{page.content | replace: "_", "\_"  | replace: " \\", " \\\\" }}
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
