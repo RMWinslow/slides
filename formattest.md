@@ -141,6 +141,47 @@ $$\int\_{-\infty}^\infty e^{-i \omega \tau} \RIZZ \, d\tau=  \SIZZ$$
 
 ---
 
+## katex multiline
+
+$$\theta(t) = 
+\begin{cases}
+    \theta_t & \text{if } t\in\{0,...,T-1\} \\
+    \theta_T & \text{if } t\geq T
+\end{cases}$$
+
+
+$$\theta(t) = 
+\begin{cases}
+    \theta_t & \text{if } t\in\{0,...,T-1\} \\\\
+    \theta_T & \text{if } t\geq T
+\end{cases}$$
+
+
+
+---
+
+
+$$
+\theta(t) = 
+\begin{cases}
+    \theta_t & \text{if } t\in\{0,...,T-1\} \\
+    \theta_T & \text{if } t\geq T
+\end{cases}
+$$
+
+
+<div>
+$$
+\theta(t) = 
+\begin{cases}
+    \theta_t & \text{if } t\in\{0,...,T-1\} \\
+    \theta_T & \text{if } t\geq T
+\end{cases}
+$$
+</div>
+
+---
+
 layout: true
 class: header
 
