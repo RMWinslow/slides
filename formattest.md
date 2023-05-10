@@ -64,6 +64,7 @@ class: header
 ---
 
 layout: true
+class: header
 
 ## New Section
 
@@ -141,6 +142,7 @@ $$\int\_{-\infty}^\infty e^{-i \omega \tau} \RIZZ \, d\tau=  \SIZZ$$
 ---
 
 layout: true
+class: header
 
 ## lists
 
