@@ -16,8 +16,6 @@ Addendum with graphs of optimal policy in model with $\sigma=0.66$
 
 
 
----
-
 
 
 
@@ -49,7 +47,7 @@ No Savings, no partial UI ($\theta_p=\frac{\hat hP}{\hat hE}$), Full Enforcement
 |:------------------:|:--------:|:----------------:|:-----------------:|:---------------:|
 | 65% | 4.30% | 89% | 5% | -0.5422 |
 
-<img src="img/2023july31/No Savings. - θp=0.5,πp=0.0,πu=0.0,σ=0.66,ρ=2.5.png" style="max-width:100%;">
+<img src="img/2023july31/No savings. - θp=0.5,πp=0.0,πu=0.0,σ=0.66,ρ=2.5.png" style="max-width:100%;">
 
 ---
 
@@ -90,7 +88,7 @@ No Savings, no partial UI ($\theta_p=\frac{\hat hP}{\hat hE}$), No Enforcement($
 |:------------------:|:--------:|:----------------:|:-----------------:|:---------------:|
 | 65% | 4.30% | 89% | 5% | -0.5422 |
 
-<img src="img/2023july31/No Savings. - θp=0.5,πp=1.0,πu=1.0,σ=0.66,ρ=2.5.png" style="max-width:100%;">
+<img src="img/2023july31/No savings. - θp=0.5,πp=1.0,πu=1.0,σ=0.66,ρ=2.5.png" style="max-width:100%;">
 
 (On a third look at these results, 
 I agree it is confusing that anyone is choosing partial employment over unemployment.
