@@ -43,7 +43,7 @@ layout: true
 
 ---
 
-No Savings, no partial UI ($\theta_p=\frac{\hP}{\hE}$), Full Enforcement ($\pi_p=\pi_u=0$)
+No Savings, no partial UI ($\theta_p=\frac{\hat hP}{\hat hE}$), Full Enforcement ($\pi_p=\pi_u=0$)
 
 | Optimal $\theta_u$ | Tax Rate | % Fully Employed | % Partly Employed | Average Utility |
 |:------------------:|:--------:|:----------------:|:-----------------:|:---------------:|
@@ -62,7 +62,7 @@ No Savings, no partial UI ($\theta_p=\frac{\hP}{\hE}$), Full Enforcement ($\pi_p
 
 
 
-With Savings, no partial UI ($\theta_p=\frac{\hP}{\hE}$), Full Enforcement ($\pi_p=\pi_u=0$)
+With Savings, no partial UI ($\theta_p=\frac{\hat hP}{\hat hE}$), Full Enforcement ($\pi_p=\pi_u=0$)
 
 | Optimal $\theta_u$ | Tax Rate | % Fully Employed | % Partly Employed | Average Utility |
 |:------------------:|:--------:|:----------------:|:-----------------:|:---------------:|
@@ -84,7 +84,7 @@ With Savings, no partial UI ($\theta_p=\frac{\hP}{\hE}$), Full Enforcement ($\pi
 
 
 
-No Savings, no partial UI ($\theta_p=\frac{\hP}{\hE}$), No Enforcement($\pi_p=\pi_u=1$)
+No Savings, no partial UI ($\theta_p=\frac{\hat hP}{\hat hE}$), No Enforcement($\pi_p=\pi_u=1$)
 
 | Optimal $\theta_u$ | Tax Rate | % Fully Employed | % Partly Employed | Average Utility |
 |:------------------:|:--------:|:----------------:|:-----------------:|:---------------:|
@@ -112,7 +112,7 @@ I will check for bugs again.)
 
 
 
-With Savings, no partial UI ($\theta_p=\frac{\hP}{\hE}$), No Enforcement ($\pi_p=\pi_u=1$)
+With Savings, no partial UI ($\theta_p=\frac{\hat hP}{\hat hE}$), No Enforcement ($\pi_p=\pi_u=1$)
 
 | Optimal $\theta_u$ | Tax Rate | % Fully Employed | % Partly Employed | Average Utility |
 |:------------------:|:--------:|:----------------:|:-----------------:|:---------------:|
