@@ -1,5 +1,5 @@
 ---
-title: "Office Hours: 2023 July 28"
+title: "Office Hours: 2023 July 31 (extra)"
 layout: presentation_solar
 ---
 
@@ -7,7 +7,7 @@ layout: presentation_solar
 class:middle
 
 
-# Office Hours: July 31, 2023
+# Office Hours: July 31, 2023 (Addendum)
 
 Robert Winslow
 
