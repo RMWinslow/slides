@@ -82,6 +82,17 @@ With Savings, no partial UI ($\theta_p=\frac{\hat hP}{\hat hE}$), Full Enforceme
 
 
 
+No Savings, no partial UI ($\theta_p=\frac{\hat hP}{\hat hE}$), No Enforcement($\pi_p=\pi_u=1$).
+
+**WITH BUGFIX**
+
+| Optimal $\theta_u$ | Tax Rate | % Fully Employed | % Partly Employed | Average Utility |
+|:------------------:|:--------:|:----------------:|:-----------------:|:---------------:|
+| 0.3 | 2.03% | 89% | 5% | -0.5535 |
+
+<img src="img/2023july31/No savings. - hpr=0.5,θp=0.5,πp=1.0,πu=1.0,σ=0.66,ρ=2.5.png" style="max-width:100%;">
+
+<!--
 No Savings, no partial UI ($\theta_p=\frac{\hat hP}{\hat hE}$), No Enforcement($\pi_p=\pi_u=1$)
 
 | Optimal $\theta_u$ | Tax Rate | % Fully Employed | % Partly Employed | Average Utility |
@@ -93,7 +104,7 @@ No Savings, no partial UI ($\theta_p=\frac{\hat hP}{\hat hE}$), No Enforcement($
 (On a third look at these results, 
 I agree it is confusing that anyone is choosing partial employment over unemployment.
 I will check for bugs again.)
-
+-->
 
 ---
 
