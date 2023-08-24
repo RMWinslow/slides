@@ -494,5 +494,5 @@ Employment rate by income quintile:
 | Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
 
 
----
+
 
