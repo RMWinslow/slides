@@ -7,7 +7,7 @@ th,td {font-size: smaller;}
 </style>
 
 
-
+<!--
 ## Outline:
 
 - Tables for different enforcement rates. π=0.1,0.2,0.3, etc.
@@ -17,18 +17,11 @@ th,td {font-size: smaller;}
 - Interpolation between two tax levels in π=0.5 case.
 - Manual check that in the π=0.5 case, the additional taxes are exactly enough to pay for the additional benefits.
 
-
-
-
-
----
-
 layout: true
 class: header
 
 <h2 style="background-color: #9cd6e4;">Further Experiments with π</h2>
-
----
+-->
 
 ### π=0.0 
 
