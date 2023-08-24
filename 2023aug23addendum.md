@@ -2,6 +2,11 @@
 title: "Office Hours: 2023 Aug 23 (Addenda)"
 layout: presentation_solar
 ---
+<style>
+th,td {font-size: smaller;}
+</style>
+
+
 
 ## Outline:
 
@@ -28,14 +33,13 @@ class: header
 
 | π | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-c:\Users\RMW\Documents\GitHub\papersdrafts\covid_unemployment\mymodel\PUI_Model.py:453: RuntimeWarning: invalid value encountered in multiply
-  agg_util = np.nansum([λ[x]*U(c[x].clip(0),l[x]) for x in self.state_set])
 | 0.5 | 0.5 | 0 | 3.34% | -0.0 | -0.5246 | 89% | 5% |
 
 Employment rate by income quintile:
 
 | Quintile | 1 | 2 | 3 | 4 | 5 |
 |:--|:-:|:-:|:-:|:-:|:-:|
+| Income  | 372 | 592 | 886 | 1280 | 2323 |
 | **Fully employed**  | 88.8% | 88.8% | 88.8% | 88.8% | 88.8% |
 | **Partly employed**  | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
 | Offered e, chose P  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
