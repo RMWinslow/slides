@@ -19,6 +19,8 @@ h3 {margin-top: 1rem;}
 - Manual check that in the π=0.5 case, the additional taxes are exactly enough to pay for the additional benefits.
 -->
 
+---
+
 layout: true
 class: header
 
