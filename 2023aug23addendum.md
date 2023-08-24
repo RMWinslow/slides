@@ -5,6 +5,7 @@ layout: presentation_solar
 <style>
 th,td {font-size: smaller;}
 h2 + h3 {margin-top: .1rem;}
+.remark-slide-number {font-size: small;}
 </style>
 
 
