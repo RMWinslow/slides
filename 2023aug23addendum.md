@@ -319,7 +319,7 @@ Now adjust the taxes to remove the deficit when the bonus is in place:
 
 | π | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| 0.3 | 0.5 | 600 | 17.47% | -0.02 | -0.4584 | 44% | 50% |
+| 0.3 | 0.5 | 600 | 17.47% | -0.0 | -0.4584 | 44% | 50% |
 
 Employment rate by income quintile:
 
@@ -398,7 +398,7 @@ Now adjust the taxes to remove the deficit when the bonus is in place:
 
 | π | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| 0.4 | 0.5 | 600 | 22.65% | -0.01 | -0.4511 | 34% | 54% |
+| 0.4 | 0.5 | 600 | 22.65% | -0.0 | -0.4511 | 34% | 54% |
 
 Employment rate by income quintile:
 
