@@ -4,7 +4,7 @@ layout: presentation_solar
 ---
 <style>
 th,td {font-size: smaller;}
-h3 {margin-top: 1rem;}
+h2 + h3 {margin-top: .1rem;}
 </style>
 
 
