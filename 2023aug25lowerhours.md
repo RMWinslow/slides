@@ -6,7 +6,6 @@ layout: presentation_solar
 layout: true
 class: header
 
-<h2 style="background-color: #fdd;">Experiments with lower hours part-time</h2>
 
 <style>
 th,td {font-size: smaller;}
@@ -14,11 +13,10 @@ h2 + h3 {margin-top: .1rem;}
 .remark-slide-number {font-size: small;}
 </style>
 
+<h2 style="background-color: #fdd;">Experiments with lower hours part-time</h2>
+
 
 ---
-
-
-
 
 ### π=0.2, lower partial hours: 12
 
