@@ -3,26 +3,6 @@ title: "Office Hours: 2023 Aug 23 (Addenda 2)"
 layout: presentation_solar
 ---
 
-# Test H1
-
-## Test H2
-
-### Test H3
-
-Test
-
----
-
-## Test H2
-
-### Test H3
-
-Test
-
-
-
----
-
 layout: true
 class: header
 
