@@ -14,6 +14,7 @@
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-slide-number {font-size: small;}
 
       
       .remark-slide-content {
@@ -32,6 +33,7 @@
           vertical-align: top;
           border: 1px solid black;
           padding: 0.4em;
+          font-size: smaller;
       }
       h2 {
         border-bottom: 1px solid #93a1a1;
@@ -39,6 +41,8 @@
       h3 {
         margin-bottom: 1rem;
       }
+      .remark-slide-number {font-size: small;}
+
 
       .header {
         padding-top: 4rem;
@@ -60,6 +64,24 @@
           left: 6em;
           font-size: 0.7em;
       }
+
+      /*Makes printed page render properly*/
+      /*https://github.com/gnab/remark/issues/50#issuecomment-223887379*/
+      @page {
+        size: 908px  681px;
+        margin: 0;
+      }
+      @media print {
+        .remark-slide-scaler {
+          width: 100% !important;
+          height: 100% !important;
+          transform: scale(1) !important;
+          top: 0 !important;
+          left: 0 !important;
+        }
+      }
+
+
 
     </style>
     

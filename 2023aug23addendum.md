@@ -2,11 +2,6 @@
 title: "Office Hours: 2023 Aug 23 (Addenda)"
 layout: presentation_solar
 ---
-<style>
-th,td {font-size: smaller;}
-h2 + h3 {margin-top: .1rem;}
-.remark-slide-number {font-size: small;}
-</style>
 
 
 <!--
