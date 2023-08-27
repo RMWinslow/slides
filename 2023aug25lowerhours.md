@@ -33,6 +33,19 @@ Employment rate by income quintile:
 | Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
 
+???
+
+This is a test of the Presenter notes part of the remark system.
+
+- list 1
+- list
+- list
+
+| a | b | c |
+|:-:|:-:|:-:|
+| x | y | z |
+| x | y | z |
+
 
 ---
 
