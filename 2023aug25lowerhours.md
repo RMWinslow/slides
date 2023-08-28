@@ -249,122 +249,6 @@ Employment rate by income quintile:
 
 
 
----
-
-layout: true
-class: header
-
-<h2 style="background-color: #dfd;">Experiments with different χ transition rates.</h2>
-
-
----
-
-Test with pure markdown:
-
-|  | χ▒e | χ▒p| χ▒u |
-|:-:|:-:|:-:|:-:|
-| χe▒ |  | |  |
-| χp▒ |  | |  |
-| χu▒ |  | |  |
-
-| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| x.x | x.x | x.x | xxx | xx.xx% | x.x | -x.xxxx | xx% | xx% |
-
-| PLACEHOLDER TABLE | 1 | 2 | 3 | 4 | 5 | all |
-|:--|:-:|:-:|:-:|:-:|:-:|:-:|
-| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
-| **Fully employed**  | **1.8%** | **67.3%** | **88.8%** | **88.8%** | **88.8%** | **67.1%** |
-| **Partly employed**  | **78.7%** | **26.4%** | **4.9%** | **4.9%** | **4.9%** | **24.0%** |
-| Offered e, chose P  | 73.7% | 21.5% | 0.0% | 0.0% | 0.0% | 19.0% |
-| Offered p, chose P  | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
-| **Unemployed**  | **19.5%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **8.9%** |
-| Offered e, chose U  | 13.2% | 0.0% | 0.0% | 0.0% | 0.0% | 2.6% |
-| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
-| Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
-
----
-
-Latex version:
-
-
-
-
-</div>
-
-| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| x.x | x.x | x.x | xxx | xx.xx% | x.x | -x.xxxx | xx% | xx% |
-
-| PLACEHOLDER TABLE | 1 | 2 | 3 | 4 | 5 | all |
-|:--|:-:|:-:|:-:|:-:|:-:|:-:|
-| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
-| **Fully employed**  | **1.8%** | **67.3%** | **88.8%** | **88.8%** | **88.8%** | **67.1%** |
-| **Partly employed**  | **78.7%** | **26.4%** | **4.9%** | **4.9%** | **4.9%** | **24.0%** |
-| Offered e, chose P  | 73.7% | 21.5% | 0.0% | 0.0% | 0.0% | 19.0% |
-| Offered p, chose P  | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
-| **Unemployed**  | **19.5%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **8.9%** |
-| Offered e, chose U  | 13.2% | 0.0% | 0.0% | 0.0% | 0.0% | 2.6% |
-| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
-| Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
-
----
-
-Version with html table
-
-<table style="width:25%; font-size:small;">
-<tr>
-    <td></td>
-    <td>χ▒e</td>
-    <td>χ▒p</td>
-    <td>χ▒u</td>
-</tr>
-<tr>
-    <td>χe▒</td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td>χp▒</td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-    <td>χu▒</td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-</table>
-
-
-| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| x.x | x.x | x.x | xxx | xx.xx% | x.x | -x.xxxx | xx% | xx% |
-
-| PLACEHOLDER TABLE | 1 | 2 | 3 | 4 | 5 | all |
-|:--|:-:|:-:|:-:|:-:|:-:|:-:|
-| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
-| **Fully employed**  | **1.8%** | **67.3%** | **88.8%** | **88.8%** | **88.8%** | **67.1%** |
-| **Partly employed**  | **78.7%** | **26.4%** | **4.9%** | **4.9%** | **4.9%** | **24.0%** |
-| Offered e, chose P  | 73.7% | 21.5% | 0.0% | 0.0% | 0.0% | 19.0% |
-| Offered p, chose P  | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
-| **Unemployed**  | **19.5%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **8.9%** |
-| Offered e, chose U  | 13.2% | 0.0% | 0.0% | 0.0% | 0.0% | 2.6% |
-| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
-| Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
-
-
-
-
-
-
-
-
-
-
 
 
 ---
@@ -411,7 +295,7 @@ The following graph ignores those not at work or not in the labor force:
 
 <img src="img/2023aug23/CPS%20IPUMS%20P%20as%20share%20of%20P%20and%20U%20(sub20).png" style="width:100%;">
 
-(Above: Same graph but with part-time work restricted to those who work 20 hours or less.)
+<span style="font-size:small;">(Above: Same graph but with part-time work restricted to those who work 20 hours or less.)</span>
 
 
 
