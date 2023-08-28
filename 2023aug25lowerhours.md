@@ -6,6 +6,52 @@ layout: presentation_solar
 layout: true
 class: header
 
+<h2 style="background-color: #dfd;">Experiment with New Values for χ</h2>
+
+---
+
+For this test, I altered just the last row of χ, 
+to decrease the rate at which new full-time employment is found,
+and increase the persistance of unemployment.
+
+(Changed values are bolded. See later slide for original.)
+
+$$\chi = 
+\begin{bmatrix}
+    \chi(e,e) & \chi(e,p) & \chi(e,u) \\
+    \chi(p,e) & \chi(p,p) & \chi(p,u) \\
+    \chi(u,e) & \chi(u,p) & \chi(u,u) 
+\end{bmatrix} = 
+\begin{bmatrix}
+    0.94 & 0.03 & 0.03 \\
+    0.57 & 0.33 & 0.1 \\
+    \boldsymbol{0.2} & 0.1 & \boldsymbol{0.7}
+\end{bmatrix}
+$$
+
+which yields stationary distribution (with perfect enforcement) of:
+
+| E | P | U |
+|:-:|:-:|:-:|
+| 84.48% | 5.31% | 10.22% |
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+layout: true
+class: header
+
 <h2 style="background-color: #fdd;">With Original Values for χ</h2>
 
 
