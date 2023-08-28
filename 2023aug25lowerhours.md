@@ -203,6 +203,7 @@ class: header
 Test with pure markdown:
 
 |  | χ▒e | χ▒p| χ▒u |
+|:-:|:-:|:-:|:-:|
 | χe▒ |  | |  |
 | χp▒ |  | |  |
 | χu▒ |  | |  |
@@ -227,6 +228,9 @@ Test with pure markdown:
 
 Latex version:
 
+
+<span style="font-size:small;">
+
 $$\chi = 
 \begin{bmatrix}
    \chi(e,e) & \chi(e,p) & \chi(e,u) \\
@@ -239,6 +243,8 @@ $$\chi =
    \chi(u,e) & \chi(u,p) & \chi(u,u) 
 \end{bmatrix}
 $$
+
+</span>
 
 | π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -260,7 +266,7 @@ $$
 
 Version with html table
 
-<table>
+<table style="width:25%, font-size:small;">
 <tr>
     <td></td>
     <td>χ▒e</td>
