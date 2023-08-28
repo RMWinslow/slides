@@ -177,3 +177,212 @@ Employment rate by income quintile:
 | Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+layout: true
+class: header
+
+<h2 style="background-color: #dfd;">Experiments with different χ transition rates.</h2>
+
+
+---
+
+Test with pure markdown:
+
+|  | χ▒e | χ▒p| χ▒u |
+| χe▒ |  | |  |
+| χp▒ |  | |  |
+| χu▒ |  | |  |
+
+| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| x.x | x.x | x.x | xxx | xx.xx% | x.x | -x.xxxx | xx% | xx% |
+
+| PLACEHOLDER TABLE | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **1.8%** | **67.3%** | **88.8%** | **88.8%** | **88.8%** | **67.1%** |
+| **Partly employed**  | **78.7%** | **26.4%** | **4.9%** | **4.9%** | **4.9%** | **24.0%** |
+| Offered e, chose P  | 73.7% | 21.5% | 0.0% | 0.0% | 0.0% | 19.0% |
+| Offered p, chose P  | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
+| **Unemployed**  | **19.5%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **8.9%** |
+| Offered e, chose U  | 13.2% | 0.0% | 0.0% | 0.0% | 0.0% | 2.6% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
+
+---
+
+Latex version:
+
+$$\chi = 
+\begin{bmatrix}
+   \chi(e,e) & \chi(e,p) & \chi(e,u) \\
+   \chi(p,e) & \chi(p,p) & \chi(p,u) \\
+   \chi(u,e) & \chi(u,p) & \chi(u,u) 
+\end{bmatrix} = 
+\begin{bmatrix}
+   \chi(e,e) & \chi(e,p) & \chi(e,u) \\
+   \chi(p,e) & \chi(p,p) & \chi(p,u) \\
+   \chi(u,e) & \chi(u,p) & \chi(u,u) 
+\end{bmatrix}
+$$
+
+| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| x.x | x.x | x.x | xxx | xx.xx% | x.x | -x.xxxx | xx% | xx% |
+
+| PLACEHOLDER TABLE | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **1.8%** | **67.3%** | **88.8%** | **88.8%** | **88.8%** | **67.1%** |
+| **Partly employed**  | **78.7%** | **26.4%** | **4.9%** | **4.9%** | **4.9%** | **24.0%** |
+| Offered e, chose P  | 73.7% | 21.5% | 0.0% | 0.0% | 0.0% | 19.0% |
+| Offered p, chose P  | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
+| **Unemployed**  | **19.5%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **8.9%** |
+| Offered e, chose U  | 13.2% | 0.0% | 0.0% | 0.0% | 0.0% | 2.6% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
+
+---
+
+Version with html table
+
+<table>
+<tr>
+    <td></td>
+    <td>χ▒e</td>
+    <td>χ▒p</td>
+    <td>χ▒u</td>
+</tr>
+<tr>
+    <td>χe▒</td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>χp▒</td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>χu▒</td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
+
+
+| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| x.x | x.x | x.x | xxx | xx.xx% | x.x | -x.xxxx | xx% | xx% |
+
+| PLACEHOLDER TABLE | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **1.8%** | **67.3%** | **88.8%** | **88.8%** | **88.8%** | **67.1%** |
+| **Partly employed**  | **78.7%** | **26.4%** | **4.9%** | **4.9%** | **4.9%** | **24.0%** |
+| Offered e, chose P  | 73.7% | 21.5% | 0.0% | 0.0% | 0.0% | 19.0% |
+| Offered p, chose P  | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
+| **Unemployed**  | **19.5%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **8.9%** |
+| Offered e, chose U  | 13.2% | 0.0% | 0.0% | 0.0% | 0.0% | 2.6% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+layout: true
+
+## Some Minor Empirical Notes:
+
+---
+
+### Average Hours for Part-time workers
+
+- Average hours for part-time workers in CPS data: 22-23 hours.
+- But CPS defines part-time as no more than 35 hours per week.
+- Conditional on working 1-20 hours, the average is 14-15.
+- So lower value for $ĥ_p$ is reasonable.
+
+
+![](img/2023aug23/CPS%20IPUMS%20Labor%20Market%20Composition.png)
+
+
+---
+
+### Does Part-Time employment have a spike like PUI?
+
+- During the pandemic, both full and partial UI spiked upwards. Moreover, PUI increased as a *share* of total UI benefits.
+- In CPS, part-time employment did spike upwards, but relatively less than unemployment did. This results in the opposite pattern in ratio of P to U as seen in UI.
+
+![](img/2023aug23/CPS%20IPUMS%20P%20as%20share%20of%20P%20and%20U%20(rate).png)
+
+---
+
+### Does Part-Time employment have a spike like PUI?
+
+- During the pandemic, both full and partial UI spiked upwards. Moreover, PUI increased as a *share* of total UI benefits.
+- In CPS, part-time employment did spike upwards, but relatively less than unemployment did. This results in the opposite pattern in ratio of P to U as seen in UI.
+- Same graph but with part-time work restricted to those who work 20 hours or less.
+
+![](img/2023aug23/CPS%20IPUMS%20P%20as%20share%20of%20P%20and%20U%20(sub20).png)
+
+
+
+
+
+---
+
+The above use markdown syntax. This uses html syntax for the image. But with the same file name.
+
+<img src="img/2023aug23/CPS%20IPUMS%20P%20as%20share%20of%20P%20and%20U%20(sub20).png">
+
+---
+
+This is html with spaces in the filename 
+
+<img src="img/2023aug23/CPS IPUMS P as share of P and U (sub20).png">
+
+
+
+---
+
+This one uses markdown syntax but with spaces in the filename.
+
+![](img/2023aug23/CPS IPUMS P as share of P and U (sub20).png)
+
+
+
+
+
+
+
+
+
+
