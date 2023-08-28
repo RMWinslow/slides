@@ -6,7 +6,31 @@ layout: presentation_solar
 layout: true
 class: header
 
-<h2 style="background-color: #fdd;">Experiments with lower hours part-time</h2>
+<h2 style="background-color: #fdd;">With Original Values for χ</h2>
+
+
+---
+
+This uses the value fo χ used in previous experiments:
+
+$$\chi = 
+\begin{bmatrix}
+    \chi(e,e) & \chi(e,p) & \chi(e,u) \\
+    \chi(p,e) & \chi(p,p) & \chi(p,u) \\
+    \chi(u,e) & \chi(u,p) & \chi(u,u) 
+\end{bmatrix} = 
+\begin{bmatrix}
+    0.94 & 0.03 & 0.03 \\
+    0.57 & 0.33 & 0.1 \\
+    0.4 & 0.1 & 0.5
+\end{bmatrix}
+$$
+
+which yields stationary distribution (with perfect enforcement) of:
+
+E:88.77%,   P:4.92%,   U:6.31%,   P/U:77.92%
+
+
 
 
 ---
@@ -32,20 +56,6 @@ Employment rate by income quintile:
 | Offered e, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
-
-???
-
-This is a test of the Presenter notes part of the remark system.
-
-- list 1
-- list
-- list
-
-| a | b | c |
-|:-:|:-:|:-:|
-| x | y | z |
-| x | y | z |
-
 
 ---
 
@@ -229,20 +239,7 @@ Test with pure markdown:
 Latex version:
 
 
-<div style="font-size:small;">
 
-$$\chi = 
-\begin{bmatrix}
-   \chi(e,e) & \chi(e,p) & \chi(e,u) \\
-   \chi(p,e) & \chi(p,p) & \chi(p,u) \\
-   \chi(u,e) & \chi(u,p) & \chi(u,u) 
-\end{bmatrix} = 
-\begin{bmatrix}
-   \chi(e,e) & \chi(e,p) & \chi(e,u) \\
-   \chi(p,e) & \chi(p,p) & \chi(p,u) \\
-   \chi(u,e) & \chi(u,p) & \chi(u,u) 
-\end{bmatrix}
-$$
 
 </div>
 
