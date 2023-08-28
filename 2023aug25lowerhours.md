@@ -325,7 +325,7 @@ Version with html table
 
 layout: true
 
-## Some Minor Empirical Notes:
+## Some Empirical Notes:
 
 ---
 
@@ -336,8 +336,15 @@ layout: true
 - Conditional on working 1-20 hours, the average is 14-15.
 - So lower value for $ĥ_p$ is reasonable.
 
+---
 
-![](img/2023aug23/CPS%20IPUMS%20Labor%20Market%20Composition.png)
+### Labor Market Composition Over Time
+
+The following graph ignores those not at work or not in the labor force:
+
+<img src="img/2023aug23/CPS IPUMS Labor Market Composition (ignoring not at work).png" style="width:100%;">
+
+<!--![](img/2023aug23/CPS%20IPUMS%20Labor%20Market%20Composition.png)-->
 
 
 ---
@@ -347,7 +354,7 @@ layout: true
 - During the pandemic, both full and partial UI spiked upwards. Moreover, PUI increased as a *share* of total UI benefits.
 - In CPS, part-time employment did spike upwards, but relatively less than unemployment did. This results in the opposite pattern in ratio of P to U as seen in UI.
 
-![](img/2023aug23/CPS%20IPUMS%20P%20as%20share%20of%20P%20and%20U%20(rate).png)
+<img src="img/2023aug23/CPS%20IPUMS%20P%20as%20share%20of%20P%20and%20U%20(rate).png" style="width:100%;">
 
 ---
 
@@ -357,31 +364,7 @@ layout: true
 - In CPS, part-time employment did spike upwards, but relatively less than unemployment did. This results in the opposite pattern in ratio of P to U as seen in UI.
 - Same graph but with part-time work restricted to those who work 20 hours or less.
 
-![](img/2023aug23/CPS%20IPUMS%20P%20as%20share%20of%20P%20and%20U%20(sub20).png)
-
-
-
-
-
----
-
-The above use markdown syntax. This uses html syntax for the image. But with the same file name.
-
-<img src="img/2023aug23/CPS%20IPUMS%20P%20as%20share%20of%20P%20and%20U%20(sub20).png">
-
----
-
-This is html with spaces in the filename 
-
-<img src="img/2023aug23/CPS IPUMS P as share of P and U (sub20).png">
-
-
-
----
-
-This one uses markdown syntax but with spaces in the filename.
-
-![](img/2023aug23/CPS IPUMS P as share of P and U (sub20).png)
+<img src="img/2023aug23/CPS%20IPUMS%20P%20as%20share%20of%20P%20and%20U%20(sub20).png" style="width:100%;">
 
 
 
