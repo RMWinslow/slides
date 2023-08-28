@@ -13,6 +13,7 @@ class: header
 
 This uses the value fo χ used in previous experiments:
 
+
 $$\chi = 
 \begin{bmatrix}
     \chi(e,e) & \chi(e,p) & \chi(e,u) \\
@@ -28,7 +29,9 @@ $$
 
 which yields stationary distribution (with perfect enforcement) of:
 
-E:88.77%,   P:4.92%,   U:6.31%,   P/U:77.92%
+| E | P | U |
+|:-:|:-:|:-:|
+| 88.77% | 4.92% | 6.31% |
 
 
 
@@ -359,10 +362,10 @@ The following graph ignores those not at work or not in the labor force:
 
 - During the pandemic, both full and partial UI spiked upwards. Moreover, PUI increased as a *share* of total UI benefits.
 - In CPS, part-time employment did spike upwards, but relatively less than unemployment did. This results in the opposite pattern in ratio of P to U as seen in UI.
-- Same graph but with part-time work restricted to those who work 20 hours or less.
 
 <img src="img/2023aug23/CPS%20IPUMS%20P%20as%20share%20of%20P%20and%20U%20(sub20).png" style="width:100%;">
 
+(Above: Same graph but with part-time work restricted to those who work 20 hours or less.)
 
 
 
