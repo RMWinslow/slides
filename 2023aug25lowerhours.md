@@ -229,7 +229,7 @@ Test with pure markdown:
 Latex version:
 
 
-<span style="font-size:small;">
+<div style="font-size:small;">
 
 $$\chi = 
 \begin{bmatrix}
@@ -244,7 +244,7 @@ $$\chi =
 \end{bmatrix}
 $$
 
-</span>
+</div>
 
 | π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -266,7 +266,7 @@ $$
 
 Version with html table
 
-<table style="width:25%, font-size:small;">
+<table style="width:25%; font-size:small;">
 <tr>
     <td></td>
     <td>χ▒e</td>
