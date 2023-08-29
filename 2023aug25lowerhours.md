@@ -36,6 +36,167 @@ which yields stationary distribution (with perfect enforcement) of:
 | 84.48% | 5.31% | 10.22% |
 
 
+---
+
+### π=0.2, lower partial hours 12.0 
+
+Basic Version with no bonus:
+
+| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.2 | 0.2 | 0.5 | 0 | 5.61% | -0.0 | -0.5562 | 84% | 5% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **84.5%** | **84.5%** | **84.5%** | **84.5%** | **84.5%** | **84.5%** |
+| **Partly employed**  | **5.3%** | **5.3%** | **5.3%** | **5.3%** | **5.3%** | **5.3%** |
+| Offered e, chose P  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose P  | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% |
+| **Unemployed**  | **10.2%** | **10.2%** | **10.2%** | **10.2%** | **10.2%** | **10.2%** |
+| Offered e, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% |
+
+
+---
+
+
+### π=0.2, lower partial hours 12.0 
+
+Now add the 600 dollar bonus without changing tax rate:
+
+| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.2 | 0.2 | 0.5 | 600 | 5.61% | 97.46 | -0.4108 | 74% | 16% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **33.4%** | **83.2%** | **84.5%** | **84.5%** | **84.5%** | **74.0%** |
+| **Partly employed**  | **56.4%** | **6.6%** | **5.3%** | **5.3%** | **5.3%** | **15.8%** |
+| Offered e, chose P  | 51.1% | 1.3% | 0.0% | 0.0% | 0.0% | 10.5% |
+| Offered p, chose P  | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% |
+| **Unemployed**  | **10.2%** | **10.2%** | **10.2%** | **10.2%** | **10.2%** | **10.2%** |
+| Offered e, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% |
+
+
+---
+
+
+### π=0.2, lower partial hours 12.0 
+
+Now adjust the taxes to remove the deficit when the bonus is in place:
+
+| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.2 | 0.2 | 0.5 | 600 | 15.11% | -0.0 | -0.4997 | 74% | 16% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **33.1%** | **83.2%** | **84.5%** | **84.5%** | **84.5%** | **73.9%** |
+| **Partly employed**  | **56.7%** | **6.6%** | **5.3%** | **5.3%** | **5.3%** | **15.8%** |
+| Offered e, chose P  | 51.4% | 1.3% | 0.0% | 0.0% | 0.0% | 10.5% |
+| Offered p, chose P  | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% |
+| **Unemployed**  | **10.2%** | **10.2%** | **10.2%** | **10.2%** | **10.2%** | **10.2%** |
+| Offered e, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% |
+
+
+---
+
+
+### π=0.3, lower partial hours 12.0 
+
+Basic Version with no bonus:
+
+| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.3 | 0.3 | 0.5 | 0 | 5.61% | 0.0 | -0.5561 | 84% | 5% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **84.5%** | **84.5%** | **84.5%** | **84.5%** | **84.5%** | **84.5%** |
+| **Partly employed**  | **5.3%** | **5.3%** | **5.3%** | **5.3%** | **5.3%** | **5.3%** |
+| Offered e, chose P  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose P  | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% |
+| **Unemployed**  | **10.2%** | **10.2%** | **10.2%** | **10.2%** | **10.2%** | **10.2%** |
+| Offered e, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% |
+
+
+---
+
+
+### π=0.3, lower partial hours 12.0 
+
+Now add the 600 dollar bonus without changing tax rate:
+
+| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.3 | 0.3 | 0.5 | 600 | 5.61% | 132.9 | -0.3732 | 62% | 23% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **1.8%** | **55.8%** | **84.5%** | **84.5%** | **84.5%** | **62.2%** |
+| **Partly employed**  | **64.5%** | **33.9%** | **5.3%** | **5.3%** | **5.3%** | **22.9%** |
+| Offered e, chose P  | 59.2% | 28.6% | 0.0% | 0.0% | 0.0% | 17.6% |
+| Offered p, chose P  | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% |
+| **Unemployed**  | **33.7%** | **10.3%** | **10.2%** | **10.2%** | **10.2%** | **14.9%** |
+| Offered e, chose U  | 23.5% | 0.1% | 0.0% | 0.0% | 0.0% | 4.7% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% |
+
+
+---
+
+
+### π=0.3, lower partial hours 12.0 
+
+Now adjust the taxes to remove the deficit when the bonus is in place:
+
+| π0 | π1 | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.3 | 0.3 | 0.5 | 600 | 18.22% | -0.0 | -0.4901 | 62% | 23% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **1.7%** | **55.6%** | **84.5%** | **84.5%** | **84.5%** | **62.1%** |
+| **Partly employed**  | **62.8%** | **34.0%** | **5.3%** | **5.3%** | **5.3%** | **22.5%** |
+| Offered e, chose P  | 57.5% | 28.7% | 0.0% | 0.0% | 0.0% | 17.2% |
+| Offered p, chose P  | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% | 5.3% |
+| **Unemployed**  | **35.5%** | **10.5%** | **10.2%** | **10.2%** | **10.2%** | **15.3%** |
+| Offered e, chose U  | 25.3% | 0.3% | 0.0% | 0.0% | 0.0% | 5.1% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% | 10.2% |
+
+
+
+
+
+
+
+
 
 
 
