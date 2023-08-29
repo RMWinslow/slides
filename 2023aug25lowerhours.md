@@ -413,12 +413,14 @@ Employment rate by income quintile:
 
 ---
 
-layout: false
+layout: true
 
 ## Comparison of Results from two example χ:
 
 Below, χ1 refers to the original χ (pink slides),
 while χ2 refers to the modified χ (green slides).
+
+---
 
 Basic Version, no bonus:
 
@@ -429,6 +431,8 @@ Basic Version, no bonus:
 | χ1, π=0.3 | 88.8% | 4.9% | 6.3% |
 | χ2, π=0.3 | 84.5% | 5.3% | 10.2% |
 
+---
+
 Now add the 600 dollar bonus without changing tax rate:
 
 | | E | P | U |
@@ -437,6 +441,8 @@ Now add the 600 dollar bonus without changing tax rate:
 | χ2, π=0.2 | 74.0% | 15.8% | 10.2% |
 | χ1, π=0.3 | 67.0% | 23.9% | 9.0% |
 | χ2, π=0.3 | 62.2% | 22.9% | 14.9% |
+
+---
 
 Now adjust the taxes to remove the deficit when the bonus is in place:
 
