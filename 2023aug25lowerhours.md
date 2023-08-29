@@ -484,6 +484,9 @@ layout: true
 - Conditional on working 1-20 hours, the average is 14-15.
 - So lower value for $ĥ_p$ is reasonable.
 
+<img src="img/2023aug23/Average hours worked last week for those who worked 1-20 hours (IPUMS CPS).png" style="width:100%;">
+
+
 ---
 
 ### Labor Market Composition Over Time
