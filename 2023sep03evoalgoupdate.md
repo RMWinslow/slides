@@ -18,6 +18,7 @@ But not both at the same time, even when giving the search algorithm extra degre
 
 - The best matches for aggregate rates of full/partial/un- employment exhibit little to no heterogeneity in U across quintiles.
 - The best matches for U across quintiles have a rate for P which is much too high.
+- When trying to match both, the algorithm typically converges to the former case.
 
 
 ---
@@ -136,24 +137,12 @@ Employment rate by income quintile:
 | Offered u, chose U  | 14.1% | 14.1% | 14.1% | 14.1% | 14.1% | 14.1% |
 
 
----
-
-
-
-
----
-
-
-
-
----
 
 <!--Plenty of degrees of freedom, so easy for search to home in on a perfect fit.-->
 
 
 
 
-The following is leftover from previous slides. Left in as testing for now:
 
 
 
@@ -181,8 +170,25 @@ The following is leftover from previous slides. Left in as testing for now:
 layout: true
 class: header
 
-<h2 style="background-color: #eef;">With Original Values for χ</h2>
+<h2 style="background-color: #eef;">A Match for per-quintile U</h2>
 
+
+---
+
+
+Moments to fit: 
+
+May 2020 Unemployment Rates by pre-pandemic earnings quintiles, 
+as estimated in 
+Numbers taken from Table 1 of 
+*US unemployment insurance replacement rates during the pandemic*
+(Ganong,Noel,Vavra, 2020)
+
+
+| Quintile | 1 | 2 | 3 | 4 | 5 |
+|:--|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |
+| U  | 19.9% | 12.8% | 8.0% | 6.2% | 3.8% |
 
 ---
 
@@ -196,14 +202,88 @@ $$\chi =
     \chi(u,e) & \chi(u,p) & \chi(u,u) 
 \end{bmatrix} = 
 \begin{bmatrix}
-    0. & 0. & 0. \\
-    0. & 0. & 0. \\
-    0. & 0. & 0.
+    0.3729 & 0.6039 & 0.0232 \\
+    0.1096 & 0.8083 & 0.0821 \\
+    0.4078 & 0.4216 & 0.1706
 \end{bmatrix}
 $$
 
-$$\pi = 0.$$
+$$\pi = 0.1962$$
 
+
+---
+
+Basic Version with no bonus:
+
+| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.1962 | 0.1962 | 15 | 0.5 | 0 | 8.39% | 0.0 | -1.0056 | 18% | 74% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **18.1%** | **18.1%** | **18.1%** | **18.1%** | **18.1%** | **18.1%** |
+| **Partly employed**  | **74.1%** | **74.1%** | **74.1%** | **74.1%** | **74.1%** | **74.1%** |
+| Offered e, chose P  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose P  | 74.1% | 74.1% | 74.1% | 74.1% | 74.1% | 74.1% |
+| **Unemployed**  | **7.8%** | **7.8%** | **7.8%** | **7.8%** | **7.8%** | **7.8%** |
+| Offered e, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 7.8% | 7.8% | 7.8% | 7.8% | 7.8% | 7.8% |
+
+
+---
+
+
+Now add the 600 dollar bonus without changing tax rate:
+
+| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.1962 | 0.1962 | 15 | 0.5 | 600 | 8.39% | 460.72 | -0.1481 | 11% | 78% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **0.4%** | **2.3%** | **18.1%** | **18.1%** | **18.1%** | **11.4%** |
+| **Partly employed**  | **79.3%** | **89.9%** | **74.1%** | **74.1%** | **74.1%** | **78.3%** |
+| Offered e, chose P  | 5.2% | 15.7% | 0.0% | 0.0% | 0.0% | 4.2% |
+| Offered p, chose P  | 74.1% | 74.1% | 74.1% | 74.1% | 74.1% | 74.1% |
+| **Unemployed**  | **20.4%** | **7.8%** | **7.8%** | **7.8%** | **7.8%** | **10.3%** |
+| Offered e, chose U  | 12.5% | 0.0% | 0.0% | 0.0% | 0.0% | 2.5% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 7.8% | 7.8% | 7.8% | 7.8% | 7.8% | 7.8% |
+
+
+---
+
+
+
+Now adjust the taxes to remove the deficit when the bonus is in place:
+
+| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.1962 | 0.1962 | 15 | 0.5 | 600 | 55.14% | -0.0 | -0.7252 | 11% | 78% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **0.4%** | **2.3%** | **18.1%** | **18.1%** | **18.1%** | **11.4%** |
+| **Partly employed**  | **79.1%** | **89.8%** | **74.1%** | **74.1%** | **74.1%** | **78.3%** |
+| Offered e, chose P  | 5.0% | 15.7% | 0.0% | 0.0% | 0.0% | 4.1% |
+| Offered p, chose P  | 74.1% | 74.1% | 74.1% | 74.1% | 74.1% | 74.1% |
+| **Unemployed**  | **20.5%** | **7.8%** | **7.8%** | **7.8%** | **7.8%** | **10.4%** |
+| Offered e, chose U  | 12.7% | 0.0% | 0.0% | 0.0% | 0.0% | 2.5% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 7.8% | 7.8% | 7.8% | 7.8% | 7.8% | 7.8% |
+
+
+---
 
 
 
