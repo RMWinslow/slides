@@ -10,16 +10,15 @@ transition matrices χ, and enforcement rates π,
 to try matching the rates of partial and full unemployment 
 seen in mid-2020.
 
-I am able to reasonably match:
-- the aggregate rates for E,P,U
-- the per-quintile rates for U
+- I am able to reasonably match the aggregate rates for E,P,U.
+- But cannot match the per-quintile rates for U, even when giving the search algorithm extra degrees of freedom
+    - Further, the best matches to the per-quintile U rates yield absurdly high rates for P
 
-But not both at the same time, even when giving the search algorithm extra degrees of freedom
-
+<!--
 - The best matches for aggregate rates of full/partial/un- employment exhibit little to no heterogeneity in U across quintiles.
 - The best matches for U across quintiles have a rate for P which is much too high.
 - When trying to match both, the algorithm typically converges to the former case.
-
+-->
 
 ---
 
@@ -285,6 +284,21 @@ Employment rate by income quintile:
 
 ---
 
+Running the genetic algorithm with tweaks --
+such as an even lower number of hours for P or some fixed value for π --
+yields essentially the same results:
+
+- High U for quintile 1, as desired.
+- The other 4 quintiles sharing the same U
+- A rate for P which is much too high.
+
+My Conclusion from these experiments: 
+It seems implausible within the model as its constructed 
+for the UI bonus to be the main driving force behind the variance in unemployment across income levels.
+
+Therefore, if fitting the model with heterogeneity to the pandemic,
+it seems that the the transition matrix χ should exogenously vary by income level.
+But that introduces so many variables that identifying the effect of the PUI bonus on the intrinsic margin seems hopeless.
 
 
 
