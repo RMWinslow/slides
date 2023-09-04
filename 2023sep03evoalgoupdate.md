@@ -169,7 +169,7 @@ Employment rate by income quintile:
 layout: true
 class: header
 
-<h2 style="background-color: #eef;">A Match for per-quintile U</h2>
+<h2 style="background-color: #eef;">A  (not great) match for per-quintile U</h2>
 
 
 ---
