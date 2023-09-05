@@ -307,3 +307,143 @@ But that introduces so many variables that identifying the effect of the PUI bon
 
 
 
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+layout: true
+class: header
+
+<h2 style="background-color: #ddf;">One more example of trying to match per-quintile U</h2>
+
+
+---
+
+Here is an example where the 600 dollar bonus *reduces* full Unemployment.
+
+### Moments to fit: 
+
+U by quintile, as before:
+
+
+| Quintile | 1 | 2 | 3 | 4 | 5 |
+|:--|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |
+| U  | 19.9% | 12.8% | 8.0% | 6.2% | 3.8% |
+
+
+ĥP=12 this time instead of 15, and π=0.5
+
+
+---
+
+
+
+
+### Results of search:
+
+$$\chi = 
+\begin{bmatrix}
+    \chi(e,e) & \chi(e,p) & \chi(e,u) \\
+    \chi(p,e) & \chi(p,p) & \chi(p,u) \\
+    \chi(u,e) & \chi(u,p) & \chi(u,u) 
+\end{bmatrix} = 
+\begin{bmatrix}
+    0.6867 & 0.1226 & 0.1907 \\
+    0.0105 & 0.9720 & 0.0175 \\
+    0.5438 & 0.2521 & 0.2041
+\end{bmatrix}
+$$
+
+$\pi = 0.5$ by assumption.
+
+---
+
+Basic Version with no bonus:
+
+| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.5 | 0.5 | 12 | 0.5 | 0 | 52.54% | 0.0 | -2.5053 | 10% | 21% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **10.5%** | **10.5%** | **10.5%** | **10.5%** | **10.5%** | **10.5%** |
+| **Partly employed**  | **21.8%** | **20.4%** | **20.1%** | **19.9%** | **23.9%** | **21.2%** |
+| Offered e, chose P  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose P  | 21.8% | 20.4% | 20.1% | 19.9% | 23.9% | 21.2% |
+| **Unemployed**  | **67.7%** | **69.2%** | **69.4%** | **69.7%** | **65.6%** | **68.3%** |
+| Offered e, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose U  | 63.3% | 64.8% | 65.0% | 65.3% | 61.3% | 63.9% |
+| Offered u, chose U  | 4.4% | 4.4% | 4.4% | 4.4% | 4.4% | 4.4% |
+
+
+---
+
+
+Now add the 600 dollar bonus without changing tax rate:
+
+| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.5 | 0.5 | 12 | 0.5 | 600 | 52.54% | 106.32 | -0.653 | 5% | 85% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **0.1%** | **0.3%** | **2.6%** | **9.7%** | **10.5%** | **4.6%** |
+| **Partly employed**  | **85.5%** | **85.6%** | **85.4%** | **85.2%** | **85.2%** | **85.3%** |
+| Offered e, chose P  | 0.3% | 0.4% | 0.2% | 0.0% | 0.0% | 0.2% |
+| Offered p, chose P  | 85.2% | 85.2% | 85.2% | 85.2% | 85.2% | 85.2% |
+| **Unemployed**  | **14.5%** | **14.2%** | **12.1%** | **5.2%** | **4.4%** | **10.0%** |
+| Offered e, chose U  | 10.1% | 9.8% | 7.7% | 0.8% | 0.0% | 5.7% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 4.4% | 4.4% | 4.4% | 4.4% | 4.4% | 4.4% |
+
+
+---
+
+
+
+Now adjust the taxes to remove the deficit when the bonus is in place:
+
+| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.5 | 0.5 | 12 | 0.5 | 600 | 64.26% | 0.0 | -0.9659 | 5% | 85% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **0.1%** | **0.3%** | **2.6%** | **9.8%** | **10.5%** | **4.6%** |
+| **Partly employed**  | **85.5%** | **85.6%** | **85.3%** | **85.2%** | **85.2%** | **85.3%** |
+| Offered e, chose P  | 0.4% | 0.5% | 0.1% | 0.0% | 0.0% | 0.2% |
+| Offered p, chose P  | 85.2% | 85.2% | 85.2% | 85.2% | 85.2% | 85.2% |
+| **Unemployed**  | **14.4%** | **14.1%** | **12.1%** | **5.0%** | **4.4%** | **10.0%** |
+| Offered e, chose U  | 10.0% | 9.7% | 7.7% | 0.7% | 0.0% | 5.6% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 4.4% | 4.4% | 4.4% | 4.4% | 4.4% | 4.4% |
+
+
+---
+
+
+Interestingly, the addition of the bonus 600 actually makes U **go down**,
+as it makes P more attractive.
+
+Otherwise though, the same problems from Example 2 are still relevant.
+
