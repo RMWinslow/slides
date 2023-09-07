@@ -37,7 +37,40 @@ class: header
 
 ---
 
+### Partial Unemployment Insurance
 
+- If a person is eligible for UI, a weekly benefit amount (WBA) is determined based on employment history.
+  - Except for high earners, it's about half of their typical income.
+  - Constant throughout entire UI spell.
+- Benefits depend both on the current week's gross earnings, and on the individual's WBA.
+  - Your WBA is the amount you collect when totally unemployed.
+  - As earnings increase, benefits decrease
+  - Details vary by state.
+- During the pandemic, the Federal Pandemic Unemployment Compensation supplement (600 then later 300 USD) was paid out in full to anyone collecting even a single dollar of state UI.
+
+
+---
+
+### Example: State UI Benefits in Minnesota
+
+<img src="img/20230505/uiMN.png" style="max-width:40%;float:right;">
+
+In Minnesota, the rule is that the benefits for a given week are determined by:
+
+$$
+benefits = \begin{cases}
+WBA - \frac{earnings}{2} &\text{ if } earnings < WBA \\
+0 &\text{ if } earnings \geq WBA \\
+\end{cases}
+$$
+
+where WBA is weekly benefit amount (person-specific, fixed for entire duration of benefits spell)
+and the earnings refers to the current week's labor income before taxes and transfers.
+
+*Figure on right: earnings and benefits for a hypothetical Minnesota worker with a WBA of 400 USD*
+
+
+<!--TODO: What was YIRU's WBA? I should plug that in here instead of a generic 400.-->
 
 ---
 
