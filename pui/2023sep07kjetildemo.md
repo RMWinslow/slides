@@ -374,3 +374,144 @@ class: header
 
 
 ---
+
+
+### Calibrating χ
+
+I set
+
+$$\chi = 
+\begin{bmatrix}
+   \chi(e,e) & \chi(e,p) & \chi(e,u) \\
+   \chi(p,e) & \chi(p,p) & \chi(p,u) \\
+   \chi(u,e) & \chi(u,p) & \chi(u,u) 
+\end{bmatrix}
+=
+\begin{bmatrix}
+   0.94 & 0.03 & 0.03 \\
+   0.57 & 0.33 & 0.10 \\
+   0.40 & 0.10 & 0.50 
+\end{bmatrix}
+$$
+
+Which has stationary distribution $[0.89, 0.05, 0.06]$.
+
+
+
+
+---
+
+### Calibrating working time
+
+- $\hE$ is set to $0.45$, representing a full work week of 45 hours out of possible 100.
+- And time spent for part-time work is set to $\hP=0.20$.
+
+<!--- $\hE=0.45$ (time Spent for full time work.)-->
+
+
+---
+
+### Other parameters:
+
+These use the same values as (Hansen, Imrohoroğlu, 1992) and :
+
+- $\beta=0.995$ (time discount factor). Same as (Şahin et al, 2002)
+- $\psi=1$ 
+- $\gamma_c=0.5$ 
+- $\gamma_l=0.3$ 
+
+
+<!--
+so 
+$$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = 
+\mathbb{E} \sum_t \beta^t \Big(\frac{c_t^{1-\gamma_c}}{1-\gamma_c} + \psi \cdot \frac{l_t^{1-\gamma_l}}{1-\gamma_l}\Big)$$
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+layout: true
+class: header
+
+<h2 style="background-color: #fdd;">A Little Experiment</h2>
+
+---
+
+
+
+
+### ψ=1, γc=0.5, γl=0.3, π=0.2
+
+Basic Version with no bonus:
+
+| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.2 | 0.2 | 20 | 0.5 | 0 | 3.35% | -0.0 | 2.9977 | 89% | 5% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income | 372 | 592 | 886 | 1280 | 2323 | |
+| **Fully employed** | **88.8%** | **88.8%** | **88.8%** | **88.8%** | **88.8%** | **88.8%** |
+| **Partly employed** | **4.9%** | **4.9%** | **4.9%** | **4.9%** | **4.9%** | **4.9%** |
+| Offered e, chose P | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose P | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
+| **Unemployed** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** |
+| Offered e, chose U | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose U | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
+
+---
+
+### ψ=1, γc=0.5, γl=0.3, π=0.2
+
+Now add the 600 dollar bonus without changing tax rate:
+
+| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.2 | 0.2 | 20 | 0.5 | 600 | 3.35% | 88 | 3.1016 | 69% | 24% |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income | 372 | 592 | 886 | 1280 | 2323 | |
+| **Fully employed** | **0.0%** | **77.4%** | **88.8%** | **88.8%** | **88.8%** | **68.7%** |
+| **Partly employed** | **91.0%** | **16.3%** | **4.9%** | **4.9%** | **4.9%** | **24.4%** |
+| Offered e, chose P | 86.1% | 11.3% | 0.0% | 0.0% | 0.0% | 19.5% |
+| Offered p, chose P | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
+| **Unemployed** | **9.0%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **6.8%** |
+| Offered e, chose U | 2.7% | 0.0% | 0.0% | 0.0% | 0.0% | 0.5% |
+| Offered p, chose U | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% |
+
+
+
+
+
+
+
