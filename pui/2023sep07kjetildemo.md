@@ -309,7 +309,7 @@ $$
 
 
 
----------------
+---
 
 ### Adding heterogeneity to the model.
 
@@ -331,7 +331,7 @@ workers benefitting from the Pandemic Unemployment Compensation.
 
 
 
---------------
+---
 
 
 
