@@ -4,7 +4,281 @@ layout: presentation_solar
 parent: PUI
 ---
 
-- 
+# PUI Presentation, Sept 07, 2023
+
+Robert Winslow
+
+What is the effect of partial unemployment insurance on labor decisions?
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+layout: true
+class: header
+
+<h2 style="background-color: #dfd;">Partial Unemployment Insurance in the US</h2>
+
+---
+
+
+### State UI Recipients Over Time, All US
+
+<img src="img/20230505/saUSAwide.png" style="max-width:100%;">
+
+---
+
+
+
+---
+
+
+
+### State UI Recipients Over Time, MN
+
+<img src="img/20230505/saMNwide.png" style="max-width:100%;">
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+layout: true
+class: header
+
+<h2 style="background-color: #eef;">Model</h2>
+
+---
+
+- Simple model of job search and unemployment insurance.
+- Based on:
+    - *The role of unemployment insurance in an economy with liquidity constraints and moral hazard* (Hansen, Imrohoroğlu, 1992)
+    - *Unemployment insurance and the role of self-insurance.* (Abdulkadiroğlu, Kuruşçu, Şahin, 2002).
+- My contribution is the addition of *partial* unemployment insurance.
+
+
+<!--The following are some global definitions for more concise notation.-->
+
+$$
+\gdef\etaE{\text{E}}
+\gdef\etaP{\text{P}}
+\gdef\etaU{\text{U}}
+\gdef\sE{e}
+\gdef\sP{p}
+\gdef\sU{u}
+\gdef\hP{\hat{h}_p}
+\gdef\hE{\hat{h}_e}
+$$
+
+
+---
+
+
+### Consumer's choices
+
+The consumer's optimand is straightforward:
+
+$$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = \mathbb{E} \sum_t \beta^t \frac{(c_t^{1-\sigma}l_t^\sigma)^{1-\rho}-1}{1-\rho}$$
+
+Two decisions the consumer faces:
+
+1. How to split income between consumption and (non-interest-bearing) savings
+    - budget is $m'+c = m+y_d$, where $m$ is assets, and $y_d$ is disposable income.
+    - assets are subject to the constraint $m'\geq 0$
+
+2. Whether and how much to work when give a job opportunity. (See next slide.)
+
+<!--These basics are very similar to (Abdulkadiroğlu, Kuruşçu, Şahin, (2002)).-->
+
+---
+
+
+### Job Search
+
+
+
+- Employment opportunity $s\in\set{e,p,u}$ represents whether the person has a job opportunity ($s=e$), a partial job opportunity ($s=p$) or no job opportunity ($s=u$). (Employment, Partial employment, full Unemployment)
+    - $s$ evolves according to a 3x3 transition matrix $\chi$, <!--TODO: Calibrate-->
+
+$$\chi = 
+\begin{bmatrix}
+   \chi(e,e) & \chi(e,p) & \chi(e,u) \\
+   \chi(p,e) & \chi(p,p) & \chi(p,u) \\
+   \chi(u,e) & \chi(u,p) & \chi(u,u) 
+\end{bmatrix}
+$$
+
+- employment status $\eta\in\Set{\etaE,\etaP,\etaU}$ represents the level of work the consumer actually chooses to engage in. 
+    - If $s=\sE$, consumer can choose from $\eta\in\Set{\etaE,\etaP,\etaU}$
+    - If $s=\sP$, consumer can choose from $\eta\in\Set{\etaP,\etaU}$
+    - If $s=\sU$, consumer must choose $\eta = \etaU$
+
+
+<!--
+- Note that $s=u \implies \eta=0$. But if the person chooses not to accept an employment opportunity, $(s,\eta)=(e,0)$.
+-->
+
+
+---
+
+### Unemployment Benefits
+
+$\mu\in\set{0,1}$ is a binary variable indicating whether the person collects unemployment benefits.
+
+- If $s=\sE$, then $\mu=0$
+- If $(s,\eta)=(\sP,\etaP)$ or $(\sU,\etaU)$, then $\mu=1$
+- If $\eta=\etaU$, but $s\neq\sU$, then $\mu=1$ with probability $\pi_u$, 0 otherwise
+- If $\eta=\etaP$, but $s\neq\sP$, then $\mu=1$ with probability $\pi_p$, 0 otherwise
+
+If Consumer collects benefits, the benefits adjust their disposable income to some fraction of employed disposable income, called the "replacement rate".
+
+-  $\theta_p$ is replacement rate for partially employed (when $(\eta,\mu)=(\etaP,1)$)
+-  $\theta_u$ is replacement rate for unemployed (when $(\eta,\mu)=(\etaU,1)$)
+
+
+<!--TODO?: Make pi dependent on s, eta, and previous s or eta?-->
+
+---
+
+### Utility Flows, Income, and Leisure
+
+Given $(m,m',\eta,\mu)$, utility flow is:
+
+$$U\Big(m-m'+y_d(\eta,\mu),\;l(\eta)\Big)$$
+
+where
+
+$$
+y_d(\eta,\mu) =
+\begin{cases}
+   (1-\tau)y                &\text{if } (\eta,\mu)=(\etaE,0) \\
+   (1-\tau)yθ_p             &\text{if } (\eta,\mu)=(\etaP,1) \\
+   (1-\tau)yθ_u             &\text{if } (\eta,\mu)=(\etaU,1) \\
+   (1-\tau)y\frac{\hP}{\hE} &\text{if } (\eta,\mu)=(\etaP,0) \\
+   0                        &\text{if } (\eta,\mu)=(\etaU,0) \\
+\end{cases}
+$$
+
+and
+
+$$
+l(\eta) =
+\begin{cases}
+   1-\hE &\text{if } \eta=\etaE \\
+   1-\hP &\text{if } \eta=\etaP \\
+   1 &\text{if } \eta=\etaU \\
+\end{cases}
+$$
+
+---
+
+### Timeline Within Each Period
+
+
+
+1. Consumer recieves potential job offer $s\in\set{e,p,u}$
+2. Consumer chooses employment status $\eta\in\Set{\etaE,\etaP,\etaU}$
+3. Draw $\mu\in\set{0,1}$: does Consumer get unemployment benefits?   
+4. Consumer chooses $m'$ after seeing $\mu$
+
+
+
+
+---
+
+### Value Functions
+
+$$
+V(e,m) = \max_{\eta\in\set{\etaE,\etaP,\etaU}}\Big\lbrace
+\mathbb{E} \left[\max_{m'}\Set{U(m-m'+y_d(\eta,\mu),l(\eta))+cont(e,m')}\right]
+\Big\rbrace
+$$
+
+$$
+V(p,m) = \max_{\eta\in\set{\etaP,\etaU}}\Big\lbrace
+\mathbb{E} \left[\max_{m'}\Set{U(m-m'+y_d(\eta,\mu),l(\eta))+cont(p,m')}\right]
+\Big\rbrace
+$$
+
+$$
+V(u,m) = \max_{m'}\Set{U(m-m'+y_d(\eta,\mu),l(\eta))+cont(u,m')}
+$$
+
+where
+
+$$cont(s,m') \equiv \beta \sum_{s'}\chi(s,s')V(m',s')$$
+
+
+---
+
+
+### Market Clearing and Equilibrium
+
+State of a person is $x=(m,s,\eta,\mu)$
+
+Stationary equilibrium consists of 
+- decision rules $\eta(m,s)$, $c(x)$, $m'(x)$
+- time-invariant measure $\lambda(x)$ of people in state $x$
+- tax rate $\tau$
+
+Such that
+
+- Given $\tau$, the decision rules are optimal for the consumers.
+- Goods market clears: 
+
+$$\sum_x \lambda(x) c(x) = \sum_x \lambda(x) \cdot 
+\begin{cases}
+y                &\text{if }\eta=\etaE\\
+\frac{\hP}{\hE}y &\text{if }\eta=\etaP\\
+0                &\text{if }\eta=\etaU\\
+\end{cases}
+$$
+
+- $\lambda(x')=\lambda(x)$
+- Government budget  balanced (?):
+
+
+
+
+
+
+
 
 
 
@@ -13,30 +287,10 @@ parent: PUI
 
 ---
 
----
-
----
-
 
 
 ---
 
-
-## Summary
-
-I implemented a genetic algorithm to search over 
-transition matrices χ, and enforcement rates π,
-to try matching the rates of partial and full unemployment 
-seen in mid-2020.
-
-I am able to reasonably match:
-- the aggregate rates for E,P,U
-- the per-quintile rates for U
-
-But not both at the same time, even when giving the search algorithm extra degrees of freedom
-
-- The best matches for aggregate rates of full/partial/un- employment exhibit little to no heterogeneity in U across quintiles.
-- The best matches for U across quintiles have a rate for P which is much too high.
 
 
 ---
