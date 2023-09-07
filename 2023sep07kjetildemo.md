@@ -1,7 +1,25 @@
 ---
-title: "Office Hours: 2023 Sept 03 (Genetic algo)"
+title: "Office Hours: 2023 Sept 07 (kjetil presentation)"
 layout: presentation_solar
 ---
+
+- 
+
+
+
+
+---
+
+---
+
+---
+
+---
+
+
+
+---
+
 
 ## Summary
 
