@@ -114,7 +114,8 @@ $$
 
 The consumer's optimand is straightforward:
 
-$$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = \mathbb{E} \sum_t \beta^t \frac{(c_t^{1-\sigma}l_t^\sigma)^{1-\rho}-1}{1-\rho}$$
+$$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = 
+\mathbb{E} \sum_t \beta^t \Big(\frac{c_t^{1-\gamma_c}}{1-\gamma_c} + \psi \cdot \frac{l_t^{1-\gamma_l}}{1-\gamma_l}\Big)$$
 
 Two decisions the consumer faces:
 
