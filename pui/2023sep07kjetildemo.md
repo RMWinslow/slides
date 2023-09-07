@@ -309,6 +309,32 @@ $$
 
 
 
+---------------
+
+### Adding heterogeneity to the model.
+
+In *US unemployment insurance replacement rates during the pandemic* (Ganong, Noel, and Vavra, 2020), 
+the authors use CPS data to estimate the income distribution of 
+workers benefitting from the Pandemic Unemployment Compensation.
+
+| Quintile | 1 | 2 | 3 | 4 | 5 |
+|:--|:-:|:-:|:-:|:-:|:-:|
+| Pre-pandemic Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |
+| May 2020 Unemp Rate, estimated  | 19.9% | 12.8% | 8.0% | 6.2% | 3.8% |
+
+*From Table 1 from (Ganong, Noel, and Vavra, 2020)*
+
+### Adding this to model:
+
+- 5 'types' of people corresponding to these income quintiles.
+- Income scaled so that 886 corresponds to y=1
+
+
+
+--------------
+
+
+
 
 
 
