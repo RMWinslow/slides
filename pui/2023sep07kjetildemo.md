@@ -4,6 +4,8 @@ layout: presentation_solar
 parent: PUI
 ---
 
+class:middle
+
 # PUI Presentation, Sept 07, 2023
 
 Robert Winslow
