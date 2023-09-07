@@ -1,6 +1,7 @@
 ---
 title: "Office Hours: 2023 Sept 07 (kjetil presentation)"
 layout: presentation_solar
+parent: PUI
 ---
 
 - 

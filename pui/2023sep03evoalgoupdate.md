@@ -1,6 +1,7 @@
 ---
 title: "Office Hours: 2023 Sept 03 (Genetic algo)"
 layout: presentation_solar
+parent: PUI
 ---
 
 ## Summary

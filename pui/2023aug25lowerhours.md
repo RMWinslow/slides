@@ -1,6 +1,7 @@
 ---
 title: "Office Hours: 2023 Aug 23 (Addenda 2)"
 layout: presentation_solar
+parent: PUI
 ---
 
 layout: true
