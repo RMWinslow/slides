@@ -72,7 +72,53 @@ and the earnings refers to the current week's labor income before taxes and tran
 *Figure on right: earnings and benefits for a hypothetical Minnesota worker with a WBA of 400 USD*
 
 
-<!--TODO: What was YIRU's WBA? I should plug that in here instead of a generic 400.-->
+
+---
+
+### Example: State UI Benefits in Minnesota
+
+<img src="img/20230907/MN.png" style="max-width:20%;float:right;">
+
+In Minnesota, the rule is that the benefits for a given week are determined by:
+
+$$
+benefits = \begin{cases}
+WBA - \frac{earnings}{2} &\text{ if } earnings < WBA \\
+0 &\text{ if } earnings \geq WBA \\
+\end{cases}
+$$
+
+where WBA is weekly benefit amount (person-specific, fixed for entire duration of benefits spell)
+and the earnings refers to the current week's labor income before taxes and transfers.
+
+*Figure on right: earnings and benefits for a hypothetical Minnesota worker with a WBA of 400 USD*
+
+---
+
+### Example: State UI Benefits in Minnesota
+
+<img src="img/20230907/MN.png" style="max-width:20%;float:right;">
+
+In Minnesota, the rule is that the benefits for a given week are determined by:
+
+<div style="font-size: small;">
+
+$$
+benefits = \begin{cases}
+WBA - \frac{earnings}{2} &\text{ if } earnings < WBA \\
+0 &\text{ if } earnings \geq WBA \\
+\end{cases}
+$$
+
+</div>
+
+
+where WBA is weekly benefit amount (person-specific, fixed for entire duration of benefits spell)
+and the earnings refers to the current week's labor income before taxes and transfers.
+
+*Figure on right: earnings and benefits for a hypothetical Minnesota worker with a WBA of 400 USD*
+
+
 
 ---
 
