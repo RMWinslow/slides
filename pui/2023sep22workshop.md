@@ -266,8 +266,6 @@ y_d(\eta,\mu) =
 \end{cases}
 $$
 
-(Note that $yθ_p = y\frac{\hP}{\hE} + benefits$.)
-
 and
 
 $$
@@ -278,6 +276,9 @@ l(\eta) =
    1 &\text{if } \eta=\etaU \\
 \end{cases}
 $$
+
+<!--(Note that $yθ_p = y\frac{\hP}{\hE} + benefits$.)-->
+
 
 ---
 
