@@ -112,8 +112,8 @@ class: header
 - Canada Emergency Response Benefit: 2000 CAD per month. For people not covered by EI. Late March to October 2020.
 - Minimum Guaranteed EI benefits. Sept 2020 to (Sept/Nov 2021). Found conflicting sources on the end date there.
 
-[BBC US Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/B6A3/production/_115055764_optimised-us_cases_deaths24oct-nc.png.webp)  
-[BBC CAN Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/25B3/production/_114915690_canada_cases_deaths-nc.png.webp)  
+<a href="https://ichef.bbci.co.uk/news/976/cpsprodpb/B6A3/production/_115055764_optimised-us_cases_deaths24oct-nc.png.webp">BBC US Covid Chart</a>    
+<a href="https://ichef.bbci.co.uk/news/976/cpsprodpb/25B3/production/_114915690_canada_cases_deaths-nc.png.webp">BBC Can Covid Chart</a>    
 [Canada EI, NSA](img/20230922/cansa.png)
 
 
