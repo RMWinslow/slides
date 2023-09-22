@@ -501,18 +501,17 @@ $$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = \mathbb{E} \sum_t \beta^t \frac{(c_t^{1
 layout: true
 class: header
 
-<h2 style="background-color: #fdd;">A Little Experiment</h2>
+<h2 style="background-color: #fdd;">An Example "Experiment"</h2>
 
 ---
 
-
-### ψ=0.35, γc=0.5, γl=0.5, π=0.2
+### With π = 0.3 
 
 Basic Version with no bonus:
 
-| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| 0.2 | 0.2 | 12 | 0.5 | 0 | 3.38% | -0.0 | 0.6299 | 89% | 5% |
+| π | θp | θu | ĥP | ĥE | bonus | $\tau$ | deficit | mean $U$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.3 | 0.667 | 0.5 | 15 | 45 | 0 | 5.04% | -0.0 | -0.5286 |
 
 Employment rate by income quintile:
 
@@ -532,22 +531,22 @@ Employment rate by income quintile:
 ---
 
 
-### ψ=0.35, γc=0.5, γl=0.5, π=0.2
+### With π = 0.3 
 
 Now add the 600 dollar bonus without changing tax rate:
 
-| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| 0.2 | 0.2 | 12 | 0.5 | 600 | 3.38% | 92.92 | 0.692 | 72% | 22% |
+| π | θp | θu | ĥP | ĥE | bonus | $\tau$ | deficit | mean $U$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.3 | 2.28 | 2.113 | 15 | 45 | 600 | 5.04% | 177.20000000000002 | -0.3316 |
 
 Employment rate by income quintile:
 
 | Quintile | 1 | 2 | 3 | 4 | 5 | all |
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|
 | Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
-| **Fully employed**  | **3.6%** | **88.7%** | **88.8%** | **88.8%** | **88.8%** | **71.7%** |
-| **Partly employed**  | **90.1%** | **5.0%** | **4.9%** | **4.9%** | **4.9%** | **22.0%** |
-| Offered e, chose P  | 85.2% | 0.1% | 0.0% | 0.0% | 0.0% | 17.0% |
+| **Fully employed**  | **0.4%** | **3.0%** | **39.5%** | **87.8%** | **88.8%** | **43.9%** |
+| **Partly employed**  | **93.3%** | **90.7%** | **54.2%** | **5.9%** | **4.9%** | **49.8%** |
+| Offered e, chose P  | 88.4% | 85.8% | 49.3% | 1.0% | 0.0% | 44.9% |
 | Offered p, chose P  | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
 | **Unemployed**  | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** |
 | Offered e, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
@@ -558,22 +557,22 @@ Employment rate by income quintile:
 ---
 
 
-### ψ=0.35, γc=0.5, γl=0.5, π=0.2
+### With π = 0.3 
 
 Now adjust the taxes to remove the deficit when the bonus is in place:
 
-| π0 | π1 | ĥP | $\theta$ | bonus | $\tau$ | deficit | mean $U$ | Fully Empl | Partly Empl |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| 0.2 | 0.2 | 12 | 0.5 | 600 | 11.62% | -0.0 | 0.6373 | 71% | 22% |
+| π | θp | θu | ĥP | ĥE | bonus | $\tau$ | deficit | mean $U$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 0.3 | 2.28 | 2.113 | 15 | 45 | 600 | 21.75% | -0.0 | -0.4851 |
 
 Employment rate by income quintile:
 
 | Quintile | 1 | 2 | 3 | 4 | 5 | all |
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|
 | Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
-| **Fully employed**  | **3.0%** | **87.1%** | **88.8%** | **88.8%** | **88.8%** | **71.3%** |
-| **Partly employed**  | **90.7%** | **6.6%** | **4.9%** | **4.9%** | **4.9%** | **22.4%** |
-| Offered e, chose P  | 85.8% | 1.7% | 0.0% | 0.0% | 0.0% | 17.5% |
+| **Fully employed**  | **0.5%** | **2.8%** | **39.3%** | **87.8%** | **88.8%** | **43.9%** |
+| **Partly employed**  | **93.2%** | **90.9%** | **54.4%** | **5.9%** | **4.9%** | **49.8%** |
+| Offered e, chose P  | 88.2% | 85.9% | 49.4% | 0.9% | 0.0% | 44.9% |
 | Offered p, chose P  | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% |
 | **Unemployed**  | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** |
 | Offered e, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
@@ -582,6 +581,17 @@ Employment rate by income quintile:
 
 
 ---
+
+
+- With many parameters, only the first quintile has an uptick in P.
+- No way to induce increased Partial claims in higher quintiles without driving E way down. 
+
+Why?
+
+- People only vary here in terms of income and asset levels.
+- Benefits drawn iid each period.
+
+
 
 
 
