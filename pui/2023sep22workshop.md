@@ -537,7 +537,7 @@ Now add the 600 dollar bonus without changing tax rate:
 
 | π | θp | θu | ĥP | ĥE | bonus | $\tau$ | deficit | mean $U$ |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| 0.3 | 2.28 | 2.113 | 15 | 45 | 600 | 5.04% | 177.20000000000002 | -0.3316 |
+| 0.3 | 0.667 | 0.5 | 15 | 45 | 600 | 5.04% | 177.20000000000002 | -0.3316 |
 
 Employment rate by income quintile:
 
@@ -563,7 +563,7 @@ Now adjust the taxes to remove the deficit when the bonus is in place:
 
 | π | θp | θu | ĥP | ĥE | bonus | $\tau$ | deficit | mean $U$ |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| 0.3 | 2.28 | 2.113 | 15 | 45 | 600 | 21.75% | -0.0 | -0.4851 |
+| 0.3 | 0.667 | 0.5 | 15 | 45 | 600 | 21.75% | -0.0 | -0.4851 |
 
 Employment rate by income quintile:
 
@@ -590,6 +590,87 @@ Why?
 
 - People only vary here in terms of income and asset levels.
 - Benefits drawn iid each period.
+
+---
+
+
+
+---
+
+### 30% of people have π=1, 70% π=0
+
+Basic Version with no bonus:
+
+| π | θp | θu | ĥP | ĥE | bonus | $\tau$ | deficit | mean $U$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| mixed | 0.667 | 0.5 | 15 | 45 | 0 | 13.69% | -0.0 | -0.611 |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **45.9%** | **56.7%** | **53.2%** | **51.3%** | **53.0%** | **66.7%** |
+| **Partly employed**  | **47.8%** | **37.0%** | **40.5%** | **42.4%** | **40.7%** | **27.0%** |
+| Offered e, chose P  | 42.9% | 32.1% | 35.6% | 37.5% | 35.8% | 73.5% |
+| Offered p, chose P  | 4.9% | 4.9% | 4.9% | 4.9% | 4.9% | 9.8% |
+| **Unemployed**  | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** | **6.3%** |
+| Offered e, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered p, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
+| Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 12.6% |
+
+
+---
+
+
+### 30% of people have π=1, 70% π=0 
+
+Now add the 600 dollar bonus without changing tax rate:
+
+| π | θp | θu | ĥP | ĥE | bonus | $\tau$ | deficit | mean $U$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| mixed | 0.667 | 0.5 | 15 | 45 | 600 | 13.69% | 248.08 | -0.3548 |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **44.4%** | **44.4%** | **44.4%** | **44.4%** | **44.4%** | **62.1%** |
+| **Partly employed**  | **2.5%** | **2.5%** | **2.5%** | **14.6%** | **49.3%** | **10.5%** |
+| Offered e, chose P  | 0.0% | 0.0% | 0.0% | 11.4% | 44.4% | 22.3% |
+| Offered p, chose P  | 2.5% | 2.5% | 2.5% | 3.2% | 4.9% | 6.2% |
+| **Unemployed**  | **53.2%** | **53.2%** | **53.2%** | **41.0%** | **6.3%** | **27.3%** |
+| Offered e, chose U  | 44.4% | 44.4% | 44.4% | 33.0% | 0.0% | 66.5% |
+| Offered p, chose U  | 2.5% | 2.5% | 2.5% | 1.7% | 0.0% | 3.6% |
+| Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 12.6% |
+
+
+---
+
+
+### 30% of people have π=1, 70% π=0 
+
+Now adjust the taxes to remove the deficit when the bonus is in place:
+
+| π | θp | θu | ĥP | ĥE | bonus | $\tau$ | deficit | mean $U$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| mixed | 0.667 | 0.5 | 15 | 45 | 600 | 35.11% | 0.0 | -0.5985 |
+
+Employment rate by income quintile:
+
+| Quintile | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | all |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
+| **Fully employed**  | **44.4%** | **44.4%** | **44.4%** | **44.4%** | **44.4%** | **62.1%** |
+| **Partly employed**  | **2.5%** | **2.5%** | **2.5%** | **18.5%** | **49.3%** | **11.0%** |
+| Offered e, chose P  | 0.0% | 0.0% | 0.0% | 15.1% | 44.4% | 23.8% |
+| Offered p, chose P  | 2.5% | 2.5% | 2.5% | 3.4% | 4.9% | 6.3% |
+| **Unemployed**  | **53.2%** | **53.2%** | **53.2%** | **37.1%** | **6.3%** | **26.9%** |
+| Offered e, chose U  | 44.4% | 44.4% | 44.4% | 29.3% | 0.0% | 65.0% |
+| Offered p, chose U  | 2.5% | 2.5% | 2.5% | 1.5% | 0.0% | 3.6% |
+| Offered u, chose U  | 6.3% | 6.3% | 6.3% | 6.3% | 6.3% | 12.6% |
+
 
 
 
