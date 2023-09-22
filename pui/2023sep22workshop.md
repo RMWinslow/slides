@@ -612,7 +612,7 @@ Basic Version with no bonus:
 
 Employment rate by income quintile:
 
-| Quintile | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | all |
+| Quintile | 1 | 2 | 3 | 4 | 5 |  all |
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
 | **Fully employed**  | **45.9%** | **56.7%** | **53.2%** | **51.3%** | **53.0%** | **66.7%** |
@@ -638,7 +638,7 @@ Now add the 600 dollar bonus without changing tax rate:
 
 Employment rate by income quintile:
 
-| Quintile | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | all |
+| Quintile | 1 | 2 | 3 | 4 | 5 |  all |
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
 | **Fully employed**  | **44.4%** | **44.4%** | **44.4%** | **44.4%** | **44.4%** | **62.1%** |
@@ -664,7 +664,7 @@ Now adjust the taxes to remove the deficit when the bonus is in place:
 
 Employment rate by income quintile:
 
-| Quintile | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | all |
+| Quintile | 1 | 2 | 3 | 4 | 5 |  all |
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Weekly Income  | 372 | 592 | 886 | 1280 | 2323 |  |
 | **Fully employed**  | **44.4%** | **44.4%** | **44.4%** | **44.4%** | **44.4%** | **62.1%** |
