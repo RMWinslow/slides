@@ -99,26 +99,22 @@ and the earnings refers to the current week's labor income before taxes and tran
 layout: true
 class: header
 
-<h2 style="background-color: #dfd;">Partial Unemployment Insurance in Canada</h2>
+<h2 style="background-color: #ded;">Partial Unemployment Insurance in Canada</h2>
 
 
 ---
 
-Test Slide
+<img src="img/20230922/cansa.png" style="max-width:100%;">
 
-I want to put details about canadian EI in the notes here.
 
 ???
 
-- Bullet point notes about Canadian program responses here.
-- Yada yada on such and such date.
-- And the slide will also have the graph of canadian EI, full and partial.
+- Canada Emergency Response Benefit: 2000 CAD per month. For people not covered by EI. Late March to October 2020.
+- Minimum Guaranteed EI benefits. Sept 2020 to (Sept/Nov 2021). Found conflicting sources on the end date there.
 
-
-
-![BBC US Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/B6A3/production/_115055764_optimised-us_cases_deaths24oct-nc.png.webp)  
-![BBC CAN Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/25B3/production/_114915690_canada_cases_deaths-nc.png.webp)
-
+[BBC US Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/B6A3/production/_115055764_optimised-us_cases_deaths24oct-nc.png.webp)  
+[BBC CAN Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/25B3/production/_114915690_canada_cases_deaths-nc.png.webp)  
+[Canada EI, NSA](img/20230922/cansa.png)
 
 
 
