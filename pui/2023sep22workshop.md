@@ -18,7 +18,7 @@ Did supplemental Unemployment Compensation discourage full-time work?
 - During the Pandemic, large supplemental payments were given to anyone collecting even a dollar of Unemployment Insurance.
 - These payments were made to the fully unemployed and to those with reduced hours.
 - (Ganong et al 2022) found these programs only slightly reduced the job finding rate.
-- But what about the effect on the intrinsic margin.
+- But what about the effect on the intrinsic margin?
 
 
 
@@ -592,6 +592,14 @@ Why?
 - Benefits drawn iid each period.
 
 ---
+
+
+What if:
+- each person knows whether their employment status is enforceable (that π=0 or 1)
+- 30% know that is is uneforceable (π=0), 70% that it will be perfectly enforced (π=1)
+
+Answer: A completely different kind of broken nonsense result.
+
 
 
 
