@@ -10,39 +10,17 @@ class:middle
 
 Robert Winslow
 
-What is the effect of partial unemployment insurance on labor decisions?
+Did supplemental Unemployment Compensation discourage full-time work?
 
 
 ---
 
-QUESTION
+- During the Pandemic, large supplemental payments were given to anyone collecting even a dollar of Unemployment Insurance.
+- These payments were made to the fully unemployed and to those with reduced hours.
+- (Ganong et al 2022) found these programs only slightly reduced the job finding rate.
+- But what about the effect on the intrinsic margin.
 
 
-
----
-
-<!--Maybe don't cite that paper about job search rates for now.-->
-
-
-
-
----
-
-
-Test Slide
-
-I want to put details about canadian EI in the notes here.
-
-???
-
-- Bullet point notes about Canadian program responses here.
-- Yada yada on such and such date.
-- And the slide will also have the graph of canadian EI, full and partial.
-
-
-
-![BBC US Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/B6A3/production/_115055764_optimised-us_cases_deaths24oct-nc.png.webp)  
-![BBC CAN Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/25B3/production/_114915690_canada_cases_deaths-nc.png.webp)
 
 
 ---
@@ -70,7 +48,9 @@ class: header
   - Your WBA is the amount you collect when totally unemployed.
   - As earnings increase, benefits decrease
   - Details vary by state.
-- During the pandemic, the Federal Pandemic Unemployment Compensation supplement (600 then later 300 USD) was paid out in full to anyone collecting even a single dollar of state UI.
+- During the pandemic, the Federal Pandemic Unemployment Compensation supplement was paid out in full to anyone collecting even a single dollar of state UI.
+  - 600 dollars per week April to July, 2020
+  - 300 dollars per week January to September, 2021
 
 ---
 
@@ -98,7 +78,48 @@ and the earnings refers to the current week's labor income before taxes and tran
 
 <img src="img/20230505/saMNwide.png" style="max-width:100%;">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+layout: true
+class: header
+
+<h2 style="background-color: #dfd;">Partial Unemployment Insurance in Canada</h2>
+
+
+---
+
+Test Slide
+
+I want to put details about canadian EI in the notes here.
+
+???
+
+- Bullet point notes about Canadian program responses here.
+- Yada yada on such and such date.
+- And the slide will also have the graph of canadian EI, full and partial.
+
+
+
+![BBC US Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/B6A3/production/_115055764_optimised-us_cases_deaths24oct-nc.png.webp)  
+![BBC CAN Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/25B3/production/_114915690_canada_cases_deaths-nc.png.webp)
+
+
 
 
 
@@ -427,10 +448,10 @@ Which has stationary distribution $[0.89, 0.05, 0.06]$.
 
 ---
 
-### Calibrating working time
+### working time
 
 - $\hE$ is set to $0.45$, representing a full work week of 45 hours out of possible 100.
-- And time spent for part-time work is set to $\hP=0.12$.
+- And time spent for part-time work is set to $\hP=0.15$.
 
 <!--- $\hE=0.45$ (time Spent for full time work.)-->
 
