@@ -13,6 +13,18 @@ Robert Winslow
 What is the effect of partial unemployment insurance on labor decisions?
 
 
+---
+
+QUESTION
+
+
+
+---
+
+<!--Maybe don't cite that paper about job search rates for now.-->
+
+
+
 
 ---
 
@@ -29,9 +41,8 @@ I want to put details about canadian EI in the notes here.
 
 
 
-
-
-
+![BBC US Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/B6A3/production/_115055764_optimised-us_cases_deaths24oct-nc.png.webp)  
+![BBC CAN Covid Chart](https://ichef.bbci.co.uk/news/976/cpsprodpb/25B3/production/_114915690_canada_cases_deaths-nc.png.webp)
 
 
 ---
@@ -79,7 +90,7 @@ $$
 where WBA is weekly benefit amount (person-specific, fixed for entire duration of benefits spell)
 and the earnings refers to the current week's labor income before taxes and transfers.
 
-*Figure on right: earnings and benefits for a hypothetical Minnesota worker with a WBA of 400 USD*
+*Figure on right: earnings and benefits for a hypothetical Minnesota worker with a WBA of 477 USD*
 
 ---
 
@@ -154,8 +165,10 @@ $$
 
 The consumer's optimand is straightforward:
 
-$$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = 
-\mathbb{E} \sum_t \beta^t \Big(\frac{c_t^{1-\gamma_c}}{1-\gamma_c} + \psi \cdot \frac{l_t^{1-\gamma_l}}{1-\gamma_l}\Big)$$
+<!--$$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = \mathbb{E} \sum_t \beta^t \Big(\frac{c_t^{1-\gamma_c}}{1-\gamma_c} + \psi \cdot \frac{l_t^{1-\gamma_l}}{1-\gamma_l}\Big)$$-->
+
+$$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = \mathbb{E} \sum_t \beta^t \frac{(c_t^{1-\sigma}l_t^\sigma)^{1-\rho}-1}{1-\rho}$$
+
 
 Two decisions the consumer faces:
 
@@ -229,12 +242,14 @@ $$
 y_d(\eta,\mu) =
 \begin{cases}
    (1-\tau)y                &\text{if } (\eta,\mu)=(\etaE,0) \\
-   (1-\tau)yθ_p             &\text{if } (\eta,\mu)=(\etaP,1) \\
-   (1-\tau)yθ_u             &\text{if } (\eta,\mu)=(\etaU,1) \\
    (1-\tau)y\frac{\hP}{\hE} &\text{if } (\eta,\mu)=(\etaP,0) \\
    0                        &\text{if } (\eta,\mu)=(\etaU,0) \\
+   (1-\tau)yθ_p             &\text{if } (\eta,\mu)=(\etaP,1) \\
+   (1-\tau)yθ_u             &\text{if } (\eta,\mu)=(\etaU,1) \\
 \end{cases}
 $$
+
+(Note that $yθ_p = y\frac{\hP}{\hE} + benefits$.)
 
 and
 
@@ -427,14 +442,13 @@ Which has stationary distribution $[0.89, 0.05, 0.06]$.
 These use the same values as (Hansen, Imrohoroğlu, 1992) and :
 
 - $\beta=0.995$ (time discount factor). Same as (Şahin et al, 2002)
-- $\psi=0.35$ 
-- $\gamma_c=0.5$ 
-- $\gamma_l=2$ 
+- $\sigma=0.5$ 
+- $\rho=2.5$ 
 
 
 
-$$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = 
-\mathbb{E} \sum_t \beta^t \Big(\frac{c_t^{1-\gamma_c}}{1-\gamma_c} + \psi \cdot \frac{l_t^{1-\gamma_l}}{1-\gamma_l}\Big)$$
+$$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = \mathbb{E} \sum_t \beta^t \frac{(c_t^{1-\sigma}l_t^\sigma)^{1-\rho}-1}{1-\rho}$$
+
 
 
 
