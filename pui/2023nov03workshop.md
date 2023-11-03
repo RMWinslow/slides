@@ -470,7 +470,7 @@ $$\mathbb{E} \sum_j \beta^t U(c_t,l_t) = \mathbb{E} \sum_t \beta^t \frac{(c_t^{1
 layout: true
 class: header
 
-<h2 style="background-color: #fdd;">Policy Experiments in the Model"</h2>
+<h2 style="background-color: #fdd;">Policy Experiments in the Model</h2>
 
 ### Comparison of Static Equilibria
 
@@ -621,7 +621,7 @@ Utility by Quintile
 layout: true
 class: header
 
-<h2 style="background-color: #fdd;">Policy Experiments in the Model"</h2>
+<h2 style="background-color: #fdd;">Policy Experiments in the Model</h2>
 
 ### Simulation of Pandemic and FPUC
 
@@ -644,7 +644,7 @@ $$
 
 Results (No FPUC here)
 
-<img src="img/2023nov05/FPUCSimulation (no bonus).png" style="max-width:100%;">
+<img src="img/20231103/fpucsimnull.png" style="max-width:100%;">
 
 
 
@@ -658,7 +658,7 @@ Results (No FPUC here)
 
 Results (With FPUC Simulation)
 
-<img src="img/2023nov05/FPUCSimulation (no fwd looking).png" style="max-width:100%;">
+<img src="img/20231103/fpucsim.png" style="max-width:100%;">
 
 
 ---
