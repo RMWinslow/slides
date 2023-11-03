@@ -529,8 +529,6 @@ Now adjust the taxes to remove the deficit when the bonus is in place:
 | &ensp;Offered E, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | &ensp;Offered P, chose U  | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | &ensp;Offered U, chose U  | 6.5% | 6.5% | 6.5% | 6.5% | 6.5% | 6.5% |
-| Utility  | -1.153 | -0.7817 | -0.4378 | -0.1849 | 0.1127 | -0.4889 |
-| assetss  | 2.6962 | 0.9716 | 0.6947 | 0.417 | 0.0611 | 0.9681 |
 
 
 ---
