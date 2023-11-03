@@ -94,32 +94,6 @@ and the earnings refers to the current week's labor income before taxes and tran
 
 
 
----
-
-layout: true
-class: header
-
-<h2 style="background-color: #ded;">Partial Unemployment Insurance in Canada</h2>
-
-
----
-
-<img src="img/20230922/cansa.png" style="max-width:100%;">
-
-
-???
-
-- Canada Emergency Response Benefit: 2000 CAD per month. For people not covered by EI. Late March to October 2020.
-- Minimum Guaranteed EI benefits. Sept 2020 to (Sept/Nov 2021). Found conflicting sources on the end date there.
-
-<a href="https://ichef.bbci.co.uk/news/976/cpsprodpb/B6A3/production/_115055764_optimised-us_cases_deaths24oct-nc.png.webp">BBC US Covid Chart</a>    
-<a href="https://ichef.bbci.co.uk/news/976/cpsprodpb/25B3/production/_114915690_canada_cases_deaths-nc.png.webp">BBC Can Covid Chart</a>    
-[Canada EI, NSA](img/20230922/cansa.png)
-
-
-
-
-
 
 
 
@@ -154,11 +128,11 @@ class: header
 
 ---
 
-- Simple model of job search and unemployment insurance.
+- Model of unemployment insurance with partial employment and moral hazard.
 - Based on:
     - *The role of unemployment insurance in an economy with liquidity constraints and moral hazard* (Hansen, Imrohoroğlu, 1992)
     - *Unemployment insurance and the role of self-insurance.* (Abdulkadiroğlu, Kuruşçu, Şahin, 2002).
-- My contribution is the addition of *partial* unemployment insurance.
+- My main contribution is the addition of *partial* unemployment insurance.
 
 
 <!--The following are some global definitions for more concise notation.-->
