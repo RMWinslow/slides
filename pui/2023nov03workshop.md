@@ -598,7 +598,6 @@ Utility by Quintile
 
 
 
-----
 
 
 
@@ -617,6 +616,7 @@ Utility by Quintile
 
 
 
+---
 
 layout: true
 class: header
@@ -644,7 +644,7 @@ $$
 
 Results (No FPUC here)
 
-<img src="img/2023nov05/FPUC_Simulation (no bonus).png" style="max-width:100%;">
+<img src="img/2023nov05/FPUCSimulation (no bonus).png" style="max-width:100%;">
 
 
 
@@ -658,7 +658,7 @@ Results (No FPUC here)
 
 Results (With FPUC Simulation)
 
-<img src="img/2023nov05/FPUC_Simulation (no fwd looking).png" style="max-width:100%;">
+<img src="img/2023nov05/FPUCSimulation (no fwd looking).png" style="max-width:100%;">
 
 
 ---
