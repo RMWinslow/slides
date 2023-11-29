@@ -385,6 +385,78 @@ beamerdefaultoverlayspecification{<+->}
 
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Structuring a talk is a difficult task and the following structure may not
+ be suitable.
+ Here are some rules that apply for this solution: 
+\end_layout
+
+\begin_layout Itemize
+Exactly two or three sections (other than the summary).
+ 
+\end_layout
+
+\begin_layout Itemize
+At *most* three subsections per section.
+ 
+\end_layout
+
+\begin_layout Itemize
+Talk about 30s to 2min per frame.
+ So there should be between about 15 and 30 frames, all told.
+\end_layout
+
+\begin_layout Itemize
+A conference audience is likely to know very little of what you are going
+ to talk about.
+ So *simplify*! 
+\end_layout
+
+\begin_layout Itemize
+In a 20min talk, getting the main ideas across is hard enough.
+ Leave out details, even if it means being less precise than you think necessary.
+ 
+\end_layout
+
+\begin_layout Itemize
+If you omit details that are vital to the proof/implementation, just say
+ so once.
+ Everybody will be happy with that.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -487,78 +559,6 @@ $$
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Outline
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Structuring a talk is a difficult task and the following structure may not
- be suitable.
- Here are some rules that apply for this solution: 
-\end_layout
-
-\begin_layout Itemize
-Exactly two or three sections (other than the summary).
- 
-\end_layout
-
-\begin_layout Itemize
-At *most* three subsections per section.
- 
-\end_layout
-
-\begin_layout Itemize
-Talk about 30s to 2min per frame.
- So there should be between about 15 and 30 frames, all told.
-\end_layout
-
-\begin_layout Itemize
-A conference audience is likely to know very little of what you are going
- to talk about.
- So *simplify*! 
-\end_layout
-
-\begin_layout Itemize
-In a 20min talk, getting the main ideas across is hard enough.
- Leave out details, even if it means being less precise than you think necessary.
- 
-\end_layout
-
-\begin_layout Itemize
-If you omit details that are vital to the proof/implementation, just say
- so once.
- Everybody will be happy with that.
- 
 \end_layout
 
 \end_inset
