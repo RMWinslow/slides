@@ -5,7 +5,7 @@ nav_exclude: false
 permalink: pui
 ---
 
-
+[Beamer slides](jmp-beamer.pdf)
 
 
 
