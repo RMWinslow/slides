@@ -214,6 +214,14 @@ status open
 -Make your slides look standard and way more polished 
 \end_layout
 
+\begin_layout Plain Layout
+———
+\end_layout
+
+\begin_layout Plain Layout
+Use same letters for s and eta?
+\end_layout
+
 \end_inset
 
 
@@ -244,6 +252,11 @@ optional, use only with long paper titles
 
 \end_layout
 
+\begin_layout Subtitle
+Did supplemental unemployment compensation discourage a return to full-time
+ work?
+\end_layout
+
 \begin_layout Author
 Robert Winslow
 \end_layout
@@ -254,39 +267,11 @@ Department of Economics
 \end_inset
 
 University of Minnesota, Twin Cities
-\begin_inset Note Note
-status open
-
-\begin_layout Itemize
-Use the 
-\begin_inset Quotes eld
-\end_inset
-
-Institute mark
-\begin_inset Quotes erd
-\end_inset
-
- inset (
-\family sans
-Insert\SpecialChar menuseparator
-Custom Insets\SpecialChar menuseparator
-InstituteMark
-\family default
-) only if there are several affiliations.
-\end_layout
-
-\begin_layout Itemize
-Keep it simple, no one is interested in your street address.
-\end_layout
-
-\end_inset
-
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-Universities of Minnesota
+University of Minnesota
 \begin_inset Note Note
 status open
 
@@ -319,7 +304,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 If you have a file called "institution-logo-filename.xxx", where xxx is a
@@ -449,6 +434,115 @@ beamerdefaultoverlayspecification{<+->}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+gdef
+\backslash
+etaE{
+\backslash
+text{E}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+gdef
+\backslash
+etaP{
+\backslash
+text{P}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+gdef
+\backslash
+etaU{
+\backslash
+text{U}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+gdef
+\backslash
+sE{e}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+gdef
+\backslash
+sP{p}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+gdef
+\backslash
+sU{u}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+gdef
+\backslash
+hP{
+\backslash
+hat{h}_p}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+gdef
+\backslash
+hE{
+\backslash
+hat{h}_e}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -474,7 +568,7 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Structuring a talk is a difficult task and the following structure may not
@@ -526,27 +620,12 @@ If you omit details that are vital to the proof/implementation, just say
 Motivation
 \end_layout
 
-\begin_layout Subsection
-The Basic Problem That We Studied
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Basic Problem
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Frame
 \begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-Make Titles Informative.
- Use Uppercase Letters.
+
 \end_layout
 
 \end_inset
@@ -573,7 +652,8 @@ A title should summarize the slide in an understandable fashion for anyone
 \end_layout
 
 \begin_layout Itemize
-Use Itemize a lot.
+During the Pandemic, large supplemental payments were given to anyone collecting
+ even a dollar of Unemployment Insurance.
 \end_layout
 
 \begin_deeper
@@ -583,7 +663,8 @@ Use Itemize a lot.
 
 \end_deeper
 \begin_layout Itemize
-Use very short sentences or short phrases.
+These payments were made to the fully unemployed and to those with reduced
+ hours.
 \end_layout
 
 \begin_deeper
@@ -593,7 +674,18 @@ Use very short sentences or short phrases.
 
 \end_deeper
 \begin_layout Itemize
-These overlays are created using the Pause style.
+(Ganong et al 2022) found these programs only slightly reduced the job finding
+ rate.
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+But what about the effect on the intensive margin?
 \end_layout
 
 \end_deeper
@@ -604,212 +696,8 @@ These overlays are created using the Pause style.
 
 \end_layout
 
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Make Titles Informative.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-1-
-\end_layout
-
-\end_inset
-
-You can also use overlay specifications to create overlays.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-3-
-\end_layout
-
-\end_inset
-
-This allows you to present things in any order.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Argument item:2
-status open
-
-\begin_layout Plain Layout
-
-2-
-\end_layout
-
-\end_inset
-
-This is shown second.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Make Titles Informative.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-1-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Untitled block.
-\end_layout
-
-\begin_layout Itemize
-Shown on all slides.
-\end_layout
-
-\end_deeper
-\begin_layout ExampleBlock
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-2-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Some Example Block Title
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $e^{i\pi}=-1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $e^{i\pi/2}=i$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Subsection
-Previous Work
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Make Titles Informative.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Example
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-1-
-\end_layout
-
-\end_inset
-
-On first slide.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-2-
-\end_layout
-
-\end_inset
-
-On second slide.
-\end_layout
-
-\end_deeper
 \begin_layout Section
-Our Results/Contribution
-\end_layout
-
-\begin_layout Subsection
-Main Results
+Partial Unemployment Insurance in the US
 \end_layout
 
 \begin_layout Frame
@@ -817,8 +705,38 @@ Main Results
 status open
 
 \begin_layout Plain Layout
-Make Titles Informative.
- 
+Regular State UI Recipients Over Time, All US
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename img/jmp-beamer/partialUI graphWeeks of State UI Benefits - USA, All States Aggregate.png
+	lyxscale 20
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Partial Unemployment Insurance
 \end_layout
 
 \end_inset
@@ -827,18 +745,56 @@ Make Titles Informative.
 \end_layout
 
 \begin_deeper
-\begin_layout Theorem
-On first slide.
+\begin_layout Itemize
+If a person is eligible for UI, a weekly benefit amount (WBA) is determined
+ based on employment history.
 \end_layout
 
-\begin_layout Pause
-
+\begin_deeper
+\begin_layout Itemize
+Except for high earners, it's about half of their typical income.
 \end_layout
 
-\begin_layout Corollary
-On second slide.
+\begin_layout Itemize
+Constant throughout entire UI spell.
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+Benefits depend both on the current week's gross earnings, and on the individual
+'s WBA.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Your WBA is the amount you collect when totally unemployed.
+\end_layout
+
+\begin_layout Itemize
+As earnings increase, benefits decrease
+\end_layout
+
+\begin_layout Itemize
+Details vary by state.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+During the pandemic, the Federal Pandemic Unemployment Compensation supplement
+ was paid out in full to anyone collecting even a single dollar of state
+ UI.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+600 dollars per week April to July, 2020
+\end_layout
+
+\begin_layout Itemize
+300 dollars per week January to September, 2021
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -852,12 +808,34 @@ On second slide.
 status open
 
 \begin_layout Plain Layout
-Make Titles Informative.
- 
+Example: State UI Benefits in Minnesota
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Frame
+In Minnesota, the rule is that the benefits for a given week are determined
+ by:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\[
+benefits=\begin{cases}
+WBA-\frac{earnings}{2} & \text{if }earnings<WBA\\
+0 & \text{if }earnings\geq WBA
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
@@ -868,53 +846,69 @@ Make Titles Informative.
 
 \begin_deeper
 \begin_layout Column
-5cm
-\end_layout
-
-\begin_layout Theorem
-\begin_inset Argument 1
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-1-
+.7
+\backslash
+textwidth
 \end_layout
 
 \end_inset
 
-In left column.
+
+\end_layout
+
+\begin_layout Standard
+where WBA is weekly benefit amount (person-specific, fixed for entire duration
+ of benefits spell).
+ Frame and the earnings refers to the current week's labor income before
+ taxes and transfers.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Figure on right: earnings and benefits for a hypothetical Minnesota worker
+ with a WBA of 477 USD
 \end_layout
 
 \begin_layout Column
-5cm
-\end_layout
-
-\begin_layout Corollary
-\begin_inset Argument 1
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-2-
+.3
+\backslash
+textwidth
 \end_layout
 
 \end_inset
 
-In right column.
-\begin_inset Newline newline
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename img/jmp-beamer/MN.png
+	lyxscale 20
+	width 100col%
+
 \end_inset
 
-New line
+
 \end_layout
 
 \end_deeper
 \end_deeper
-\begin_layout Subsection
-Basic Ideas for Proofs/Implementations
-\end_layout
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
 
-\begin_layout Section*
-Summary
+
 \end_layout
 
 \begin_layout Frame
@@ -922,7 +916,35 @@ Summary
 status open
 
 \begin_layout Plain Layout
-Summary
+Regular State UI Recipients Over Time, MN
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename img/jmp-beamer/saMNwide.png
+	lyxscale 20
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Model
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -932,63 +954,1368 @@ Summary
 
 \begin_deeper
 \begin_layout Itemize
-The
-\color none
- 
-\color inherit
-
-\begin_inset Flex Alert
-status open
-
-\begin_layout Plain Layout
-first main message
-\end_layout
-
-\end_inset
-
-
-\color none
- of your talk in one or two lines.
+Model of unemployment insurance with partial employment and moral hazard.
 \end_layout
 
 \begin_layout Itemize
-The
-\color none
- 
-\color inherit
-
-\begin_inset Flex Alert
-status open
-
-\begin_layout Plain Layout
-second main message
+Based on:
 \end_layout
 
-\end_inset
+\begin_deeper
+\begin_layout Itemize
 
-
-\color none
- of your talk in one or two lines.
+\emph on
+The role of unemployment insurance in an economy with liquidity constraints
+ and moral hazard
+\emph default
+ (Hansen, Imrohoroğlu, 1992)
 \end_layout
 
 \begin_layout Itemize
-Perhaps a
-\color none
- 
-\color inherit
 
-\begin_inset Flex Alert
+\emph on
+Unemployment insurance and the role of self-insurance
+\emph default
+.
+ (Abdulkadiroğlu, Kuruşçu, Şahin, 2002).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+My main contribution is the addition of partial unemployment insurance.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Model Setup
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-third message
+Consumer's Choices
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The consumer's optimand is straightforward:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{E}\sum_{j}\beta^{t}U(c_{t},l_{t})=\mathbb{E}\sum_{t}\beta^{t}\frac{(c_{t}^{1-\sigma}l_{t}^{\sigma})^{1-\rho}-1}{1-\rho}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Two decisions the consumer faces:
+\end_layout
+
+\begin_layout Enumerate
+How to split income between consumption and (non-interest-bearing) savings
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+budget is 
+\begin_inset Formula $m'+c=m+y_{d}$
+\end_inset
+
+, where $m$ is assets, and $y_d$ is disposable income.
+\end_layout
+
+\begin_layout Itemize
+assets are subject to the constraint 
+\begin_inset Formula $m'\geq0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Whether and how much to work when give a job opportunity.
+ (See next slide.)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Job Search
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Employment opportunity 
+\begin_inset Formula $s\in\left\{ e,p,u\right\} $
+\end_inset
+
+ represents whether the person has a job opportunity (
+\begin_inset Formula $s=e$
+\end_inset
+
+), a partial job opportunity (
+\begin_inset Formula $s=p$
+\end_inset
+
+) or no job opportunity (
+\begin_inset Formula $s=u$
+\end_inset
+
+).
+ (Employment, Partial employment, full Unemployment)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $s$
+\end_inset
+
+ evolves according to a 3x3 transition matrix 
+\begin_inset Formula $\chi$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\chi=\begin{bmatrix}\chi(\sE,\sE) & \chi(\sE,\sP) & \chi(\sE,\sU)\\
+\chi(\sP,\sE) & \chi(\sP,\sP) & \chi(\sP,\sU)\\
+\chi(\sU,\sE) & \chi(\sU,\sP) & \chi(\sU,\sU)
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+employment status 
+\begin_inset Formula $\eta\in\left\{ \etaE,\etaP,\etaU\right\} $
+\end_inset
+
+ represents the level of work the consumer actually chooses to engage in.
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $s=\sE$
+\end_inset
+
+, consumer can choose from 
+\begin_inset Formula $\eta\in\left\{ \etaE,\etaP,\etaU\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $s=\sP$
+\end_inset
+
+, consumer can choose from 
+\begin_inset Formula $\eta\in\left\{ \etaE,\etaP,\etaU\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $s=\sU$
+\end_inset
+
+, consumer can choose from 
+\begin_inset Formula $\eta=\etaU$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Unemployment Benefits
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mu\in\left\{ 0,1\right\} $
+\end_inset
+
+ is a binary variable indicating whether the person collects unemployment
+ benefits.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If 
+\begin_inset Formula $s=\sE$
+\end_inset
+
+, then 
+\begin_inset Formula $\mu=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $(s,\eta)=(\sP,\etaP)$
+\end_inset
+
+ or 
+\begin_inset Formula $(\sU,\etaU)$
+\end_inset
+
+, then 
+\begin_inset Formula $\mu=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $\eta=\etaU$
+\end_inset
+
+, but 
+\begin_inset Formula $s\neq\sU$
+\end_inset
+
+, then 
+\begin_inset Formula $\mu=1$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\pi_{u}$
+\end_inset
+
+, 
+\begin_inset Formula $0$
+\end_inset
+
+ otherwise
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $\eta=\etaP$
+\end_inset
+
+, but 
+\begin_inset Formula $s\neq\sP$
+\end_inset
+
+, then 
+\begin_inset Formula $\mu=1$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\pi_{p}$
+\end_inset
+
+, 
+\begin_inset Formula $ $
+\end_inset
+
+ otherwise
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+If Consumer collects benefits, the benefits adjust their disposable income
+ to some fraction of employed disposable income, called the "replacement
+ rate".
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\theta_{p}$
+\end_inset
+
+ is replacement rate for partially employed (when 
+\begin_inset Formula $(\eta,\mu)=(\etaP,1)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\theta_{u}$
+\end_inset
+
+ is replacement rate for unemployed (when 
+\begin_inset Formula $(\eta,\mu)=(\etaU,1)$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Utility Flows, Income, and Leisure
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Too long
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Given 
+\begin_inset Formula $(m,m',\eta,\mu)$
+\end_inset
+
+, utility flow is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U\Big(m-m'+y_{d}(\eta,\mu),\;l(\eta)\Big)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{d}(\eta,\mu)=\begin{cases}
+(1-\tau)y & \text{if }(\eta,\mu)=(\etaE,0)\\
+(1-\tau)y\frac{\hP}{\hE} & \text{if }(\eta,\mu)=(\etaP,0)\\
+0 & \text{if }(\eta,\mu)=(\etaU,0)\\
+(1-\tau)yθ_{p} & \text{if }(\eta,\mu)=(\etaP,1)\\
+(1-\tau)yθ_{u} & \text{if }(\eta,\mu)=(\etaU,1)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+l(\eta)=\begin{cases}
+1-\hE & \text{if }\eta=\etaE\\
+1-\hP & \text{if }\eta=\etaP\\
+1 & \text{if }\eta=\etaU
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Timeline Within Each Period
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Consumer receives potential job offer 
+\begin_inset Formula $s\in\left\{ \sE,\sP,\sU\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Consumer chooses employment status 
+\begin_inset Formula $\eta\in\left\{ \etaE,\etaP,\etaU\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Draw 
+\begin_inset Formula $\mu\in\left\{ 0,1\right\} $
+\end_inset
+
+: does the Consumer get unemployment benefits? 
+\end_layout
+
+\begin_layout Itemize
+Consumer chooses 
+\begin_inset Formula $m'$
+\end_inset
+
+ after seeing 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Value Functions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Too wide
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(e,m)=\max_{\eta\in\left\{ \etaE,\etaP,\etaU\right\} }\Big\lbrace\mathbb{E}\left[\max_{m'}\left\{ U(m-m'+y_{d}(\eta,\mu),l(\eta))+cont(e,m')\right\} \right]\Big\rbrace
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(p,m)=\max_{\eta\in\left\{ \etaP,\etaU\right\} }\Big\lbrace\mathbb{E}\left[\max_{m'}\left\{ U(m-m'+y_{d}(\eta,\mu),l(\eta))+cont(p,m')\right\} \right]\Big\rbrace
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V(u,m)=\max_{m'}\left\{ U(m-m'+y_{d}(\eta,\mu),l(\eta))+cont(u,m')\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\begin_inset Formula 
+\[
+cont(s,m')\equiv\beta\sum_{s'}\chi(s,s')V(m',s')
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Market Clearing and Equilibrium
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+needs a second pass
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+State of a person is 
+\begin_inset Formula $x=(m,s,\eta,\mu)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Stationary equilibrium consists of 
+\end_layout
+
+\begin_layout Itemize
+decision rules 
+\begin_inset Formula $\eta(m,s)$
+\end_inset
+
+, 
+\begin_inset Formula $c(x)$
+\end_inset
+
+, 
+\begin_inset Formula $m'(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+time-invariant measure 
+\begin_inset Formula $\lambda(x)$
+\end_inset
+
+ of people in state 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+tax rate 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Such that
+\end_layout
+
+\begin_layout Itemize
+Given 
+\begin_inset Formula $\tau$
+\end_inset
+
+, the decision rules are optimal for the consumers.
+\end_layout
+
+\begin_layout Itemize
+Goods market clears: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{x}\lambda(x)c(x)=\sum_{x}\lambda(x)\cdot\begin{cases}
+y & \text{if }\eta=\etaE\\
+\frac{\hP}{\hE}y & \text{if }\eta=\etaP\\
+0 & \text{if }\eta=\etaU
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\lambda(x')=\lambda(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Government budget balanced
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Adding heterogeneity to the model.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In 
+\emph on
+US unemployment insurance replacement rates during the pandemic
+\emph default
+ (Ganong, Noel, and Vavra, 2020), the authors use CPS data to estimate the
+ income distribution of workers benefitting from the Pandemic Unemployment
+ Compensation.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Quintile
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
 \color none
-, but not more than that.
+Pre-pandemic Weekly Income
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+372
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+592
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+886
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1280
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2323
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+From Table 1 from (Ganong, Noel, and Vavra, 2020)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Adding this to model: 
+\end_layout
+
+\begin_layout Itemize
+5 'types' of people corresponding to these income quintiles.
+ 
+\end_layout
+
+\begin_layout Itemize
+Income scaled so that 
+\begin_inset Formula $886$
+\end_inset
+
+ corresponds to 
+\begin_inset Formula $y=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Calibration
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Calibrating 
+\begin_inset Formula $\chi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Needs a complete REDO.
+ Outdated.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Each period is 1 month.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\chi=\begin{bmatrix}\chi(\sE,\sE) & \chi(\sE,\sP) & \chi(\sE,\sU)\\
+\chi(\sP,\sE) & \chi(\sP,\sP) & \chi(\sP,\sU)\\
+\chi(\sU,\sE) & \chi(\sU,\sP) & \chi(\sU,\sU)
+\end{bmatrix}=\begin{bmatrix}\\
+\\
+\\
+\end{bmatrix}
+\]
+
+\end_inset
+
+Which has stationary distribution 
+\begin_inset Formula $[0.89,0.05,0.06]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Working Time
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\hE$
+\end_inset
+
+ is set to 
+\begin_inset Formula $0.45$
+\end_inset
+
+, representing a full work week of 45 hours out of possible 100.
+ 
+\end_layout
+
+\begin_layout Itemize
+And time spent for part-time work is set to 
+\begin_inset Formula $\hP=0.15$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Other Parameters
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Should be a table
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Other parameters:
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+$
+\backslash
+beta=0.9966$ (time discount factor)
+\end_layout
+
+\begin_layout Standard
+$
+\backslash
+sigma=0.5$ 
+\end_layout
+
+\begin_layout Standard
+$
+\backslash
+rho=2.5$ 
+\end_layout
+
+\begin_layout Standard
+$
+\backslash
+pi=0.2$ 
+\end_layout
+
+\begin_layout Standard
+$
+\backslash
+theta_u=0.5$
+\end_layout
+
+\begin_layout Standard
+$
+\backslash
+theta_p=0.
+\backslash
+bar{6}$
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{E}\sum_{j}\beta^{t}U(c_{t},l_{t})=\mathbb{E}\sum_{t}\beta^{t}\frac{(c_{t}^{1-\sigma}l_{t}^{\sigma})^{1-\rho}-1}{1-\rho}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Policy Experiments in the Model
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Working Time
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+PLACEHOLDER FOR TABLE OF BASELINE ECONOMY
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Simulation of Pandemic and FPUC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Start in pre-pandemic stationary equilibrium.
+ 
+\end_layout
+
+\begin_layout Itemize
+Iterate measure month by month.
+ 24 periods representing 2020 and 2021.
+ 
+\end_layout
+
+\begin_layout Itemize
+Represent the direct effect of the pandemic as one time shock, where transition
+ between months 3 and 4 is:
+\begin_inset Formula 
+\[
+\chi_{shock}=\begin{bmatrix}0.90 & 0.00 & 0.10\\
+0.00 & 0.90 & 0.10\\
+0.00 & 0.00 & 1.00
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Then transition process reverts to normal.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: Insert Results graphs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Simulation of Pandemic and FPUC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Results (No FPUC here)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Simulation of Pandemic and FPUC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Results (No FPUC here)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Simulation of Pandemic and FPUC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In addition, simulate FPUC by updating lump-sum bonus 
+\begin_inset Formula $b$
+\end_inset
+
+ each period.
+ 
+\end_layout
+
+\begin_layout Itemize
+Both the arrival and cessation of elevated benefits are unexpected.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
 \end_layout
 
 \begin_layout Standard
@@ -996,33 +2323,9 @@ third message
 status open
 
 \begin_layout Plain Layout
-An outlook is always optional.
+TODO: Backup Slide with lit review
 \end_layout
 
-\end_inset
-
-
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Outlook
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-What we have not done yet.
-\end_layout
-
-\begin_layout Itemize
-Even more stuff.
-\end_layout
-
-\end_deeper
-\end_deeper
 \begin_layout Section*
 \start_of_appendix
 \begin_inset Note Note
@@ -1065,7 +2368,7 @@ For Further Reading
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1151,7 +2454,6 @@ status open
 \begin_layout Plain Layout
 Followed by interesting articles.
  Keep the list short.
- 
 \end_layout
 
 \end_inset
@@ -1208,5 +2510,10 @@ Journal on This and That
 \end_layout
 
 \end_deeper
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
