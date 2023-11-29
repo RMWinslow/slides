@@ -89,21 +89,129 @@
 status open
 
 \begin_layout Plain Layout
-This file is a solution template for:
+practice a 5 minute version of your job market paper over and over.
+ First take a video as you give your interview and watch it.
+ You'll quickly see a bunch of things that needs to be improved.
+ Then revise your talk, practice and video it again.
+ Keep doing this.
+ Then try your talk on your friends and anyone you can find who would listen.
+ And ask them for feedback and incorporate.
+ Be ready to expand on different parts and details since the actua interview
+ will be close to 30 minutes.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Talk at a conference/colloquium.
+\begin_layout Plain Layout
+For you another crucial thing is to be ready to discuss teaching indetai.
+ So prepare a 3-4 minute talk about each class you say you can teach..
+ what topics you'd cover, what books you'd use etc.
+ What do you like aboyt teaching, etc.
+ This is super important for you.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Finally listen very well to comments your interviewers give you.
+ They are the most crucial part of mock interviews.
+ Write them down right after and send them to me too.
+ And then revise your talk based on those comments.
+ We will talk when i am back in town.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+-put covid in the title.
+ important!
+\end_layout
+
+\begin_layout Plain Layout
+-In the model, you won't have the upwards sloping curves, so don't emphasize
+ this in the graph.
+ Focus on the cliff
+\end_layout
+
+\begin_layout Plain Layout
+-Don't cite the models in the beginning of your model.
+ Just say what your model has.
+ Just a quick summary of the model 
+\end_layout
+
+\begin_layout Plain Layout
+-You should have a backup slide with lit review
+\end_layout
+
+\begin_layout Plain Layout
+-Don't use "m" for assets, use "a" 
+\end_layout
+
+\begin_layout Plain Layout
+-Don't put "cont" in the value functions, do something else 
+\end_layout
+
+\begin_layout Plain Layout
+-calibration slide needs to look less tentative.
+ put the table with parameters.
+ The ones you can't pin down, need to put some sensitivity and show that.
  
 \end_layout
 
-\begin_layout Itemize
-Talk length is about 20min.
+\begin_layout Plain Layout
+-Use risk aversion 2, but do robustness with like 5 etc.
  
 \end_layout
 
-\begin_layout Itemize
-Style is ornate.
+\begin_layout Plain Layout
+-First show the aggregate table, then the distribution.
+ And format the tables better.
+ Savings should be something like wealth to income ratio 
+\end_layout
+
+\begin_layout Plain Layout
+-Should report consumption equivalent variation.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+-Important to know how these numbers react to risk aversion, especially
+ the cheating rate -> effect is unclear, will need the numbers 
+\end_layout
+
+\begin_layout Plain Layout
+-Need to consumption equivalent welfare as the main result.
+ And the aggregate employment
+\end_layout
+
+\begin_layout Plain Layout
+-name it something skill different
+\end_layout
+
+\begin_layout Plain Layout
+-Legend and figure don't match on slide 27
+\end_layout
+
+\begin_layout Plain Layout
+-Less abbreviations, or acronyms.
+ Write in plain english 
+\end_layout
+
+\begin_layout Plain Layout
+-Make your slides look standard and way more polished 
 \end_layout
 
 \end_inset
