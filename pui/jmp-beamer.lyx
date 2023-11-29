@@ -18,6 +18,8 @@
 \usepackage{booktabs}
 \renewcommand\toprule{\hline\hline}
 \renewcommand\bottomrule{\hline\hline}
+
+\usepackage{natbib} % For manual citations.
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -606,12 +608,15 @@ During the Pandemic, large supplemental payments were given to anyone collecting
 \end_layout
 
 \begin_layout Itemize
-These payments were made to the fully unemployed and to those with reduced
- hours.
+These payments were made to the fully unemployed 
+\emph on
+and to those with reduced hours
+\emph default
+.
 \end_layout
 
 \begin_layout Itemize
-(Ganong et al 2022) found these programs only slightly reduced the job finding
+Other papers estimate these programs only slightly reduced the job finding
  rate.
 \end_layout
 
@@ -3146,12 +3151,195 @@ Simulation with bonus UI payments
 
 \end_layout
 
+\begin_layout Section*
+\start_of_appendix
+Appendix
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lit Review
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Similar models without partial employment:
+\begin_inset Newline newline
+\end_inset
+
+(Hansen and Imrohoroğlu, 1992)(Abdulkadiroğlu et al., 2002)
+\end_layout
+
+\begin_layout Itemize
+UI Replacement rates were effectively above 100%:
+\begin_inset Newline newline
+\end_inset
+
+ (Ganong et al., 2020)
+\end_layout
+
+\begin_layout Itemize
+Effects of expanded UI on job finding rate were small: 
+\begin_inset Newline newline
+\end_inset
+
+(Ganong et al., 2022)(Dube, 2021)(Coombs et al., 2022)
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 TODO: Backup Slide with lit review
+\end_layout
+
+\begin_layout Plain Layout
+This version calls the bib, which is too big.
+\end_layout
+
+\begin_layout Plain Layout
+As a hack, I'll just copy the cites.
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lit Review
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Similar models without partial employment:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{hansen1992role}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{sahin2002unemployment}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+UI Replacement rates were effectively above 100%:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{ganong2020us}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Effects of expanded UI on job finding rate were small: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{ganong2022spending}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{dube2021aggregate}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{coombs2022early}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibliographystyle{ecta} 
+\backslash
+bibliography{mybib}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
