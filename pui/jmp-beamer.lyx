@@ -143,90 +143,32 @@ Finally listen very well to comments your interviewers give you.
 status open
 
 \begin_layout Plain Layout
--put covid in the title.
- important!
-\end_layout
-
-\begin_layout Plain Layout
--In the model, you won't have the upwards sloping curves, so don't emphasize
- this in the graph.
- Focus on the cliff
-\end_layout
-
-\begin_layout Plain Layout
--Don't cite the models in the beginning of your model.
- Just say what your model has.
- Just a quick summary of the model 
-\end_layout
-
-\begin_layout Plain Layout
--You should have a backup slide with lit review
-\end_layout
-
-\begin_layout Plain Layout
--Don't use "m" for assets, use "a" 
-\end_layout
-
-\begin_layout Plain Layout
--Don't put "cont" in the value functions, do something else 
+-
+\emph on
+You should have a backup slide with lit review
 \end_layout
 
 \begin_layout Plain Layout
 -calibration slide needs to look less tentative.
  put the table with parameters.
- The ones you can't pin down, need to put some sensitivity and show that.
+ 
+\emph on
+The ones you can't pin down, need to put some sensitivity and show that.
  
 \end_layout
 
 \begin_layout Plain Layout
 -Use risk aversion 2, but do robustness with like 5 etc.
- 
+ (Done in paper, but not shown here.)
 \end_layout
 
 \begin_layout Plain Layout
--First show the aggregate table, then the distribution.
- And format the tables better.
- Savings should be something like wealth to income ratio 
-\end_layout
-
-\begin_layout Plain Layout
--Should report consumption equivalent variation.
- 
+-Savings should be something like wealth to income ratio 
 \end_layout
 
 \begin_layout Plain Layout
 -Important to know how these numbers react to risk aversion, especially
  the cheating rate -> effect is unclear, will need the numbers 
-\end_layout
-
-\begin_layout Plain Layout
--Need to consumption equivalent welfare as the main result.
- And the aggregate employment
-\end_layout
-
-\begin_layout Plain Layout
--name it something skill different
-\end_layout
-
-\begin_layout Plain Layout
--Legend and figure don't match on slide 27
-\end_layout
-
-\begin_layout Plain Layout
--Less abbreviations, or acronyms.
- Write in plain english 
-\end_layout
-
-\begin_layout Plain Layout
--Make your slides look standard and way more polished 
-\end_layout
-
-\begin_layout Plain Layout
-———
-\end_layout
-
-\begin_layout Plain Layout
-Use same letters for s and eta?
 \end_layout
 
 \end_inset
@@ -950,18 +892,24 @@ Model of unemployment insurance with partial employment and moral hazard.
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: Short description of model
+Workers stochastically transition between three levels of employment opportunity.
 \end_layout
 
-\end_inset
+\begin_deeper
+\begin_layout Itemize
+Full Employment, Partial Employment, Unemployment
+\end_layout
 
+\end_deeper
+\begin_layout Itemize
+Workers receive UI benefits when partially employed or unemployed.
+\end_layout
 
+\begin_layout Itemize
+Workers can choose to work at a level below their employment opportunity,
+ but only have a small chance of receiving UI benefits if they do so.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Itemize
 Based on:
