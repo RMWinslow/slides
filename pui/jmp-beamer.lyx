@@ -486,7 +486,7 @@ text{U}}
 \backslash
 gdef
 \backslash
-sE{e}
+sE{E}
 \end_layout
 
 \begin_layout Plain Layout
@@ -495,7 +495,7 @@ sE{e}
 \backslash
 gdef
 \backslash
-sP{p}
+sP{P}
 \end_layout
 
 \begin_layout Plain Layout
@@ -504,7 +504,7 @@ sP{p}
 \backslash
 gdef
 \backslash
-sU{u}
+sU{U}
 \end_layout
 
 \begin_layout Plain Layout
@@ -656,34 +656,16 @@ During the Pandemic, large supplemental payments were given to anyone collecting
  even a dollar of Unemployment Insurance.
 \end_layout
 
-\begin_deeper
-\begin_layout Pause
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 These payments were made to the fully unemployed and to those with reduced
  hours.
 \end_layout
 
-\begin_deeper
-\begin_layout Pause
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 (Ganong et al 2022) found these programs only slightly reduced the job finding
  rate.
 \end_layout
 
-\begin_deeper
-\begin_layout Pause
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 But what about the effect on the intensive margin?
 \end_layout
@@ -900,6 +882,16 @@ textwidth
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Need to redo this graph.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -958,6 +950,20 @@ Model of unemployment insurance with partial employment and moral hazard.
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: Short description of model
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Itemize
 Based on:
 \end_layout
 
@@ -983,6 +989,11 @@ Unemployment insurance and the role of self-insurance
 \end_deeper
 \begin_layout Itemize
 My main contribution is the addition of partial unemployment insurance.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1037,15 +1048,23 @@ How to split income between consumption and (non-interest-bearing) savings
 \begin_deeper
 \begin_layout Itemize
 budget is 
-\begin_inset Formula $m'+c=m+y_{d}$
+\begin_inset Formula $a'+c=a+y_{d}$
 \end_inset
 
-, where $m$ is assets, and $y_d$ is disposable income.
+, where 
+\begin_inset Formula $a$
+\end_inset
+
+ is assets, and 
+\begin_inset Formula $y_{d}$
+\end_inset
+
+ is disposable income.
 \end_layout
 
 \begin_layout Itemize
 assets are subject to the constraint 
-\begin_inset Formula $m'\geq0$
+\begin_inset Formula $a'\geq0$
 \end_inset
 
 
@@ -1081,19 +1100,19 @@ Job Search
 \begin_deeper
 \begin_layout Standard
 Employment opportunity 
-\begin_inset Formula $s\in\left\{ e,p,u\right\} $
+\begin_inset Formula $s\in\left\{ \sE,\sP,\sU\right\} $
 \end_inset
 
  represents whether the person has a job opportunity (
-\begin_inset Formula $s=e$
+\begin_inset Formula $s=\sE$
 \end_inset
 
 ), a partial job opportunity (
-\begin_inset Formula $s=p$
+\begin_inset Formula $s=\sP$
 \end_inset
 
 ) or no job opportunity (
-\begin_inset Formula $s=u$
+\begin_inset Formula $s=\sU$
 \end_inset
 
 ).
@@ -1338,6 +1357,18 @@ Too long
 
 \begin_deeper
 \begin_layout Standard
+Utility flow is 
+\begin_inset Formula $U\Big(a-a'+y_{d}(\eta,\mu),\;l(\eta)\Big)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Given 
 \begin_inset Formula $(m,m',\eta,\mu)$
 \end_inset
@@ -1345,7 +1376,7 @@ Given
 , utility flow is:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 U\Big(m-m'+y_{d}(\eta,\mu),\;l(\eta)\Big)
@@ -1356,19 +1387,36 @@ U\Big(m-m'+y_{d}(\eta,\mu),\;l(\eta)\Big)
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-where
+where 
+\begin_inset Formula $y_{d}(\eta,\mu)$
+\end_inset
+
+ is the disposable income and 
+\begin_inset Formula $l(\eta)$
+\end_inset
+
+ is the leisure that results from the worker's decisions.
+\end_layout
+
+\begin_layout Pause
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
 y_{d}(\eta,\mu)=\begin{cases}
-(1-\tau)y & \text{if }(\eta,\mu)=(\etaE,0)\\
-(1-\tau)y\frac{\hP}{\hE} & \text{if }(\eta,\mu)=(\etaP,0)\\
+(1-\tau)w & \text{if }(\eta,\mu)=(\etaE,0)\\
+(1-\tau)w\frac{\hP}{\hE} & \text{if }(\eta,\mu)=(\etaP,0)\\
 0 & \text{if }(\eta,\mu)=(\etaU,0)\\
-(1-\tau)yθ_{p} & \text{if }(\eta,\mu)=(\etaP,1)\\
-(1-\tau)yθ_{u} & \text{if }(\eta,\mu)=(\etaU,1)
+(1-\tau)\left(wθ_{p}+b\right) & \text{if }(\eta,\mu)=(\etaP,1)\\
+(1-\tau)\left(wθ_{u}+b\right) & \text{if }(\eta,\mu)=(\etaU,1)
 \end{cases}
 \]
 
@@ -1377,8 +1425,8 @@ y_{d}(\eta,\mu)=\begin{cases}
 
 \end_layout
 
-\begin_layout Standard
-and
+\begin_layout Pause
+
 \end_layout
 
 \begin_layout Standard
@@ -1418,7 +1466,7 @@ Timeline Within Each Period
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Enumerate
 Consumer receives potential job offer 
 \begin_inset Formula $s\in\left\{ \sE,\sP,\sU\right\} $
 \end_inset
@@ -1426,7 +1474,7 @@ Consumer receives potential job offer
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 Consumer chooses employment status 
 \begin_inset Formula $\eta\in\left\{ \etaE,\etaP,\etaU\right\} $
 \end_inset
@@ -1434,7 +1482,7 @@ Consumer chooses employment status
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 Draw 
 \begin_inset Formula $\mu\in\left\{ 0,1\right\} $
 \end_inset
@@ -1442,7 +1490,7 @@ Draw
 : does the Consumer get unemployment benefits? 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 Consumer chooses 
 \begin_inset Formula $m'$
 \end_inset
@@ -1477,7 +1525,7 @@ Value Functions
 status open
 
 \begin_layout Plain Layout
-Too wide
+Since I'm line breaking, I could explicitly have pi in here.
 \end_layout
 
 \end_inset
@@ -1489,38 +1537,16 @@ Too wide
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V(e,m)=\max_{\eta\in\left\{ \etaE,\etaP,\etaU\right\} }\Big\lbrace\mathbb{E}\left[\max_{m'}\left\{ U(m-m'+y_{d}(\eta,\mu),l(\eta))+cont(e,m')\right\} \right]\Big\rbrace
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-V(p,m)=\max_{\eta\in\left\{ \etaP,\etaU\right\} }\Big\lbrace\mathbb{E}\left[\max_{m'}\left\{ U(m-m'+y_{d}(\eta,\mu),l(\eta))+cont(p,m')\right\} \right]\Big\rbrace
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-V(u,m)=\max_{m'}\left\{ U(m-m'+y_{d}(\eta,\mu),l(\eta))+cont(u,m')\right\} 
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-where
-\begin_inset Formula 
-\[
-cont(s,m')\equiv\beta\sum_{s'}\chi(s,s')V(m',s')
+\begin{aligned} & V(a,s) & =\max_{\eta} & \left\{ \mathbb{E}\left[\max_{m'}\left\{ U\left(y^{d}(\eta,\mu)+a-a',l(\eta)\right)\right.\right.\right.\\
+ &  &  & \,\,\,\,\,\,+\beta\sum_{s'}\chi(s,s')V(a',s')\Bigr\}\biggr]\Biggr\}\\
+\\
+ & \text{s.t. } &  & \eta\in\begin{cases}
+\{E,P,U\} & \text{if }s=E\\
+\{P,U\} & \text{if }s=P\\
+\{U\} & \text{if }s=U
+\end{cases}\\
+ &  &  & 0\leq a'\leq a+y^{d}(\eta,\mu)
+\end{aligned}
 \]
 
 \end_inset
@@ -1547,22 +1573,12 @@ Market Clearing and Equilibrium
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-needs a second pass
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
 State of a person is 
-\begin_inset Formula $x=(m,s,\eta,\mu)$
+\begin_inset Formula $x=(a,s,\eta,\mu)$
 \end_inset
 
 
@@ -1574,15 +1590,15 @@ Stationary equilibrium consists of
 
 \begin_layout Itemize
 decision rules 
-\begin_inset Formula $\eta(m,s)$
-\end_inset
-
-, 
 \begin_inset Formula $c(x)$
 \end_inset
 
 , 
-\begin_inset Formula $m'(x)$
+\begin_inset Formula $a'(x)$
+\end_inset
+
+, 
+\begin_inset Formula $\eta'(a,s)$
 \end_inset
 
 
@@ -1612,42 +1628,23 @@ tax rate
 Such that
 \end_layout
 
-\begin_layout Itemize
-Given 
-\begin_inset Formula $\tau$
-\end_inset
-
-, the decision rules are optimal for the consumers.
+\begin_layout Enumerate
+Given the tax rate, the decision rules solve the worker's maximization problem.
 \end_layout
 
-\begin_layout Itemize
-Goods market clears: 
+\begin_layout Enumerate
+The goods market clears.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sum_{x}\lambda(x)c(x)=\sum_{x}\lambda(x)\cdot\begin{cases}
-y & \text{if }\eta=\etaE\\
-\frac{\hP}{\hE}y & \text{if }\eta=\etaP\\
-0 & \text{if }\eta=\etaU
-\end{cases}
-\]
-
-\end_inset
-
-
+\begin_layout Enumerate
+The government's budget constraint is balanced each period.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 \begin_inset Formula $\lambda(x')=\lambda(x)$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Itemize
-Government budget balanced
 \end_layout
 
 \end_deeper
@@ -1940,7 +1937,7 @@ Income scaled so that
 \end_layout
 
 \begin_layout Subsection
-Calibration
+Parameterization
 \end_layout
 
 \begin_layout Frame
@@ -1958,43 +1955,43 @@ Calibrating
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Needs a complete REDO.
- Outdated.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 Each period is 1 month.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+Transition matrix calculated from Current Population Survey data to match
+ pre-pandemic economy:
 \begin_inset Formula 
 \[
 \chi=\begin{bmatrix}\chi(\sE,\sE) & \chi(\sE,\sP) & \chi(\sE,\sU)\\
 \chi(\sP,\sE) & \chi(\sP,\sP) & \chi(\sP,\sU)\\
 \chi(\sU,\sE) & \chi(\sU,\sP) & \chi(\sU,\sU)
-\end{bmatrix}=\begin{bmatrix}\\
-\\
-\\
+\end{bmatrix}=\begin{bmatrix}0.965 & 0.017 & 0.018\\
+0.598 & 0.343 & 0.059\\
+0.339 & 0.057 & 0.604
 \end{bmatrix}
 \]
 
 \end_inset
 
-Which has stationary distribution 
-\begin_inset Formula $[0.89,0.05,0.06]$
+
+\end_layout
+
+\begin_layout Itemize
+This matrix gives a stationary distribution for E, P, and U of approximately
+ 
+\begin_inset Formula $92.6\%,2.8\%,4.6\%$
 \end_inset
 
+, which is close to the actual distribution of 
+\begin_inset Formula $92.6\%,2.9\%,4.5\%$
+\end_inset
 
+ 
 \end_layout
 
 \end_deeper
@@ -2058,11 +2055,189 @@ Other Parameters
 \end_inset
 
 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
 \begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="16" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameterization
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Preference Parameters
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Discount factor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta=0.9966$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Leisure exponent
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma=0.5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Degree of risk aversion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Should be a table
+
+
+\backslash
+vspace{0.5em}
 \end_layout
 
 \end_inset
@@ -2070,54 +2245,536 @@ Should be a table
 
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-Other parameters:
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho=2$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Population and Work Parameters
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Standard
-$
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Time spent on full employment
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\hat{h_{e}}=0.45$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Time spent on partial employment
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\hat{h_{p}}=0.15$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Population of each type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\POP_{i}=1$
+\end_inset
+
+ for each quintile.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Productivity of each type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $w_{i}=\left\{ \frac{372}{886},\frac{592}{886},\frac{886}{886},\frac{1280}{886},\frac{2323}{886}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Job opportunity transition matrix 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\chi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
 \backslash
-beta=0.9966$ (time discount factor)
+vspace{0.5em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+See text.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+UI Policy Parameters
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Replacement rate for unemployed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta_{u}=0.5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Replacement rate for underemployed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\theta_{p}=0.\bar{6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Pandemic bonus
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b=0$
+\end_inset
+
+, 
+\begin_inset Formula $b=\frac{600}{886}$
+\end_inset
+
+, or 
+\begin_inset Formula $b=\frac{300}{886}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Chance of receiving benefits when 
+\begin_inset Formula $s\neq\eta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi=0.12$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-$
-\backslash
-sigma=0.5$ 
+
 \end_layout
 
-\begin_layout Standard
-$
-\backslash
-rho=2.5$ 
+\begin_layout Itemize
+\begin_inset Formula $\beta=0.9966$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-$
-\backslash
-pi=0.2$ 
+\begin_layout Itemize
+\begin_inset Formula $\sigma=0.5$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-$
-\backslash
-theta_u=0.5$
+\begin_layout Itemize
+\begin_inset Formula $\rho=2$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-$
-\backslash
-theta_p=0.
-\backslash
-bar{6}$
+\begin_layout Itemize
+\begin_inset Formula $\theta_{u}=0.5$
+\end_inset
+
+
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Formula $\theta_{p}=0.\bar{6}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\pi=0.12$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 \mathbb{E}\sum_{j}\beta^{t}U(c_{t},l_{t})=\mathbb{E}\sum_{t}\beta^{t}\frac{(c_{t}^{1-\sigma}l_{t}^{\sigma})^{1-\rho}-1}{1-\rho}
@@ -2128,17 +2785,22 @@ bar{6}$
 
 \end_layout
 
-\end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Policy Experiments in the Model
-\end_layout
+\begin_inset Note Note
+status open
 
 \begin_layout Frame
 \begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-Working Time
+PLACEHOLDER
 \end_layout
 
 \end_inset
@@ -2161,6 +2823,11 @@ PLACEHOLDER FOR TABLE OF BASELINE ECONOMY
 \end_layout
 
 \end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -2198,9 +2865,9 @@ Represent the direct effect of the pandemic as one time shock, where transition
  between months 3 and 4 is:
 \begin_inset Formula 
 \[
-\chi_{shock}=\begin{bmatrix}0.90 & 0.00 & 0.10\\
-0.00 & 0.90 & 0.10\\
-0.00 & 0.00 & 1.00
+\chi_{shock}=\begin{bmatrix}0.783 & 0.065 & 0.152\\
+0.360 & 0.252 & 0.388\\
+0.268 & 0.053 & 0.679
 \end{bmatrix}
 \]
 
@@ -2215,15 +2882,6 @@ Then transition process reverts to normal.
 
 \end_deeper
 \begin_layout Frame
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: Insert Results graphs
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -2239,7 +2897,7 @@ TODO: Insert Results graphs
 status open
 
 \begin_layout Plain Layout
-Simulation of Pandemic and FPUC
+Simulation without bonus UI payments
 \end_layout
 
 \end_inset
@@ -2249,7 +2907,14 @@ Simulation of Pandemic and FPUC
 
 \begin_deeper
 \begin_layout Standard
-Results (No FPUC here)
+\begin_inset Graphics
+	filename img/jmp-beamer/FPUC_Simulation (no bonus).png
+	lyxscale 20
+	width 100col%
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -2265,7 +2930,7 @@ Results (No FPUC here)
 status open
 
 \begin_layout Plain Layout
-Simulation of Pandemic and FPUC
+Simulation with bonus UI payments
 \end_layout
 
 \end_inset
@@ -2275,7 +2940,14 @@ Simulation of Pandemic and FPUC
 
 \begin_deeper
 \begin_layout Standard
-Results (No FPUC here)
+\begin_inset Graphics
+	filename img/jmp-beamer/FPUC_Simulation (no fwd looking).png
+	lyxscale 20
+	width 100col%
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -2283,44 +2955,12 @@ Results (No FPUC here)
 \begin_inset Separator plain
 \end_inset
 
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Simulation of Pandemic and FPUC
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-In addition, simulate FPUC by updating lump-sum bonus 
-\begin_inset Formula $b$
-\end_inset
-
- each period.
- 
-\end_layout
-
-\begin_layout Itemize
-Both the arrival and cessation of elevated benefits are unexpected.
-\end_layout
-
-\end_deeper
-\begin_layout Frame
 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 TODO: Backup Slide with lit review
