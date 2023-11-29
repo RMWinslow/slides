@@ -11,6 +11,13 @@
 
 \setbeamercovered{transparent}
 % or whatever (possibly just delete it)
+
+
+\usepackage{adjustbox} % To make wide tables fit on a page.
+
+\usepackage{booktabs}
+\renewcommand\toprule{\hline\hline}
+\renewcommand\bottomrule{\hline\hline}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -363,40 +370,40 @@ status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 AtBeginSubsection[]{%
 \end_layout
 
 \begin_layout Plain Layout
 
-  
+%  
 \backslash
 frame<beamer>{ 
 \end_layout
 
 \begin_layout Plain Layout
 
-    
+%    
 \backslash
 frametitle{Outline}   
 \end_layout
 
 \begin_layout Plain Layout
 
-    
+%    
 \backslash
 tableofcontents[currentsection,currentsubsection] 
 \end_layout
 
 \begin_layout Plain Layout
 
-  }
+%  }
 \end_layout
 
 \begin_layout Plain Layout
 
-}
+%}
 \end_layout
 
 \end_inset
@@ -671,13 +678,6 @@ But what about the effect on the intensive margin?
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Partial Unemployment Insurance in the US
 \end_layout
@@ -1492,7 +1492,7 @@ Draw
 
 \begin_layout Enumerate
 Consumer chooses 
-\begin_inset Formula $m'$
+\begin_inset Formula $a'$
 \end_inset
 
  after seeing 
@@ -1537,7 +1537,7 @@ Since I'm line breaking, I could explicitly have pi in here.
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\begin{aligned} & V(a,s) & =\max_{\eta} & \left\{ \mathbb{E}\left[\max_{m'}\left\{ U\left(y^{d}(\eta,\mu)+a-a',l(\eta)\right)\right.\right.\right.\\
+\begin{aligned} & V(a,s) & =\max_{\eta} & \left\{ \mathbb{E}\left[\max_{a'}\left\{ U\left(y^{d}(\eta,\mu)+a-a',l(\eta)\right)\right.\right.\right.\\
  &  &  & \,\,\,\,\,\,+\beta\sum_{s'}\chi(s,s')V(a',s')\Bigr\}\biggr]\Biggr\}\\
 \\
  & \text{s.t. } &  & \eta\in\begin{cases}
@@ -1945,7 +1945,7 @@ Parameterization
 status open
 
 \begin_layout Plain Layout
-Calibrating 
+The Transition Matrix 
 \begin_inset Formula $\chi$
 \end_inset
 
@@ -2055,11 +2055,6 @@ Other Parameters
 \end_inset
 
 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
 \begin_inset Note Note
 status collapsed
 
@@ -2723,10 +2718,12 @@ Chance of receiving benefits when
 
 \end_layout
 
-\begin_layout Standard
-
+\begin_deeper
+\begin_layout Itemize
+Utility parameters:
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 \begin_inset Formula $\beta=0.9966$
 \end_inset
@@ -2748,6 +2745,12 @@ Chance of receiving benefits when
 
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+UI parameters:
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset Formula $\theta_{u}=0.5$
 \end_inset
@@ -2762,6 +2765,15 @@ Chance of receiving benefits when
 
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\pi$
+\end_inset
+
+ calibrated for simulation:
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset Formula $\pi=0.12$
 \end_inset
@@ -2772,7 +2784,7 @@ Chance of receiving benefits when
 \end_deeper
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Formula 
@@ -2790,10 +2802,11 @@ status collapsed
 
 \end_layout
 
+\end_deeper
 \begin_layout Section
 Policy Experiments in the Model
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Frame
 \begin_inset Argument 4
@@ -2828,6 +2841,70 @@ PLACEHOLDER FOR TABLE OF BASELINE ECONOMY
 
 \end_layout
 
+\begin_layout Subsection
+Comparisons of Steady States
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effects of 
+\emph on
+Bonus
+\emph default
+ on Aggregates
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Compare stationary equilibriums with different parameters.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Baseline
+\begin_inset Quotes erd
+\end_inset
+
+ economy is stationary equilibrium with the parameters above.
+\end_layout
+
+\begin_layout Itemize
+Compare to economy with the equivalent of a permanent 600 dollar UI bonus.
+\end_layout
+
+\begin_layout Itemize
+For the 
+\begin_inset Quotes eld
+\end_inset
+
+Unbalanced Budget
+\begin_inset Quotes erd
+\end_inset
+
+ case, some of the assumptions of the equilibrium are relaxed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/jmp-beamer/table comparison bonus.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -2840,7 +2917,158 @@ PLACEHOLDER FOR TABLE OF BASELINE ECONOMY
 status open
 
 \begin_layout Plain Layout
-Simulation of Pandemic and FPUC
+Effects of 
+\emph on
+Higher Replacement Rate
+\emph default
+ on Aggregates
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Impose an elevated 70% replacement rate.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/jmp-beamer/table comparison highrr.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effects of 
+\emph on
+Transfers
+\emph default
+ on Aggregates
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Calculate the amount of increased spending in the case with a permanent
+ 600 dollar bonus.
+\end_layout
+
+\begin_layout Itemize
+Spend the same amount of money on a lump-sum bonus to everyone, regardless
+ of employment status.
+\end_layout
+
+\begin_layout Itemize
+Do the same, but transfer only to the bottom two quintiles.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/jmp-beamer/table comparison basictransfer.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Consumption Equivalent of Each Quintile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/jmp-beamer/table comparison quintiles utility.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Average Asset Holdings of Each Quintile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/jmp-beamer/table comparison quintiles savings.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Simulation of Pandemic Timeline
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Simulation of Pandemic Timeline
 \end_layout
 
 \end_inset
@@ -2877,7 +3105,19 @@ Represent the direct effect of the pandemic as one time shock, where transition
 \end_layout
 
 \begin_layout Itemize
-Then transition process reverts to normal.
+Then transition process reverts to normal thereafter.
+\end_layout
+
+\begin_layout Itemize
+Simulate lump sum UI bonus by updating 
+\begin_inset Formula $b$
+\end_inset
+
+ each period.
+\end_layout
+
+\begin_layout Itemize
+Both the arrival and cessation of elevated benefits are unexpected.
 \end_layout
 
 \end_deeper
