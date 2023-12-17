@@ -6,106 +6,12 @@
 \origin unavailable
 \textclass beamer
 \begin_preamble
-\usetheme{metropolis}
-\usepackage{etex}
-%\setbeamercolor{palette primary}{bg=white}
-\usepackage[scale=2]{ccicons}
-\usepackage{amssymb,pifont}
-\setbeamertemplate{theorems}[numbered]
-\usepackage{adjustbox}
-\usepackage[position=top]{subfig}
+\usetheme{Warsaw}
+% or ...
 
-%\setmainfont{Helvetica Neue Light}
-%fontspec{Helvetica Neue Light} \selectfont   
-%\usefonttheme{serif}
-%\usepackage[sfdefault, light]{FiraSans } %% option 'sfdefault' activates Fira Sans as the default text font
-%\usepackage[T1]{fontenc}
-%\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
-%\setmainfont{Fira Sans Light}
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
 
-
-\DeclareMathOperator*{\argmax}{arg\,max}
-\DeclareMathOperator*{\argmin}{arg\,min}
-
-\newcommand{\backupbegin}{
-   \newcounter{finalframe}
-   \setcounter{finalframe}{\value{framenumber}}
-}
-\newcommand{\backupend}{
-   \setcounter{framenumber}{\value{finalframe}}
-}
-
-\newcommand{\xmark}{\ding{55}}
-\newtheorem{assumption}{Assumption}
-
-\definecolor{grayblue}{RGB}{0,76,153}
-\definecolor{dgreen}{rgb}{0.,0.6,0.}
-\setbeamertemplate{items}[triangle]
-
-\definecolor{royalblue}{RGB}{176,196,222}
-\definecolor{grayblue}{RGB}{102,153,204}
-\definecolor{darkblue}{RGB}{50,76,153}
-\definecolor{blue}{RGB}{0,76,153}
-\definecolor{red}{RGB}{153,0,0}
-\definecolor{green}{RGB}{0,152,51}
-\definecolor{gray}{RGB}{120,120,120}
-\definecolor{lightgray}{RGB}{231,231,231}
-
-\definecolor{yellow}{RGB}{160,160,160}
-   \usepackage{bbm}
-% Slide look
-\setbeamertemplate{navigation symbols}{}
-\setbeamercolor{frametitle}{fg=darkblue, bg=lightgray}
-
-
-%\setbeamercolor{itemize item}{fg=red} 
-\setbeamertemplate{itemize subitem}[square]
-\setbeamercolor{item projected}{bg=magenta!70!black,fg=white}
-  %\setbeamertemplate{enumerate items}[circle]
-
-\newcommand{\nocontentsline}[3]{}
-\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
-
-%\date{July 22, 2021}
-\usepackage{pgf}
-\usepackage{tikz}
-\usetikzlibrary{arrows,automata}
-
-
-
-\setbeamertemplate{footline}[frame number]
-\usepackage{appendixnumberbeamer}
-\definecolor{red}{RGB}{150, 0, 0}
-\definecolor{blue}{RGB}{0, 67, 150}
-
-\setbeamersize{text margin right=1.0cm}
-
-\setbeamercolor{background canvas}{bg=white}
-
-
-\setbeamertemplate{footline}[frame number]
-\usepackage{appendixnumberbeamer}
-
-\defbeamertemplate*{footline}{infolines}
-{
-  \leavevmode%
-  \hbox{%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-    \usebeamerfont{author in head/foot}{\color{gray}\insertshortauthor}
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-    \usebeamerfont{title in head/foot}{\color{gray}\insertshorttitle}
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-    \usebeamerfont{date in head/foot}{}\hspace*{2em}
-  {\color{grayblue}  \insertframenumber{} / \inserttotalframenumber}\hspace*{2ex}
-  \end{beamercolorbox}}%
-  \vskip0pt%
-}
-
-
-
-%%%%%%%
 
 \usepackage{adjustbox} % To make wide tables fit on a page.
 
@@ -115,18 +21,15 @@
 
 \usepackage{natbib} % For manual citations.
 \end_preamble
-\use_default_options true
-\begin_modules
-theorems-ams-bytype
-\end_modules
+\use_default_options false
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "ae" "Fira Sans"
-\font_sans "helvet" "Fira Sans"
-\font_typewriter "default" "default"
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
 \font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
@@ -137,17 +40,17 @@ theorems-ams-bytype
 \use_microtype false
 \use_dash_ligatures false
 \graphics default
-\default_output_format pdf4
+\default_output_format default
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 10
+\paperfontsize default
 \spacing single
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_package amsmath 1
-\use_package amssymb 1
+\use_package amsmath 2
+\use_package amssymb 2
 \use_package cancel 1
 \use_package esint 1
 \use_package mathdots 1
@@ -166,17 +69,12 @@ theorems-ams-bytype
 \justification true
 \use_refstyle 0
 \use_minted 0
-\backgroundcolor #ffffff
 \index Index
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 1in
-\topmargin 1in
-\rightmargin 1in
-\bottommargin 1in
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 2
+\tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0
@@ -205,6 +103,7 @@ NOTES FROM 2023-12-15 WORKSHOP
 
 \begin_layout Plain Layout
 -intensive margin -> explain in plain english (job talk lot's of non experts)
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -212,6 +111,7 @@ NOTES FROM 2023-12-15 WORKSHOP
  And in the second panel don't go up to 35%.
  The spike should look as big as possible -> put a marker at double maybe,
  so people do see it doubles.
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -271,7 +171,7 @@ NOTES FROM 2023-12-15 WORKSHOP
 \begin_layout Plain Layout
 -What do you mean by goods market clears, change to language to make it
  less confusing.
- Since there are no firms producing
+ Since there are no firms producing 
 \end_layout
 
 \begin_layout Plain Layout
@@ -283,12 +183,12 @@ NOTES FROM 2023-12-15 WORKSHOP
 \begin_layout Plain Layout
 -Then slide with the income quintile into parametrization -> Make the table
  more prominent and put the Ganong paper just in the footnote (and check
- the correct publishing date)
+ the correct publishing date) 
 \end_layout
 
 \begin_layout Plain Layout
 -Equilibrium slide, don't put mu and eta in the state vector -> tomorrows
- choices don't depend on it
+ choices don't depend on it 
 \end_layout
 
 \begin_layout Plain Layout
@@ -307,7 +207,7 @@ NOTES FROM 2023-12-15 WORKSHOP
  stadard way of calibrating beta -> either chose and r from the data and
  then calibrate beta to get a wealth to income ratio that fits the data
  (value should be like 3 to 4) if there was production you would try to
- target capital to output (also around 3)
+ target capital to output (also around 3) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -321,6 +221,7 @@ NOTES FROM 2023-12-15 WORKSHOP
 
 \begin_layout Plain Layout
 - When you do robustness (like change in roh) recalibrate all of this again
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -334,7 +235,7 @@ NOTES FROM 2023-12-15 WORKSHOP
 \begin_layout Plain Layout
 -theta_p is a bit confusing since it combines the replacement rate and what
  the worker actually still earns -> you should split that on the slides
- -> then theta_p should be smaller than theta_u
+ -> then theta_p should be smaller than theta_u 
 \end_layout
 
 \begin_layout Plain Layout
@@ -343,11 +244,11 @@ NOTES FROM 2023-12-15 WORKSHOP
 
 \begin_layout Plain Layout
 -You want to emphasize that you are analysing the real world through the
- eyes of your model
+ eyes of your model 
 \end_layout
 
 \begin_layout Plain Layout
--Need to say, what do you assume about the government budget
+-Need to say, what do you assume about the government budget 
 \end_layout
 
 \begin_layout Plain Layout
@@ -357,7 +258,7 @@ NOTES FROM 2023-12-15 WORKSHOP
 
 \begin_layout Plain Layout
 - Minor stuff, cannot be -0.0 in the deficit slide.
- You want them to see 88.9 get rid of the second decimal
+ You want them to see 88.9 get rid of the second decimal 
 \end_layout
 
 \begin_layout Plain Layout
@@ -377,20 +278,21 @@ NOTES FROM 2023-12-15 WORKSHOP
 \begin_layout Plain Layout
 -higher replacement rate slide -> it does not move because of discreteness
  of types -> try robustness with like ten types (if type were continues
- it should change)
+ it should change) 
 \end_layout
 
 \begin_layout Plain Layout
--and on that slide put another table with the winners and losers
+-and on that slide put another table with the winners and losers 
 \end_layout
 
 \begin_layout Plain Layout
--The title should be who gains and who loses
+-The title should be who gains and who loses 
 \end_layout
 
 \begin_layout Plain Layout
 -Comments on the counterfactuals: make it very sharp why you consider each
  of those counterfactuals.
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -402,12 +304,12 @@ NOTES FROM 2023-12-15 WORKSHOP
 
 \begin_layout Plain Layout
 -put the timeline that you showed in the beginning again on the simulation
- of pandemic slide (people will have forgotten)
+ of pandemic slide (people will have forgotten) 
 \end_layout
 
 \begin_layout Plain Layout
 -You could have the chi matrix update on the slide or next to each other
- or something like that to show how the numbers change
+ or something like that to show how the numbers change 
 \end_layout
 
 \begin_layout Plain Layout
@@ -434,6 +336,7 @@ NOTES FROM 2023-12-15 WORKSHOP
 
 \begin_layout Plain Layout
 -Calibrate it to the three month change and you might get a longer duration
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -448,12 +351,14 @@ NOTES FROM 2023-12-15 WORKSHOP
 
 \begin_layout Plain Layout
 -What fraction comes from the matrix changing and what from the cheating
+ 
 \end_layout
 
 \begin_layout Plain Layout
 -Aggregate measure of hours could be interesting (just multiply shares by
  45, 15 and 0), so you can say something about aggregate change -> gives
  you a headline number you can mention in the conclusion and in the beginning
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -483,30 +388,7 @@ Use risk aversion 2, but do robustness with like 5 etc.
 
 \begin_layout Plain Layout
 -Important to know how these numbers react to risk aversion, especially
- the cheating rate -> effect is unclear, will need the numbers
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-addtocounter{framenumber}{-1}
+ the cheating rate -> effect is unclear, will need the numbers 
 \end_layout
 
 \end_inset
@@ -536,23 +418,49 @@ Did supplemental unemployment compensation discourage a return to full-time
 
 \begin_layout Author
 Robert Winslow
+\end_layout
+
+\begin_layout Institute
+Department of Economics
 \begin_inset Newline newline
+\end_inset
+
+University of Minnesota, Twin Cities
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+University of Minnesota
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Date
+\begin_inset Note Note
+status open
 
-\shape italic
-\size scriptsize
-\color gray
-Job Market Talk
-\begin_inset VSpace smallskip*
+\begin_layout Plain Layout
+2023
+\end_layout
+
 \end_inset
 
 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+If you have a file called "institution-logo-filename.xxx", where xxx is a
+ graphic format that can be processed by latex or pdflatex, resp., then you
+ can add a logo by uncommenting the following:
+\end_layout
+
 \end_inset
 
 
@@ -564,9 +472,18 @@ status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
-setbeamertemplate{footline}[infolines]
+pgfdeclareimage[height=0.5cm]{institution-logo}{institution-logo-filename}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
 \end_layout
 
 \end_inset
@@ -575,7 +492,92 @@ setbeamertemplate{footline}[infolines]
 \end_layout
 
 \begin_layout Standard
-\begin_inset Separator parbreak
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The following causes the table of contents to be shown at the beginning
+ of every subsection.
+ Delete this, if you do not want it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+AtBeginSubsection[]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+%  }
+\end_layout
+
+\begin_layout Plain Layout
+
+%}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+If you wish to uncover everything in a step-wise fashion, uncomment the
+ following command:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
 \end_inset
 
 
@@ -611,15 +613,17 @@ status open
 \begin_layout Plain Layout
 Structuring a talk is a difficult task and the following structure may not
  be suitable.
- Here are some rules that apply for this solution:
+ Here are some rules that apply for this solution: 
 \end_layout
 
 \begin_layout Itemize
 Exactly two or three sections (other than the summary).
+ 
 \end_layout
 
 \begin_layout Itemize
 At *most* three subsections per section.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -630,18 +634,20 @@ Talk about 30s to 2min per frame.
 \begin_layout Itemize
 A conference audience is likely to know very little of what you are going
  to talk about.
- So *simplify*!
+ So *simplify*! 
 \end_layout
 
 \begin_layout Itemize
 In a 20min talk, getting the main ideas across is hard enough.
  Leave out details, even if it means being less precise than you think necessary.
+ 
 \end_layout
 
 \begin_layout Itemize
 If you omit details that are vital to the proof/implementation, just say
  so once.
  Everybody will be happy with that.
+ 
 \end_layout
 
 \end_inset
@@ -759,13 +765,6 @@ $$
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Motivation
 \end_layout
@@ -807,13 +806,6 @@ But what about the effect on the intensive margin?
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Partial Unemployment Insurance in the US
 \end_layout
@@ -1063,13 +1055,6 @@ Regular State UI Recipients Over Time, MN
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Model
 \end_layout
@@ -1084,10 +1069,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Frame
 
 \end_layout
 
@@ -2908,14 +2889,6 @@ UI parameters:
 
 \end_deeper
 \end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Frame
-
-\end_layout
-
 \begin_layout Section
 Policy Experiments in the Model
 \end_layout
