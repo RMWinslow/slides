@@ -211,15 +211,6 @@ NOTES FROM 2023-12-15 WORKSHOP
 \end_layout
 
 \begin_layout Plain Layout
--Make a back up slide for the state example depending on the state you interview
- in
-\end_layout
-
-\begin_layout Plain Layout
--Make the figure bigger -> and in general the fonds in figures
-\end_layout
-
-\begin_layout Plain Layout
 -state ui recipients -> stretch vertically.
  same as above, want to make the spikes look bigger
 \end_layout
@@ -448,7 +439,7 @@ How much did Bonus Unemployment Insurance Payments During the COVID Pandemic
 status open
 
 \begin_layout Plain Layout
-Pandemic Partial UI
+Partial Unemployment Insurance During the Pandemic
 \end_layout
 
 \end_inset
@@ -886,12 +877,10 @@ Example: State UI Benefits in Minnesota
 
 \end_layout
 
-\begin_layout Frame
+\begin_deeper
+\begin_layout Standard
 In Minnesota, the rule is that the benefits for a given week are determined
  by:
-\end_layout
-
-\begin_layout Frame
 \begin_inset Formula 
 \[
 benefits=\begin{cases}
@@ -903,13 +892,12 @@ WBA-\frac{earnings}{2} & \text{if }earnings<WBA\\
 \end_inset
 
 
+\begin_inset VSpace vfill
+\end_inset
+
+
 \end_layout
 
-\begin_layout Frame
-
-\end_layout
-
-\begin_deeper
 \begin_layout ColumnsTopAligned
 
 \end_layout
@@ -921,7 +909,7 @@ status open
 
 \begin_layout Plain Layout
 
-.7
+.45
 \backslash
 textwidth
 \end_layout
@@ -929,13 +917,6 @@ textwidth
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-where WBA is weekly benefit amount (person-specific, fixed for entire duration
- of benefits spell).
- Frame and the earnings refers to the current week's labor income before
- taxes and transfers.
 \end_layout
 
 \begin_layout Standard
@@ -951,7 +932,7 @@ status open
 
 \begin_layout Plain Layout
 
-.3
+.55
 \backslash
 textwidth
 \end_layout
@@ -1006,7 +987,7 @@ Regular State UI Recipients Over Time, MN
 
 \begin_layout Frame
 \begin_inset Graphics
-	filename img/jmp-beamer/saMNwide.png
+	filename img/jmp-beamer/partialUI graphWeeks of State UI Benefits - MN - Seasonally Adjusted.png
 	lyxscale 20
 	width 100col%
 
@@ -2333,7 +2314,7 @@ Parameterization: Skill Heterogeneity.
 \begin_layout Standard
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="6">
+<lyxtabular version="3" rows="3" columns="6">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
@@ -2410,7 +2391,7 @@ Quintile
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2432,7 +2413,7 @@ Pre-pandemic Weekly Income
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2454,7 +2435,7 @@ Pre-pandemic Weekly Income
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2476,7 +2457,7 @@ Pre-pandemic Weekly Income
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2498,7 +2479,7 @@ Pre-pandemic Weekly Income
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2520,7 +2501,7 @@ Pre-pandemic Weekly Income
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2538,6 +2519,65 @@ Pre-pandemic Weekly Income
 \noun off
 \color none
 2323
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $w_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.67
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.62
 \end_layout
 
 \end_inset
@@ -3377,11 +3417,7 @@ Comparisons of Steady States
 status open
 
 \begin_layout Plain Layout
-Effects of 
-\emph on
-Bonus
-\emph default
- on Aggregates
+
 \end_layout
 
 \end_inset
@@ -3391,7 +3427,7 @@ Bonus
 
 \begin_deeper
 \begin_layout Itemize
-Compare stationary equilibriums with different parameters.
+Compare stationary equilibria with different parameters.
 \begin_inset VSpace bigskip
 \end_inset
 
@@ -3407,6 +3443,10 @@ Baseline
 \end_inset
 
  economy is stationary equilibrium with the parameters above.
+\begin_inset Note Note
+status open
+
+\begin_layout Itemize
 \begin_inset VSpace bigskip
 \end_inset
 
@@ -3415,6 +3455,11 @@ Baseline
 
 \begin_layout Itemize
 Compare to economy with the equivalent of a permanent 600 dollar UI bonus.
+\end_layout
+
+\end_inset
+
+
 \begin_inset VSpace bigskip
 \end_inset
 
@@ -3422,7 +3467,7 @@ Compare to economy with the equivalent of a permanent 600 dollar UI bonus.
 \end_layout
 
 \begin_layout Itemize
-For the 
+For 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3430,14 +3475,44 @@ Unbalanced Budget
 \begin_inset Quotes erd
 \end_inset
 
- case, some of the assumptions of the equilibrium are relaxed.
+ cases, some of the assumptions of the equilibrium are relaxed.
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effects of 
+\emph on
+Bonus
+\emph default
+ on Aggregates
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "img/jmp-beamer/table comparison bonus.tex"
 
+\end_inset
+
+
+\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -3469,14 +3544,25 @@ Higher Replacement Rate
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Impose an elevated 70% replacement rate.
-\end_layout
-
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "img/jmp-beamer/table comparison highrr.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Impose an elevated 70% replacement rate.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Need motivation.
+ NYT screenshot or something.
+\end_layout
 
 \end_inset
 
@@ -3509,6 +3595,16 @@ Transfers
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/jmp-beamer/table comparison basictransfer.tex"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Calculate the amount of increased spending in the case with a permanent
  600 dollar bonus.
@@ -3531,16 +3627,6 @@ Spend the same amount of money on a lump-sum bonus to everyone, regardless
 Do the same, but transfer only to the bottom two quintiles.
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "img/jmp-beamer/table comparison basictransfer.tex"
-
-\end_inset
-
-
-\end_layout
-
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -3554,7 +3640,7 @@ filename "img/jmp-beamer/table comparison basictransfer.tex"
 status open
 
 \begin_layout Plain Layout
-Consumption Equivalent of Each Quintile
+Who Wins? Who Loses? 
 \end_layout
 
 \end_inset
@@ -3575,27 +3661,10 @@ filename "img/jmp-beamer/table comparison quintiles utility.tex"
 
 \end_deeper
 \begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Average Asset Holdings of Each Quintile
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "img/jmp-beamer/table comparison quintiles savings.tex"
@@ -3605,7 +3674,11 @@ filename "img/jmp-beamer/table comparison quintiles savings.tex"
 
 \end_layout
 
-\end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Simulation of Pandemic Timeline
 \end_layout
@@ -3653,6 +3726,16 @@ Represent the direct effect of the pandemic as one time shock, where transition
 0.268 & 0.053 & 0.679
 \end{bmatrix}
 \]
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Somehow replace the old transition matrix?
+\end_layout
 
 \end_inset
 
