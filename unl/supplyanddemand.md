@@ -98,3 +98,14 @@ oranges
 
 
 ---
+
+
+<div class="kg-container" src="https://www.rmwinslow.com/3102/graphs/onePeriodConsumer.yml" clearcolor="#fff0"></div>
+
+
+---
+
+
+<div class="kg-container" src="./ksTwoPeriodEquilibrium.yml" clearColor='#fff0'></div>
+
+
