@@ -1,6 +1,5 @@
 ---
 title: Test graph embedding
-layout: post
 toc: false
 nav_exclude: true
 ---
