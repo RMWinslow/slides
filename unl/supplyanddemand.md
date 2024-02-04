@@ -9,8 +9,11 @@ class:middle
 # Supply and Demand
 
 
-<link href="https://kineticgraphs.org/css/kg.0.2.6.css" rel="stylesheet" type="text/css">
-<script src="https://kineticgraphs.org/js/kg3d.0.2.6.js"></script>
+<style>
+.remark-slide-content{
+    background-color:fdf6e3;
+}
+</style>
 
 <!--
 TODO:
@@ -89,25 +92,5 @@ oranges
 ---
 
 
-
-
-
-
-
-
-<div class="kg-container" src="ksTwoPeriodEquilibrium.yml" clearColor='#fff0'></div>
-
-
-
----
-
-
-<div class="kg-container" src="https://www.rmwinslow.com/3102/graphs/onePeriodConsumer.yml" clearcolor="#fff0"></div>
-
-
----
-
-
-<div class="kg-container" src="./ksTwoPeriodEquilibrium.yml" clearColor='#fff0'></div>
 
 
