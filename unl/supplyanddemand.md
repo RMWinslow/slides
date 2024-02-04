@@ -11,7 +11,7 @@ class:middle
 
 <style>
 .remark-slide-content{
-    background-color:fdf6e3;
+    background-color: #fdf6e3;
 }
 </style>
 
