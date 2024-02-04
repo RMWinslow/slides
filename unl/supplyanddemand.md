@@ -93,7 +93,7 @@ oranges
 
 
 
-<div class="kg-container" src="ks_twoPeriodEquilibrium.yml" clearColor='#fff0'></div>
+<div class="kg-container" src="ksTwoPeriodEquilibrium.yml" clearColor='#fff0'></div>
 
 
 
