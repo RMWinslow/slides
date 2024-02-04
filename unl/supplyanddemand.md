@@ -25,15 +25,10 @@ For your visit, you will be guest lecturing a 75-minute principles of Microecono
 
 ---
 
-background-image: url(lectureoutline.png)
+background-image: url(lectureoutline.png);
+background-size: contain; 
 
 test
 
 
-
----
-
-background-image: url("lectureoutline.png")
-
-test
 
