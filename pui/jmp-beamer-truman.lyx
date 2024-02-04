@@ -3940,8 +3940,17 @@ Simulation with bonus UI payments
 
 \end_layout
 
-\begin_layout Section
-Key Takeaways:
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Key Takeaways
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
