@@ -18,7 +18,9 @@ For your visit, you will be guest lecturing a 75-minute principles of Microecono
 
 ![](lectureoutline.png)
 
+---
 
+<img src="lectureoutline.png" width=100%>
 
 
 
