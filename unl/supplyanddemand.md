@@ -8,6 +8,10 @@ class:middle
 
 # Supply and Demand
 
+
+<link href="https://kineticgraphs.org/css/kg.0.2.6.css" rel="stylesheet" type="text/css">
+<script src="https://kineticgraphs.org/js/kg3d.0.2.6.js"></script>
+
 <!--
 TODO:
 - screenshots of news stories
@@ -88,8 +92,6 @@ oranges
 
 
 
-<link href="https://kineticgraphs.org/css/kg.0.2.6.css" rel="stylesheet" type="text/css">
-<script src="https://kineticgraphs.org/js/kg3d.0.2.6.js"></script>
 
 
 
