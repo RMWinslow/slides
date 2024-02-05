@@ -92,5 +92,21 @@ oranges
 ---
 
 
+<img src="toiletpaper.jpg" width=100%>
+
+<!--
+https://channels.ft.com/en/tradesecrets/toilet-paper/
+https://phys.org/news/2021-02-real-ran-toilet-paper.html
+https://www.thebalancemoney.com/great-scott-inflation-is-real-on-toilet-paper-prices-5181574
+-->
+
+---
+
+
+<img src="shock-tp.PNG" height=100%>
+
+
+
+
 
 

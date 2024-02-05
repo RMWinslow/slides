@@ -14,7 +14,52 @@ As for the teaching philosophy seminar, this will be a 20-minute talk about your
 
 ---
 
-## Test
+class:middle
+
+## Lecture Style
+
+
+---
+
+class:middle
+
+## I Prefer Boardwork Over Slides
+
+
+
+
+<!--
+TODO:
+BIG LONG SLIDE ABOUT WHY SLIDES ARE FRAUGHT
+
+-->
+
+---
+
+class:middle
+
+
+## Projected Material Should Complement the Lecture
+
+
+
+
+
+
+
+
+---
+
+class:middle
+
+
+
+
+
+---
+
+class:middle
+
 
 
 
