@@ -636,6 +636,10 @@ todo
 
 \end_layout
 
+\begin_layout Section
+Disease Spread
+\end_layout
+
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -882,15 +886,8 @@ Finally, define the risk of disease from a neighbor
 
 \end_layout
 
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
+\begin_layout Section
+Individual Choice and Equilibrium
 \end_layout
 
 \begin_layout Frame
@@ -898,7 +895,7 @@ Finally, define the risk of disease from a neighbor
 status open
 
 \begin_layout Plain Layout
-
+Your choice is your expected number of neighbors.
 \end_layout
 
 \end_inset
@@ -907,11 +904,91 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\begin_inset Separator plain
+\begin_layout Itemize
+Each person chooses their 
+\emph on
+expected
+\emph default
+ number of neighbors, but for tractability, doesn't directly choose their
+ exact number of neighbors.
+\end_layout
+
+\begin_layout Itemize
+Instead a person chooses 
+\begin_inset Formula $N\in[0,+\infty)$
+\end_inset
+
+, 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $N\in\mathbb{R}^{+}$
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+ and then the probability that they have degree 
+\begin_inset Formula $k$
+\end_inset
+
+ in the network is:
+\begin_inset Formula 
+\[
+\frac{N^{k}e^{-N}}{k!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Let there be 
+\begin_inset Formula $i$
+\end_inset
+
+ types of people.
+ Let 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ be the choice of type 
+\begin_inset Formula $i$
+\end_inset
+
+, and 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ be the relative population of type 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Note this means that 
+\begin_inset Formula 
+\[
+p_{k}=\sum_{i}\alpha_{i}\frac{N_{i}^{k}e^{-N_{i}}}{k!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Each person 
+\emph on
+makes this choice exactly once
+\emph default
+, when news of a potential epidemic arrives.
 \end_layout
 
 \end_deeper
@@ -939,6 +1016,85 @@ status open
 status open
 
 \begin_layout Plain Layout
+People like being friendly, but dislike disease risk.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The payoff for a person of type 
+\begin_inset Formula $i$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+U_{i}(N_{i};\Psi)=u_{i}(N_{i})-\delta_{i}\cdot\left(1-e^{-\Psi N_{i}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1-e^{-\Psi N_{i}}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $P(N_{i};\Psi)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ is the probability of getting sick during this outbreak.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\delta_{i}$
+\end_inset
+
+ is the disutility from getting sick.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Itemize
+\begin_inset Formula $u_{i}(N_{i})$
+\end_inset
+
+ is the utility the person gets from being social.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -947,6 +1103,267 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+The payoff for a person of type 
+\begin_inset Formula $i$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+U_{i}(N_{i};\Psi)=u_{i}(N_{i})-\delta_{i}\cdot\left(1-e^{-\Psi N_{i}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For convenience, I'd like to choose a 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+such that:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The total payoff 
+\begin_inset Formula $U_{i}(N_{i};\Psi)$
+\end_inset
+
+ is continuous and concave down,
+\end_layout
+
+\begin_layout Itemize
+and 
+\begin_inset Formula $N_{i}^{*}(\Psi),$
+\end_inset
+
+the person's optimal policy function, is a continuous and bounded function
+ of 
+\begin_inset Formula $\Psi$
+\end_inset
+
+ over 
+\begin_inset Formula $\Psi\in[0,1]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+If 
+\begin_inset Formula $\delta_{i}=1$
+\end_inset
+
+ for all 
+\begin_inset Formula $i$
+\end_inset
+
+, then the following function has these properties:
+\begin_inset Formula 
+\[
+u_{i}(N)=\ln\left(\frac{N}{\theta_{i}}\right)-\frac{N}{\theta_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+where 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+ is the person's optimal choice when 
+\begin_inset Formula $\Psi=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+placeholder
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Equilibrium
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Given exogenous 
+\begin_inset Formula $T,\{\alpha_{i}\}$
+\end_inset
+
+, an equilibrium in this model consists of 
+\begin_inset Formula $\Psi,{N_{i}}$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\Psi=\Psi^{*}\left(\left\{ N_{i}\right\} ,T\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N_{i}=N_{i}^{*}(\Psi)\equiv\arg\max U_{i}(N_{i};\Psi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+placeholder
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+placeholder
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+placeholder
+\end_layout
+
+\end_deeper
 \begin_layout Frame
 
 \end_layout
