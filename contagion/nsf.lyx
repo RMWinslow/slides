@@ -362,6 +362,10 @@ setbeamertemplate{footline}[infolines]
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Separator parbreak
 \end_inset
 
@@ -382,7 +386,7 @@ Outline
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status open
 
@@ -443,7 +447,7 @@ Conclusions.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -549,7 +553,7 @@ $$
 \end_layout
 
 \end_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Separator plain
 \end_inset
 
@@ -599,7 +603,7 @@ todo
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Separator plain
 \end_inset
 
@@ -629,6 +633,11 @@ todo
 \end_layout
 
 \end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -1082,6 +1091,21 @@ be the value of
 \end_inset
 
 , taken as a function of the set of choices.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Should I use 
+\begin_inset Formula $\Psi^{*}\left(\left\{ N_{i}\right\} ,T\right)$
+\end_inset
+
+ instead? More consistent with paper, but needless extra vars, I think.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1387,7 +1411,7 @@ N_{i}=N_{i}^{*}(\Psi)\equiv\arg\max U_{i}(N_{i};\Psi)
 status open
 
 \begin_layout Plain Layout
-
+Equilibrium Existence
 \end_layout
 
 \end_inset
@@ -1397,7 +1421,275 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-placeholder
+
+\series bold
+Proposition 1:
+\series default
+ If for each 
+\begin_inset Formula $i$
+\end_inset
+
+, the optimal policy function 
+\begin_inset Formula $N_{i}^{*}(\Psi)$
+\end_inset
+
+is a continuous non-negative function on 
+\begin_inset Formula $\Psi\in\left[0,1\right],$
+\end_inset
+
+then an equilibrium exists.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Proposition 2:
+\series default
+ Iff 
+\begin_inset Formula $T\leq T_{c}\left(\left\{ N_{i}^{*}(0)\right\} \right)$
+\end_inset
+
+, then there is an equilibrium without any risk of epidemic exists, where
+ 
+\begin_inset Formula $\Psi=0$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{i}=N_{i}^{*}(0)$
+\end_inset
+
+ for all 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: With both conditions, does this imply the equilibrium 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename slidefigAug_equilibriumexample1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Individual Fatalism
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+An individual's disease risk is an increasing function of both 
+\begin_inset Formula $\Psi$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+However, the marginal disease risk from 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ may sometimes 
+\emph on
+decrease
+\emph default
+ as 
+\begin_inset Formula $\Psi$
+\end_inset
+
+ increases.
+ 
+\begin_inset Formula 
+\[
+\frac{\partial}{\partial\Psi}\frac{\partial}{\partial N_{i}}\left(1-e^{-\Psi N_{i}}\right)=\left(1-\Psi N_{i}\right)e^{-\Psi N_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+When 
+\begin_inset Formula $\Psi>\frac{1}{N_{i}}$
+\end_inset
+
+, an 
+\emph on
+increase
+\emph default
+ in disease risk may lead to individuals 
+\emph on
+doing less
+\emph default
+ to avoid getting sick.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename paperSept_PsitoN_lncost.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+When can 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ have 
+\emph on
+positive
+\emph default
+ externalities?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Proposition 3:
+\series default
+ Suppose 
+\begin_inset Formula $\left\{ N_{i}\right\} $
+\end_inset
+
+ is such that 
+\begin_inset Formula $T>T_{c}\left(\left\{ N_{i}\right\} \right)$
+\end_inset
+
+.
+ In this case,
+\begin_inset Formula 
+\begin{align*}
+\frac{\partial\Psi^{*}\left(\left\{ N_{i}\right\} \right)}{\partial N_{j}} & <0\\
+ & \Updownarrow\\
+(1-e^{-\Psi^{*}\left(\left\{ N_{i}\right\} \right)N_{j}}) & <\frac{\Psi\left(\left\{ N_{i}\right\} \right)}{T}\left(1-TN_{j}e^{-\Psi\left(\left\{ N_{i}\right\} \right)N_{j}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Corollary:
+\series default
+ If 
+\begin_inset Formula $N_{j}>\frac{1}{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $T>T_{c}\left(\left\{ N_{i}\right\} \right)$
+\end_inset
+
+, then 
+\begin_inset Formula $\frac{\partial\Psi^{*}\left(\left\{ N_{i}\right\} \right)}{\partial N_{j}}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Corollary:
+\series default
+ If there is only a singular type and 
+\begin_inset Formula $T>T_{c}\left(N\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $\frac{\partial\Psi^{*}\left(N\right)}{\partial N}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Corollary:
+\series default
+ If 
+\begin_inset Formula $N_{j}>\frac{1}{\Psi^{*}\left(\left\{ N_{i}\right\} \right)}$
+\end_inset
+
+ and 
+\begin_inset Formula $T>T_{c}\left(\left\{ N_{i}\right\} \right)$
+\end_inset
+
+, then 
+\begin_inset Formula $\frac{\partial\Psi^{*}\left(\left\{ N_{i}\right\} \right)}{\partial N_{j}}>0$
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1426,11 +1718,26 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-placeholder
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
 \begin_layout Frame
 
 \end_layout
@@ -1447,7 +1754,7 @@ placeholder
 status open
 
 \begin_layout Plain Layout
-
+Related Literature
 \end_layout
 
 \end_inset
@@ -1457,13 +1764,22 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-placeholder
+(Newman 2002) Describes a model of disease spread based on branching processes
+ and uses it to explicitly solve SIR models for a class of networks.
+\end_layout
+
+\begin_layout Itemize
+(Meyers et al.
+ 2005) shows that this works well to approximate the behavior of complex
+ social networks.
+\end_layout
+
+\begin_layout Itemize
+(Kremer 1996) Demonstrates similar results regarding fatalism and counter-intuit
+ive externalities in a model of an endemic disease, rather than a disease
+ outbreak.
 \end_layout
 
 \end_deeper
-\begin_layout Frame
-
-\end_layout
-
 \end_body
 \end_document
