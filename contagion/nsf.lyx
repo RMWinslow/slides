@@ -334,7 +334,7 @@ Robert Winslow
 \shape italic
 \size scriptsize
 \color gray
-Job Market Talk
+Ninth Annual Conference on Network Science and Economics
 \begin_inset VSpace smallskip*
 \end_inset
 
@@ -416,9 +416,19 @@ Add in endogenous choice.
 \end_layout
 
 \begin_layout Itemize
+Effects:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+fatalism
+\end_layout
+
+\begin_layout Itemize
 Some stuff about potentially counterintuitive effects
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 Conclusions.
  ()
@@ -626,10 +636,6 @@ todo
 
 \end_layout
 
-\begin_layout Section
-Test
-\end_layout
-
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -644,13 +650,33 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\begin_inset Separator plain
+\begin_layout Itemize
+Social network is an infinite random graph described by degree distribution
+ 
+\begin_inset Formula $\left\{ p_{k}\right\} $
 \end_inset
 
 
 \end_layout
 
+\begin_layout Itemize
+Contagion spreads along this network as in SIR.
+\end_layout
+
+\begin_layout Itemize
+Contagion spreads along an edge from I to S with iid probability 
+\begin_inset Formula $T$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+(Can't reinfect neighbor who infected you.)
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Frame
 
@@ -681,8 +707,167 @@ status open
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+Start by infecting a single node at random.
+\end_layout
+
+\begin_layout Itemize
+An 
+\begin_inset Quotes eld
+\end_inset
+
+epidemic
+\begin_inset Quotes erd
+\end_inset
+
+ occurs if the contagion spreads to an infinite number of nodes.
+ (A non-zero portion.)
+\end_layout
+
+\begin_layout Itemize
+Given degree distribution, there is a critical transmissibility threshold
+ 
+\begin_inset Formula $T_{c}$
+\end_inset
+
+, below which epidemic occurs with zero probability.
+\begin_inset Formula 
+\[
+T_{c}=\frac{\sum_{k}\left(p_{k}k\right)}{\sum_{k}\left(p_{k}k(k-1)\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+When 
+\begin_inset Formula $T>T_{c}$
+\end_inset
+
+, the probability an epidemic occurs equals the expected portion of nodes
+ which become infected.
+ 
+\end_layout
+
+\begin_layout Itemize
+Denote this 
+\begin_inset Formula $R_{\infty}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{\infty}\equiv1-\sum_{k}\left(p_{k}\cdot\left(1-\left(1-\nu\right)T\right)^{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+where 
+\begin_inset Formula $\nu\in(0,1)$
+\end_inset
+
+ is the solution to 
+\begin_inset Formula 
+\[
+\nu=\frac{\sum_{k}\left(p_{k}k\cdot\left(1-\left(1-\nu\right)T\right)^{k}\right)}{\sum_{k}\left(p_{k}k\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\left\{ p_{k}\right\} $
+\end_inset
+
+is the degree distribution of the network.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T$
+\end_inset
+
+ is transmissibility.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T_{c}$
+\end_inset
+
+ is the critical transmissibility threshold.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{\infty}$
+\end_inset
+
+ is the probability and size of epidemic.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\nu$
+\end_inset
+
+ can be thought of as the chance a random neighbor remains uninfected.
+\end_layout
+
+\begin_layout Itemize
+Finally, define the risk of disease from a neighbor 
+\begin_inset Formula $\Psi$
+\end_inset
+
+ as
+\begin_inset Formula 
+\[
+\psi\equiv\begin{cases}
+0 & \text{if }T\leq T_{c}\\
+(1-\nu)T & \text{if }T>T_{c}
+\end{cases}
+\]
+
 \end_inset
 
 
