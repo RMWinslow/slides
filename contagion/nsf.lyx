@@ -654,7 +654,7 @@ Disease Spread
 status open
 
 \begin_layout Plain Layout
-
+How Contagion Spreads
 \end_layout
 
 \end_inset
@@ -678,19 +678,23 @@ Social network is an infinite random graph described by degree distribution
 \end_layout
 
 \begin_layout Itemize
-Contagion spreads along an edge from I to S with iid probability 
+Contagion can spread along each edge with probability 
 \begin_inset Formula $T$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Itemize
+(Can't reinfect neighbor who infected you.)
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-(Can't reinfect neighbor who infected you.)
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Frame
 
@@ -712,7 +716,7 @@ Contagion spreads along an edge from I to S with iid probability
 status open
 
 \begin_layout Plain Layout
-
+How Contagion Spreads
 \end_layout
 
 \end_inset
@@ -723,6 +727,10 @@ status open
 \begin_deeper
 \begin_layout Itemize
 Start by infecting a single node at random.
+\end_layout
+
+\begin_layout Pause
+
 \end_layout
 
 \begin_layout Itemize
@@ -738,13 +746,35 @@ epidemic
  (A non-zero portion.)
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 Given degree distribution, there is a critical transmissibility threshold
  
 \begin_inset Formula $T_{c}$
 \end_inset
 
-, below which epidemic occurs with zero probability.
+
+\end_layout
+
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 \begin_inset Formula 
 \[
 T_{c}=\frac{\sum_{k}\left(p_{k}k\right)}{\sum_{k}\left(p_{k}k(k-1)\right)}
@@ -756,24 +786,59 @@ T_{c}=\frac{\sum_{k}\left(p_{k}k\right)}{\sum_{k}\left(p_{k}k(k-1)\right)}
 \end_layout
 
 \begin_layout Itemize
+If 
+\begin_inset Formula $T<T_{c}$
+\end_inset
+
+, epidemic occurs with zero probability.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Should this be 
+\begin_inset Formula $\leq$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
 When 
 \begin_inset Formula $T>T_{c}$
 \end_inset
 
 , the probability an epidemic occurs equals the expected portion of nodes
  which become infected.
- 
-\end_layout
-
-\begin_layout Itemize
-Denote this 
+ Denoted 
 \begin_inset Formula $R_{\infty}$
 \end_inset
 
 
 \begin_inset Formula 
 \[
-R_{\infty}\equiv1-\sum_{k}\left(p_{k}\cdot\left(1-\left(1-\upsilon\right)T\right)^{k}\right)
+R_{\infty}=1-\sum_{k}\left(p_{k}\cdot\left(1-\left(1-\upsilon\right)T\right)^{k}\right)
 \]
 
 \end_inset
@@ -800,6 +865,7 @@ where
 
 \end_deeper
 \end_deeper
+\end_deeper
 \begin_layout Frame
 
 \end_layout
@@ -824,7 +890,7 @@ where
 status open
 
 \begin_layout Plain Layout
-
+Important Variables so Far
 \end_layout
 
 \end_inset
@@ -927,6 +993,10 @@ expected
  exact number of neighbors.
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 Instead a person chooses 
 \begin_inset Formula $N\in[0,+\infty)$
@@ -957,6 +1027,10 @@ status open
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Pause
 
 \end_layout
 
@@ -1023,6 +1097,10 @@ Let there be
 .
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 This means the degree distribution is given by:
 \begin_inset Formula 
@@ -1035,6 +1113,21 @@ p_{k}=\sum_{i}\alpha_{i}\frac{N_{i}^{k}e^{-N_{i}}}{k!}
 
 \end_layout
 
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 The critical transmissibility threshold is given by:
 \begin_inset Formula 
@@ -1047,6 +1140,22 @@ T_{c}\left(\left\{ N_{i}\right\} \right)=\frac{\sum_{i}\alpha_{i}N_{i}}{\sum_{i}
 
 \end_layout
 
+\end_deeper
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 The probability and size of the epidemic when 
 \begin_inset Formula $T>T_{c}$
@@ -1081,6 +1190,22 @@ where
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 And finally, let 
 \begin_inset Formula $\Psi^{*}\left(\left\{ N_{i}\right\} \right)$
@@ -1147,6 +1272,7 @@ When
 
 \end_deeper
 \end_deeper
+\end_deeper
 \begin_layout Frame
 
 \end_layout
@@ -1188,6 +1314,21 @@ U_{i}(N_{i};\Psi)=u_{i}(N_{i})-\delta_{i}\cdot\left(1-e^{-\Psi N_{i}}\right)
 
 \end_layout
 
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset Formula $1-e^{-\Psi N_{i}}$
 \end_inset
@@ -1230,19 +1371,13 @@ status open
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
+\begin_layout Overprint
+\begin_inset Argument item:1
 status open
 
 \begin_layout Plain Layout
-People like being friendly, but dislike disease risk.
+
+3
 \end_layout
 
 \end_inset
@@ -1252,21 +1387,56 @@ People like being friendly, but dislike disease risk.
 
 \begin_deeper
 \begin_layout Itemize
-The payoff for a person of type 
-\begin_inset Formula $i$
+For convenience, I'd like to choose a 
+\begin_inset Formula $u_{i}$
 \end_inset
 
- is 
-\begin_inset Formula 
-\[
-U_{i}(N_{i};\Psi)=u_{i}(N_{i})-\delta_{i}\cdot\left(1-e^{-\Psi N_{i}}\right)
-\]
+such that:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The total payoff 
+\begin_inset Formula $U_{i}(N_{i};\Psi)$
+\end_inset
+
+ is continuous and concave down,
+\end_layout
+
+\begin_layout Itemize
+and 
+\begin_inset Formula $N_{i}^{*}(\Psi),$
+\end_inset
+
+the person's optimal policy function, is a continuous and bounded function
+ of 
+\begin_inset Formula $\Psi$
+\end_inset
+
+ over 
+\begin_inset Formula $\Psi\in[0,1]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+4
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 For convenience, I'd like to choose a 
 \begin_inset Formula $u_{i}$
@@ -1337,6 +1507,7 @@ where
 
 \end_deeper
 \end_deeper
+\end_deeper
 \begin_layout Frame
 
 \end_layout
@@ -1378,7 +1549,7 @@ Given exogenous
  such that 
 \begin_inset Formula 
 \[
-\Psi=\Psi^{*}\left(\left\{ N_{i}\right\} ,T\right)
+\Psi=\Psi^{*}\left(\left\{ N_{i}\right\} \right)
 \]
 
 \end_inset
@@ -1440,6 +1611,48 @@ is a continuous non-negative function on
 then an equilibrium exists.
 \end_layout
 
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename slidefigAug_equilibriumexample1.pdf
+	height 70pheight%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Overprint
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1476,16 +1689,7 @@ TODO: With both conditions, does this imply the equilibrium
 
 \end_layout
 
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename slidefigAug_equilibriumexample1.pdf
-
-\end_inset
-
-
-\end_layout
-
+\end_deeper
 \end_deeper
 \begin_layout Frame
 
@@ -1524,6 +1728,10 @@ An individual's disease risk is an increasing function of both
 
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 However, the marginal disease risk from 
 \begin_inset Formula $N_{i}$
@@ -1549,6 +1757,10 @@ decrease
 
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 When 
 \begin_inset Formula $\Psi>\frac{1}{N_{i}}$
@@ -1558,17 +1770,40 @@ When
 \emph on
 increase
 \emph default
- in disease risk may lead to individuals 
+ in disease risk may lead to individuals trying 
 \emph on
-doing less
+less
 \emph default
- to avoid getting sick.
+ hard to avoid getting sick.
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Individual Fatalism
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename paperSept_PsitoN_lncost.pdf
+	height 80pheight%
 
 \end_inset
 
@@ -1636,6 +1871,10 @@ Proposition 3:
 
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
@@ -1656,6 +1895,10 @@ Corollary:
 
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
@@ -1669,6 +1912,10 @@ Corollary:
 \begin_inset Formula $\frac{\partial\Psi^{*}\left(N\right)}{\partial N}>0$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Pause
 
 \end_layout
 
@@ -1776,8 +2023,8 @@ Related Literature
 
 \begin_layout Itemize
 (Kremer 1996) Demonstrates similar results regarding fatalism and counter-intuit
-ive externalities in a model of an endemic disease, rather than a disease
- outbreak.
+ive externalities in a model of the steady-state of an endemic disease,
+ rather than a disease outbreak.
 \end_layout
 
 \end_deeper
