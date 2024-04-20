@@ -655,16 +655,17 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
+(Newman 2002) describes a class of networks on which an SIR model can be
+ solved exactly.
+\end_layout
+
+\begin_layout Itemize
 Social network is an infinite random graph described by degree distribution
  
 \begin_inset Formula $\left\{ p_{k}\right\} $
 \end_inset
 
 
-\end_layout
-
-\begin_layout Itemize
-Contagion spreads along this network as in SIR.
 \end_layout
 
 \begin_layout Itemize
@@ -763,7 +764,7 @@ Denote this
 
 \begin_inset Formula 
 \[
-R_{\infty}\equiv1-\sum_{k}\left(p_{k}\cdot\left(1-\left(1-\nu\right)T\right)^{k}\right)
+R_{\infty}\equiv1-\sum_{k}\left(p_{k}\cdot\left(1-\left(1-\upsilon\right)T\right)^{k}\right)
 \]
 
 \end_inset
@@ -774,13 +775,13 @@ R_{\infty}\equiv1-\sum_{k}\left(p_{k}\cdot\left(1-\left(1-\nu\right)T\right)^{k}
 \begin_deeper
 \begin_layout Standard
 where 
-\begin_inset Formula $\nu\in(0,1)$
+\begin_inset Formula $\upsilon\in(0,1)$
 \end_inset
 
  is the solution to 
 \begin_inset Formula 
 \[
-\nu=\frac{\sum_{k}\left(p_{k}k\cdot\left(1-\left(1-\nu\right)T\right)^{k}\right)}{\sum_{k}\left(p_{k}k\right)}
+\upsilon=\frac{\sum_{k}\left(p_{k}k\cdot\left(1-\left(1-\upsilon\right)T\right)^{k}\right)}{\sum_{k}\left(p_{k}k\right)}
 \]
 
 \end_inset
@@ -848,11 +849,15 @@ is the degree distribution of the network.
 \begin_inset Formula $R_{\infty}$
 \end_inset
 
- is the probability and size of epidemic.
+ is the probability and size of epidemic when 
+\begin_inset Formula $T>T_{c}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\nu$
+\begin_inset Formula $\upsilon$
 \end_inset
 
  can be thought of as the chance a random neighbor remains uninfected.
@@ -868,7 +873,7 @@ Finally, define the risk of disease from a neighbor
 \[
 \psi\equiv\begin{cases}
 0 & \text{if }T\leq T_{c}\\
-(1-\nu)T & \text{if }T>T_{c}
+(1-\upsilon)T & \text{if }T>T_{c}
 \end{cases}
 \]
 
@@ -947,6 +952,44 @@ status open
 \end_layout
 
 \begin_layout Itemize
+Each person 
+\emph on
+makes this choice exactly once
+\emph default
+, when news of a potential epidemic arrives.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Overall risk depends on these choices.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
 Let there be 
 \begin_inset Formula $i$
 \end_inset
@@ -972,7 +1015,7 @@ Let there be
 \end_layout
 
 \begin_layout Itemize
-Note this means that 
+This means the degree distribution is given by:
 \begin_inset Formula 
 \[
 p_{k}=\sum_{i}\alpha_{i}\frac{N_{i}^{k}e^{-N_{i}}}{k!}
@@ -984,22 +1027,102 @@ p_{k}=\sum_{i}\alpha_{i}\frac{N_{i}^{k}e^{-N_{i}}}{k!}
 \end_layout
 
 \begin_layout Itemize
-Each person 
-\emph on
-makes this choice exactly once
-\emph default
-, when news of a potential epidemic arrives.
+The critical transmissibility threshold is given by:
+\begin_inset Formula 
+\[
+T_{c}\left(\left\{ N_{i}\right\} \right)=\frac{\sum_{i}\alpha_{i}N_{i}}{\sum_{i}\alpha_{i}N_{i}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The probability and size of the epidemic when 
+\begin_inset Formula $T>T_{c}$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\[
+R_{\infty}=1-\sum_{i}\left[\alpha_{i}e^{-(1-\upsilon)TN_{i}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+where 
+\begin_inset Formula $\upsilon$
+\end_inset
+
+ is the solution to 
+\begin_inset Formula 
+\[
+\upsilon=\frac{\sum_{i}\left(\alpha_{i}N_{i}e^{-(1-\upsilon)TN_{i}}\right)}{\sum_{i}\left(\alpha_{i}N_{i}\right)}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
-\begin_layout Frame
+\begin_layout Itemize
+And finally, let 
+\begin_inset Formula $\Psi^{*}\left(\left\{ N_{i}\right\} \right)$
+\end_inset
+
+be the value of 
+\begin_inset Formula $\Psi$
+\end_inset
+
+, taken as a function of the set of choices.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+When 
+\begin_inset Formula $T\leq T_{c}\left(\left\{ N_{i}\right\} \right)$
+\end_inset
+
+, 
+\begin_inset Formula $\Psi^{*}\left(\left\{ N_{i}\right\} \right)=0$
+\end_inset
+
 
 \end_layout
 
-\begin_layout Frame
+\begin_layout Itemize
+When 
+\begin_inset Formula $T>T_{c}\left(\left\{ N_{i}\right\} \right)$
+\end_inset
+
+, 
+\begin_inset Formula $\Psi^{*}\left(\left\{ N_{i}\right\} \right)$
+\end_inset
+
+ is the solution 
+\begin_inset Formula $\Psi\in(0,1)$
+\end_inset
+
+ to:
+\begin_inset Formula 
+\[
+\Psi=T\frac{\sum_{i}A_{i}N_{i}(1-e^{-\Psi N_{i}})}{\sum_{i}A_{i}N_{i}}
+\]
+
+\end_inset
+
 
 \end_layout
 
+\end_deeper
+\end_deeper
 \begin_layout Frame
 
 \end_layout
@@ -1095,7 +1218,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-
+People like being friendly, but dislike disease risk.
 \end_layout
 
 \end_inset
@@ -1198,32 +1321,6 @@ where
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-placeholder
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
