@@ -938,6 +938,10 @@ is the degree distribution of the network.
  can be thought of as the chance a random neighbor remains uninfected.
 \end_layout
 
+\begin_layout Pause
+
+\end_layout
+
 \begin_layout Itemize
 Finally, define the risk of disease from a neighbor 
 \begin_inset Formula $\Psi$
@@ -1073,11 +1077,11 @@ Overall risk depends on these choices.
 
 \begin_deeper
 \begin_layout Itemize
-Let there be 
+Let there be multiple types of people, denoted by 
 \begin_inset Formula $i$
 \end_inset
 
- types of people.
+.
  Let 
 \begin_inset Formula $N_{i}$
 \end_inset
@@ -1878,6 +1882,66 @@ Proposition 3:
 \begin_layout Itemize
 
 \series bold
+Corollaries:
+\series default
+ 
+\begin_inset Formula $\frac{\partial\Psi^{*}\left(\left\{ N_{i}\right\} \right)}{\partial N_{j}}>0$
+\end_inset
+
+ if 
+\begin_inset Formula $T>T_{c}\left(\left\{ N_{i}\right\} \right)$
+\end_inset
+
+ and any of the following hold:
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $N_{j}>\frac{1}{T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+there is only a singular type
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $N_{j}>\frac{1}{\Psi^{*}\left(\left\{ N_{i}\right\} \right)}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
 Corollary:
 \series default
  If 
@@ -1934,6 +1998,11 @@ Corollary:
 
 , then 
 \begin_inset Formula $\frac{\partial\Psi^{*}\left(\left\{ N_{i}\right\} \right)}{\partial N_{j}}>0$
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
