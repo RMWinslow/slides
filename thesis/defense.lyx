@@ -6,6 +6,7 @@
 \origin unavailable
 \textclass beamer
 \begin_preamble
+
 \usetheme{metropolis}
 \usepackage{etex}
 %\setbeamercolor{palette primary}{bg=white}
@@ -94,7 +95,8 @@
     \usebeamerfont{author in head/foot}{\color{gray}\insertshortauthor}
   \end{beamercolorbox}%
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-    \usebeamerfont{title in head/foot}{\color{gray}\insertshorttitle}
+    %\usebeamerfont{title in head/foot}{\color{gray}\insertshorttitle}
+    \usebeamerfont{title in head/foot}{\color{gray}\insertsection}
   \end{beamercolorbox}%
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
     \usebeamerfont{date in head/foot}{}\hspace*{2em}
@@ -287,12 +289,21 @@ addtocounter{framenumber}{-1}
 \end_layout
 
 \begin_layout Title
-Combining Behavioral Choice with a Branching Process Model of Disease
+Essays on Labor Dynamics and on Endogenous Networks
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-Partial Unemployment Insurance During the Pandemic
+foo
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -301,17 +312,7 @@ Partial Unemployment Insurance During the Pandemic
 \end_layout
 
 \begin_layout Subtitle
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Did supplemental unemployment compensation discourage a return to full-time
- work?
-\end_layout
-
-\end_inset
-
-
+Thesis Defense
 \end_layout
 
 \begin_layout Author
@@ -638,8 +639,97 @@ todo
 
 \end_layout
 
-\begin_layout Section
-Disease Spread
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section[Partial Unemployment Insurance During the Pandemic]{Chapter 1: Partial
+ Unemployment Insurance}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+How Contagion Spreads
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+(Newman 2002) describes a class of networks on which an SIR model can be
+ solved exactly.
+\end_layout
+
+\begin_layout Itemize
+Social network is an infinite random graph described by degree distribution
+ 
+\begin_inset Formula $\left\{ p_{k}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Contagion can spread along each edge with probability 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Itemize
+(Can't reinfect neighbor who infected you.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section[Behavioral Choice in a Branching Process Model of Disease]{Chapter
+ 2: Behavioral Choice in Branching Processes}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
@@ -2102,14 +2192,20 @@ ive externalities in a model of the steady-state of an endemic disease,
 \end_layout
 
 \begin_layout Standard
-\begin_inset Separator plain
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section[Forecasting Individual Unemployment]{Chapter 3: Forecasting Individual
+ Unemployment}
+\end_layout
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Forecasting Individual Unemployment
 \end_layout
 
 \begin_layout Frame
