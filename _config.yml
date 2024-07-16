@@ -1,5 +1,5 @@
 title: Slides
-remote_theme: RMWinslow/JTD-RMW
+# remote_theme: RMWinslow/JTD-RMW
 author: Robert Winslow
 description: "Markdown Slides using remark.js"
 search_enabled: true
